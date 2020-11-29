@@ -12,7 +12,7 @@ public class Solution {
         }
         return ans;
         
-        // METHOD USING Integer.bitCOunt(n)
+        // METHOD USING Integer.bitCount(n)
         
         // System.out.println(Integer.toBinaryString(n));
         

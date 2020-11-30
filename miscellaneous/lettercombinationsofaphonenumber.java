@@ -1,6 +1,6 @@
 // SUSHANT SINHA
 
-// This method is faster and takes 1 mb more space than later code.
+// This method is faster and takes 0.8 mb more space than later code.
 
 
 class Solution {
@@ -34,64 +34,58 @@ class Solution {
             }
             return ans;
         }
-        if(add.length==2){
-        for(int i=0;i<(add.length-1);i++){
-            for(int j=0;j<add[i].length();j++){
+        if(add.length==4){
+                for(int j=0;j<add[0].length();j++){
+                   
                     
-                    for(int k=0;k<add[i+1].length();k++){
+                    for(int k=0;k<add[1].length();k++){
+                        
+                        for(int l=0;l<add[2].length();l++){
+                            for(int m=0;m<add[3].length();m++){
+                             StringBuilder sb=new StringBuilder();
+                            sb.append(add[0].substring(j,j+1));
+                            sb.append(add[1].substring(k,k+1));
+                            sb.append(add[2].substring(l,l+1));
+                            sb.append(add[3].substring(m,m+1));
+                            ans.add(sb.toString());
+                        }
+                    }
+                }
+            }
+            return ans;
+        }
+        
+        if(add.length==2){
+            for(int j=0;j<add[0].length();j++){
+                    
+                    for(int k=0;k<add[1].length();k++){
                         StringBuilder sb=new StringBuilder();
-                        sb.append(add[i].substring(j,j+1));
-                        sb.append(add[i+1].substring(k,k+1));
+                        sb.append(add[0].substring(j,j+1));
+                        sb.append(add[1].substring(k,k+1));
                         ans.add(sb.toString());
                     }
                 }
-        }
+        
             return ans;
         }
         if(add.length==3){
-            for(int i=0;i<(add.length-2);i++){
-                for(int j=0;j<add[i].length();j++){
+                for(int j=0;j<add[0].length();j++){
                    
                     
-                    for(int k=0;k<add[i+1].length();k++){
+                    for(int k=0;k<add[1].length();k++){
                         
-                        for(int l=0;l<add[i+2].length();l++){
+                        for(int l=0;l<add[2].length();l++){
                              StringBuilder sb=new StringBuilder();
-                            sb.append(add[i].substring(j,j+1));
-                            sb.append(add[i+1].substring(k,k+1));
-                            sb.append(add[i+2].substring(l,l+1));
+                            sb.append(add[0].substring(j,j+1));
+                            sb.append(add[1].substring(k,k+1));
+                            sb.append(add[2].substring(l,l+1));
                             ans.add(sb.toString());
                     }
                 }
                 }
-            }
+            
             return ans;
         }
-        
-        if(add.length==4){
-            for(int i=0;i<(add.length-3);i++){
-                for(int j=0;j<add[i].length();j++){
-                   
-                    
-                    for(int k=0;k<add[i+1].length();k++){
-                        
-                        for(int l=0;l<add[i+2].length();l++){
-                            for(int m=0;l<add[i+3].length();m++){
-                             StringBuilder sb=new StringBuilder();
-                            sb.append(add[i].substring(j,j+1));
-                            sb.append(add[i+1].substring(k,k+1));
-                            sb.append(add[i+2].substring(l,l+1));
-                            sb.append(add[i+3].substring(l,l+1));
-                            ans.add(sb.toString());
-                    }
-                        }
-                }
-                }
-            }
-            return ans;
-        }
-        
-        for(String x:ans)System.out.println(x);
         return ans;
     }
 }

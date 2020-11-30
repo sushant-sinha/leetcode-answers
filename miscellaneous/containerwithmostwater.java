@@ -5,15 +5,15 @@ class Solution {
         
         // slow method as the number of iterations are more
         
-        // int max=0;
-        // for(int i=0;i<(height.length-1);i++){
-        //     for(int j=(i+1);j<height.length;j++){
-        //         int max1=(height[i]<height[j]) ? height[i] : height[j];
-        //         max1*=(j-i);
-        //         max=max>max1 ? max : max1;
-        //     }
-        // }
-        // return max;
+        int max=0;
+        for(int i=0;i<(height.length-1);i++){
+            for(int j=(i+1);j<height.length;j++){
+                int max1=(height[i]<height[j]) ? height[i] : height[j];
+                max1*=(j-i);
+                max=max>max1 ? max : max1;
+            }
+        }
+        return max;
         
         // fast method
         

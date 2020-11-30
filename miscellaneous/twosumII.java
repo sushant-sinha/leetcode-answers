@@ -1,6 +1,8 @@
- // SUSHANT SINHA
+// SUSHANT SINHA
 
- // class Solution {
+// slower solution
+
+// class Solution {
 //     public int[] twoSum(int[] numbers, int target) {
 //         int i=0,j=0;
 //         while(i<(numbers.length-1)){
@@ -18,6 +20,7 @@
 //     }
 // }
 
+// faster solution
 
 class Solution {
     public int[] twoSum(int[] numbers, int target) {

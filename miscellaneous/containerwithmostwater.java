@@ -25,8 +25,9 @@ class Solution {
         int maxArea = 0;
 
         while(left < right){
-            maxArea = Math.max(maxArea, Math.min(height[left], height[right]) 
-                      * (right - left));        // update max value
+
+        	// update max value
+            maxArea = Math.max(maxArea, Math.min(height[left], height[right]) * (right - left));      
             
             // Move pointers
             if(height[left] < height[right]) left++;

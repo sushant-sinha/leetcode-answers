@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// Finding position ( index ) where to insert the given number in
+
 class Solution {
     public int searchInsert(int[] nums, int target) {
         int h = 0;

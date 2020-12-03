@@ -1,6 +1,11 @@
 // SUSHANT SINHA
 
-// Finding position ( index ) where to insert the given number in
+/*
+    
+    Finding position ( index ) where to insert the given number in sorted array.
+    If number already exists...... return its position
+
+*/
 
 class Solution {
     public int searchInsert(int[] nums, int target) {

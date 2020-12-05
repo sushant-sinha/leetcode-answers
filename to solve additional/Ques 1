@@ -1,0 +1,61 @@
+Ayush is a Student Developer at VinnovateIT. He is an Android Developer and likes coding applications that help in managing NGOs. In this past year, he participated in many hackathons and won several of them. Due to the participation in these Hackathons, he received many Food Vouchers from nearby restaurants for free Food.
+
+He realized today that he hasn't used any of the food vouchers and coincidently all of the vouchers expire tomorrow. He decides on finding the best way to use the vouchers such that he can get the maximum amount of free food redeemed for himself.
+
+Each voucher has 3 things mentioned on top it - START_TIME, END_TIME and the amount of voucher( A ).
+
+Each voucher has a time duration for which it can be used and he can only use 1 voucher at a time for the particular time duration as he cannot be at two restaurants at the same time. Considering he stays for the entire coupon duration at the restaurant you have to write a code that helps in finding the maximum amount of free food he can redeem in that 1 day.
+
+For each coupon selected Ayush will have to stay at the restaurant for the whole coupon duration. He will stay form START_TIME to END_TIME  both inclusive. i.e.  START_TIME , END_TIME 
+
+INPUT:-
+
+First line contains positive integer n :- number of coupons Ayush have collected.
+
+Next n lines provide the details of coupons, one line for each coupon. ith line gives the details of ith coupon.
+
+Each line contains 3 number, START_TIME, END_TIME, and A (Amount of free food than can be redeemed using this coupon).
+
+note:-
+
+1. START_TIME and END_TIME contain exactly 4 digits and may contain preceeding zeros.
+
+2. START_TIME and END_TIME are in HHMM 24HRS format.(9am is 0900 and 9pm is 2100).
+
+ 
+
+OUTPUT:-
+
+Print the maximum amount of free food that can be redeemed by Ayush by the end of the day.
+
+ 
+
+CONSTRAINTS:-
+
+
+  START_TIME , END_TIME    (Exactly 4 digits and may contain preceeding zeros).
+
+
+ 
+
+NOTE :- Contains large test files, FAST input and output is recommended
+
+ 
+
+SAMPLE INPUT 
+3
+0900 1030 100
+1000 1200 500
+1100 1200 300
+SAMPLE OUTPUT 
+500
+Explanation
+Ayush will select 2nd coupun which is between 1000-1200, and disribute other coupons to his friend. Amount of free food redeemed will be 500.
+
+Timing of 1st and 3rd coupons overlap with the first one and selecting 1st and 3rd will allow him to redeem free food of cost just 400.
+
+Time Limit:	2.0 sec(s) for each input file.
+Memory Limit:	256 MB
+Source Limit:	1024 KB
+Marking Scheme:	Score is assigned if any testcase passes.
+Allowed Languages:	Bash, C, C++, C++14, C++17, Clojure, C#, D, Erlang, F#, Go, Groovy, Haskell, Java, Java 8, Java 14, JavaScript(Rhino), JavaScript(Node.js), Julia, Kotlin, Lisp, Lisp (SBCL), Lua, Objective-C, OCaml, Octave, Pascal, Perl, PHP, Python, Python 3, Python 3.8, R(RScript), Racket, Ruby, Rust, Scala, Swift-4.1, Swift, TypeScript, Visual Basic

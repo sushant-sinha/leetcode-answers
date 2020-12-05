@@ -1,0 +1,71 @@
+We all know what a fibbonacci series is for those who don't it is a series of numbers where first number = 0; second number = 1; and then every number is a sum of previous two numbers.
+
+Now we introduce a fibb-XOR and fibb-XNOR series.
+A fibb-XOR series is a series in which first two numbers are given and then every number in the series is XOR of previous two numbers.
+
+For example:-  first = a; second = b; then third = XOR(a, b) fourth=XOR(third, b),, ... n = XOR((n-1), (n-2))
+
+Similarly, a fibb-XNOR series is a series such first two numbers are given and then
+everyone number in the series is XNOR of previous two numbers.
+
+For example: if first = a; second = b; then. third = XNOR(a, b) fourth = XNOR(third,b)
+... n = XNOR((n-1), (n-2))
+
+You will be given the first two numbers of the fibb-XOR series and also the first two numbers of the fibb-XNOR series.
+Then you will be having    queries.
+Each query comprises of two integers,  and  and you are supposed to find  and 
+1. : sum of elements of the fibb-XOR series between the positions .and  (inclusive)(1-based positioning)
+2. : sum of elements of the fibb-XNOR series between the positions  and  (inclusive)(1-based positioning)
+The answer to the query will be the number of powers of  that sums to (sum1 & sum2) where & is the bitwise AND operation.
+
+For example: 
+7 can be represented as 3 powers of 2 ; 4+2+1
+23 can be represented as 4 powers of 2; 16+4+2+1
+
+Input:
+
+The first line contains one integer , the number of testcases. 
+
+Second line contains two integers  and  denoting the first and second terms of fibb-XOR seires.
+
+Third line contains two integers  and  denoting the first and second terms of fibb-XNOR seires.
+Fourth line contains one integer , denoting the number of queries.
+Each of the next  lines contains two integers  and 
+
+Output: 
+
+Output to each test case contains  lines. Each ot these lines contains one integer, denoting the number of powers of 2.
+
+Constraints:
+
+
+
+
+
+
+
+ 
+
+SAMPLE INPUT 
+1
+3 4 6 12
+5
+1 5
+2 6
+6 9
+5 8
+1 5
+SAMPLE OUTPUT 
+5
+2
+3
+4
+5
+Explanation
+Self-explanatory
+
+Time Limit:	2.0 sec(s) for each input file.
+Memory Limit:	256 MB
+Source Limit:	1024 KB
+Marking Scheme:	Score is assigned if any testcase passes.
+Allowed Languages:	Bash, C, C++, C++14, C++17, Clojure, C#, D, Erlang, F#, Go, Groovy, Haskell, Java, Java 8, Java 14, JavaScript(Rhino), JavaScript(Node.js), Julia, Kotlin, Lisp, Lisp (SBCL), Lua, Objective-C, OCaml, Octave, Pascal, Perl, PHP, Python, Python 3, Python 3.8, R(RScript), Racket, Ruby, Rust, Scala, Swift-4.1, Swift, TypeScript, Visual Basic

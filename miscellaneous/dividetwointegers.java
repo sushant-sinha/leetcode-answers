@@ -1,4 +1,7 @@
 // SUSHANT SINHA
+
+// Took reference from github... as the regular iteration method was slow for big values ans timed out.
+
 class Solution {
     public int divide(int dividend, int divisor) {
         // Corner case: 

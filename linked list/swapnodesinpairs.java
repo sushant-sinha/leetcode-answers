@@ -1,7 +1,5 @@
 // SUSHANT SINHA
 
-// trying this method
-
 // /**
 //  * Definition for singly-linked list.
 //  * public class ListNode {

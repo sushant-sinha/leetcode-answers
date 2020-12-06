@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// Trial.... Not the ansewer
+
 // /**
 //  * Definition for singly-linked list.
 //  * public class ListNode {
@@ -23,6 +25,9 @@
 //         return head;
 //     }
 // }
+
+// This is answer
+
 class Solution {
     public ListNode swapPairs(ListNode head) {
         if (head == null)

@@ -3,6 +3,14 @@
 // This method is faster and takes 0.8 mb more space than later code.
 
 
+/*  
+    Used this method as the length of the string was only 4 ....
+
+    If the length would have beem more it will be difficult to write all cases from 0 to n
+*/
+
+
+
 class Solution {
     public List<String> letterCombinations(String digits) {
         ArrayList<String> ans=new ArrayList<String>();

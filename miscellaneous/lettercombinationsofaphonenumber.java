@@ -7,6 +7,7 @@
     Used this method as the length of the string was only 4 ....
 
     If the length would have been more it will be difficult to write all cases from 0 to n
+
 */
 
 

@@ -5,20 +5,25 @@
 
 class Solution {
     public int[][] generateMatrix(int n) {
-        
+
         int ans[][]=new int[n][n];
         
         if(n==1){ans[0][0]=1;return ans;}
         int i=0,x=1;
-       while(x<=n/2){
-        for(int j=x;j<=n-x+1;j++)ans[x-1][(j-1)]=++i;
-        for(int j=x;j<n-x+1;j++)ans[j][(n-x)]=++i;
-        for(int j=x;j<n-x+1;j++)ans[(n-x)][(n-j-1)]=++i;
-        for(int j=x;j<(n-x);j++)ans[(n-j-1)][x-1]=++i;
-        ++x;
+
+        while(x<=n/2){
+            
+            for(int j=x;j<=n-x+1;j++)ans[x-1][(j-1)]=++i;
+            for(int j=x;j<n-x+1;j++)ans[j][(n-x)]=++i;
+            for(int j=x;j<n-x+1;j++)ans[(n-x)][(n-j-1)]=++i;
+            for(int j=x;j<(n-x);j++)ans[(n-j-1)][x-1]=++i;
+            ++x;
         }
+
         if(n%2!=0)ans[n/2][n/2]=++i;
+
         return ans;
+    
     }
 }
 

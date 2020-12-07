@@ -26,6 +26,8 @@ class Solution {
 
 // Fastest Solution
 
+
+/*
 class Solution {
     public int[][] generateMatrix(int n) {
         int[][] res = new int[n][n];
@@ -76,3 +78,4 @@ class Solution {
         }
     }
 }
+*/

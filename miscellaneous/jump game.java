@@ -1,6 +1,10 @@
-// took from https://github.com/cherryljr/LeetCode/blob/master/Jump%20Game.java
+/* 
 
-/*
+took directly from 
+
+https://github.com/cherryljr/LeetCode/blob/master/Jump%20Game.java
+
+
 
 Greedy O(n)
 

@@ -37,7 +37,13 @@
 //     }
 // }
 
-// Fast Solution from https://www.programcreek.com/2014/05/leetcode-add-binary-java/
+/* 
+
+
+Fast Solution from https://www.programcreek.com/2014/05/leetcode-add-binary-java/
+
+
+*/
 
 class Solution{
 public String addBinary(String a, String b) {

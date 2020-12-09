@@ -10,7 +10,7 @@ class Solution {
 		// pre2=pre1;
 		// pre1=latest;
 		// }
-		// return prev1;
+		// return pre1;
         // }
         
         // Same method but using arrays to store previous two cases

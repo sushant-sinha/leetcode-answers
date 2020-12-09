@@ -1,6 +1,4 @@
 // SUSHANT SINHA
-
-
 class Solution {
     public void duplicateZeros(int[] arr) {
         int temp[]=new int[arr.length];
@@ -22,7 +20,7 @@ class Solution {
             else {break;}
         }
         for(int i=0;i<arr.length;i++){
-            arr[i]    =temp[i];
+            arr[i]  =  temp[i];
         }
         
     }

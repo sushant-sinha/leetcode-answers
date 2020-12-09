@@ -10,7 +10,6 @@ class Solution {
     		i = i + x + 1;
     		s = s.substring(1);
     	}
-    	if (s.equals("")) return true;
-    	return false;
+    	return s.equals("");
     }
 }

@@ -1,3 +1,5 @@
+// SUSHANT SINHA
+
 class Solution {
     public int tribonacci(int n) {
         

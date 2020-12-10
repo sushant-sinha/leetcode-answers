@@ -1,4 +1,4 @@
-// took from https://github.com/interviewdiscussion/files/blob/master/Facebook_java%2Bpdf/43.%20Multiply%20Strings%20product.java
+// from https://github.com/interviewdiscussion/files/blob/master/Facebook_java%2Bpdf/43.%20Multiply%20Strings%20product.java
 
 class Solution {
     public String multiply(String num1, String num2) {

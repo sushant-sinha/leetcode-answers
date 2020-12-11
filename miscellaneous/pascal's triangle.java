@@ -29,3 +29,22 @@ class Solution {
         return res; 
     } 
 }
+
+// other short method
+
+// class Solution {
+//     public List<List<Integer>> generate(int numRows) {
+//         List<List<Integer>> result = new ArrayList<>();
+//         for (int i = 0; i < numRows; i++) {
+//             List<Integer> row = new ArrayList<>();
+//             row.add(1);
+//             for (int j = 1; j < i; j++) {
+//                 List<Integer> upper = result.get(i-1);
+//                 row.add(upper.get(j-1) + upper.get(j));
+//             }
+//             if (i > 0) row.add(1);
+//             result.add(row);
+//         }
+//         return result;
+//     }
+// }

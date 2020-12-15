@@ -33,7 +33,7 @@ public class Solution extends GuessGame {
             high=mid-1;
         }
         
-        // instead of last else we can use       else if(result == -1){high=mid-1}
+        // instead of last else we can use else if(result == -1){high=mid-1}
     }
  
     return -1;

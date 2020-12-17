@@ -25,3 +25,14 @@ public int fourSumCount(int[] A, int[] B, int[] C, int[] D) {
         return result;
     }
 }
+
+/*
+
+Take the arrays A and B, and compute all the possible sums of two elements. Put the sum in the Hash map,
+and increase the hash map value if more than 1 pair sums to the same value.
+
+Compute all the possible sums of the arrays C and D. If the hash map contains the opposite value of the current sum,
+increase the count of four elements sum to 0 by the counter in the map.
+
+
+*/

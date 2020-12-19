@@ -1,5 +1,26 @@
 // SUSHANT SINHA
 
+// My answer
+
+class Solution {
+    public int trailingZeroes(int n) {
+        int fact[]=new int[2];
+        for(int i=1;i<=n;i++){
+            int j=i;
+            while(j%2==0){
+                j/=2;
+                fact[0]++;
+            }
+            while(j%5==0){
+                j/=5;
+                fact[1]++;
+            }
+        }
+        
+        return fact[0]>fact[1] ? fact[1] : fact[0];
+    }
+}
+
 // Least space
 
 class Solution {

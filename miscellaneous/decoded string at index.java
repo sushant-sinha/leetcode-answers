@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// took from https://github.com/gouthampradhan/leetcode/blob/master/problems/src/math/DecodedStringAtIndex.java
+
 class Solution {
     public String decodeAtIndex(String S, int K) {
     long product = 0;

@@ -1,11 +1,14 @@
 // SUSHANT SINHA
 
+/*
+
 We are using an arraylist to store all the values present in the linkedlist..
 Then we use Collections.sort() to sort our arraylist....
 Then we can just assign the values of our sorted arraylist to the linkedlist 
 Please upvote if it helped 😊
 
-```
+*/
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {

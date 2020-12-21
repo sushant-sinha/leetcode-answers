@@ -18,11 +18,16 @@ Convert intersection set to array
 */
 
 // O(max(n, m)) time, O(n + m) space
-public int[] intersection(int[] nums1, int[] nums2) {
+
+// 7ms 39mb-39.2mb
+
+class Solution {
+    public int[] intersection(int[] nums1, int[] nums2) {
   Set<Integer> a = new HashSet<>(Arrays.stream(nums1).boxed().collect(Collectors.toList()));
   Set<Integer> b = new HashSet<>(Arrays.stream(nums2).boxed().collect(Collectors.toList()));
   a.retainAll(b);
   return a.stream().mapToInt(Integer::intValue).toArray();
+}
 }
 
 /*
@@ -48,7 +53,11 @@ Shrink the size of intersection array to remove unused space
 */
 
 // O(max(n, m) log max(n, m)) time, O(min(n, m)) space
-public int[] intersection(int[] nums1, int[] nums2) {
+
+// 2ms 39.1mb
+
+class Solution {
+    public int[] intersection(int[] nums1, int[] nums2) {
   Arrays.sort(nums1);
   Arrays.sort(nums2);
   int[] intersect = new int[Math.min(nums1.length, nums2.length)];
@@ -75,6 +84,7 @@ public int[] intersection(int[] nums1, int[] nums2) {
     result[i-1] = intersect[i-1];
   }
   return result;
+}
 }
 
 /*

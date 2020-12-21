@@ -1,3 +1,10 @@
+// SUSHANT SINHA
+
+// took from https://leetcode.com/problems/intersection-of-two-arrays/discuss/82222/Several-Java-solutions-with-explanation
+
+
+/*
+
 Solution using Java Collections
 
 Convert first array to the set
@@ -8,6 +15,8 @@ Use retainAll to find set intersection
 
 Convert intersection set to array
 
+*/
+
 // O(max(n, m)) time, O(n + m) space
 public int[] intersection(int[] nums1, int[] nums2) {
   Set<Integer> a = new HashSet<>(Arrays.stream(nums1).boxed().collect(Collectors.toList()));
@@ -15,6 +24,9 @@ public int[] intersection(int[] nums1, int[] nums2) {
   a.retainAll(b);
   return a.stream().mapToInt(Integer::intValue).toArray();
 }
+
+/*
+
 Solution sing sorting
 
 Sort first array
@@ -32,6 +44,8 @@ If pointers point to equal values add it to result array and move both pointers 
 Repeate 4-6 until any pointer reaches the end of array
 
 Shrink the size of intersection array to remove unused space
+
+*/
 
 // O(max(n, m) log max(n, m)) time, O(min(n, m)) space
 public int[] intersection(int[] nums1, int[] nums2) {
@@ -62,6 +76,9 @@ public int[] intersection(int[] nums1, int[] nums2) {
   }
   return result;
 }
+
+/*
+
 Brute-force solution
 
 For each element in first array traverse second array
@@ -73,6 +90,8 @@ If there is a match check if it is unique by traversing intersection array
 If match is unique add it to intersection array.
 
 Shrink intersection array
+
+*/
 
 // nums1.length = n, nums2.length = m
 // O (n * m * min(n, m)) time, O(min(n, m)) space

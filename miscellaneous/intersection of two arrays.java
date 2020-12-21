@@ -105,7 +105,11 @@ Shrink intersection array
 
 // nums1.length = n, nums2.length = m
 // O (n * m * min(n, m)) time, O(min(n, m)) space
-public int[] intersection(int[] nums1, int[] nums2) {
+
+// 7ms 38.6mb
+
+class Solution {
+    public int[] intersection(int[] nums1, int[] nums2) {
   int[] intersect = new int[Math.min(nums1.length, nums2.length)];
   int index = 0;
   for (int i = 0; i < nums1.length; i++) {
@@ -128,4 +132,5 @@ public int[] intersection(int[] nums1, int[] nums2) {
     result[index-1] = intersect[index-1];
   }
   return result;
+}
 }

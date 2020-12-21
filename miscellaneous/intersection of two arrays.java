@@ -1,6 +1,4 @@
-// SUSHANT SINHA
-
-// took from https://leetcode.com/problems/intersection-of-two-arrays/discuss/82222/Several-Java-solutions-with-explanation
+// Took from https://leetcode.com/problems/intersection-of-two-arrays/discuss/82222/Several-Java-solutions-with-explanation
 
 
 /*

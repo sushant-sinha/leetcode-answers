@@ -13,3 +13,14 @@ class Solution {
         return Math.max(0, A[A.length-1] - A[0] - 2*K);
     }
 }
+
+// My Short Solution (Slow)
+
+class Solution {
+    public int smallestRangeI(int[] A, int K) {
+        
+        Arrays.sort(A);
+        return Math.max(0, A[A.length-1] - A[0] - 2*K);
+        
+    }
+}

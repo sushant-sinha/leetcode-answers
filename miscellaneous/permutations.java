@@ -37,3 +37,37 @@ public class Solution {
         return ans;
     }
 }
+
+
+public class Solution {
+ /*
+ * @param : A list of integers.
+ * @return: A list of permutations.
+ */
+    public List<List<Integer>> permute(int[] nums) {
+        List<List<Integer>> ret = new ArrayList<List<Integer>>();
+        helper(nums, new HashSet<Integer>(), new ArrayList<Integer>(), ret);
+        
+        return ret;
+    }
+    
+    private void helper(int[] nums, HashSet<Integer> used, List<Integer> cur, List<List<Integer>> ret) {
+        if (nums.length == used.size()) {
+            ret.add(new ArrayList<Integer>(cur));
+        }
+        
+        for (int i : nums) {
+            if (used.contains(i)) {
+                continue;
+            }
+            
+            used.add(i);
+            cur.add(i);
+            helper(nums, used, cur, ret);
+            used.remove(i);
+            cur.remove(cur.size() - 1);
+        }
+    }
+}
+
+

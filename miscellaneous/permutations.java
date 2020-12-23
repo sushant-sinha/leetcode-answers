@@ -10,6 +10,7 @@ class Solution {
         return ans;
     }
     
+    // generate can be static too static void generate(int a[] , int visited[] , List<List<Integer>> ans , int count){
     public void generate(int a[] , int visited[] , List<List<Integer>> ans , int count){
         if(count == a.length+1){
             List<Integer> now = new ArrayList<>();

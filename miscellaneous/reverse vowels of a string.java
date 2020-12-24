@@ -104,3 +104,52 @@ class Solution {
     }
 }
 
+// Space efficcient
+
+class Solution {
+    public String reverseVowels(String s) {
+        //check for valid input and edge cases
+        if(s == null || s.isEmpty()){
+            return s;
+        }
+        
+        Set<Character> vowels = new HashSet<>();
+        vowels.add('a');
+        vowels.add('e');
+        vowels.add('i');
+        vowels.add('o');
+        vowels.add('u');
+        
+        int left = 0;
+        int right = s.length()-1;
+        
+        char[] str = s.toCharArray();
+        
+        while(right >= 0 && left < s.length() && left < right){
+            while(left < s.length() && !vowels.contains(Character.toLowerCase(str[left]))){
+                left++;
+            }
+            while(right >= 0 && !vowels.contains(Character.toLowerCase(str[right]))){
+                right--;
+            }
+            if(left < right){
+                char c = str[left];
+                str[left] = str[right];
+                str[right] = c;
+            }
+            left++;
+            right--;
+        }
+        
+        return new String(str);
+        
+    }
+}
+
+/*
+
+set of characters to reverse
+and we can use two pointer (opposite end, converging indecis)
+
+
+*/

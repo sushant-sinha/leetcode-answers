@@ -66,3 +66,41 @@ class Solution {
     }
 }
 
+// Fastest solution
+
+class Solution {
+    public String reverseVowels(String s) {
+        char ans[] = s.toCharArray();
+        int i=0, j= s.length()-1;
+        while (i<j) {
+            while (i<j) 
+            {
+                if(ans[i]=='a' || ans[i]=='e' || ans[i]=='i' || ans[i]=='o' || ans[i]=='u' || ans[i]=='A' || ans[i]=='E' || ans[i]=='I' || ans[i]=='O' || ans[i]=='U')
+                {
+                    break;
+                }
+                i++;
+            }
+            while (j>i) 
+            {
+                if(ans[j]=='a' || ans[j]=='e' || ans[j]=='i' || ans[j]=='o' || ans[j]=='u' || ans[j]=='A' || ans[j]=='E' || ans[j]=='I' || ans[j]=='O' || ans[j]=='U')
+                {
+                    break;
+                }
+                j--;
+            }
+
+            if(i<j)
+            {
+                char swapper = ans[i];
+                ans[i] = ans[j];
+                ans[j] = swapper;
+                i++;
+                j--;
+            }
+        }
+        
+        return new String(ans);
+    }
+}
+

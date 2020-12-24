@@ -1,6 +1,6 @@
 // SUSHANT SINHA
 
-
+// My solution 100% fast 94.26% fast
 
 class Solution {
     public int[] searchRange(int[] nums, int target) {

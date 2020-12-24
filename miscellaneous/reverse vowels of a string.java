@@ -1,7 +1,7 @@
 // SUSHANT SINHA
 
 
-// My solution
+// My solution 15-16ms 41.6mb
 
 class Solution {
     public String reverseVowels(String s) {
@@ -66,7 +66,7 @@ class Solution {
     }
 }
 
-// Fastest solution
+// Fastest solution 1-2ms 39mb
 
 class Solution {
     public String reverseVowels(String s) {
@@ -104,7 +104,7 @@ class Solution {
     }
 }
 
-// Space efficcient
+// Space efficcient 4ms 39mb
 
 class Solution {
     public String reverseVowels(String s) {

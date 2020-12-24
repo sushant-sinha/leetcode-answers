@@ -1,8 +1,5 @@
 // SUSHANT SINHA
 
-// Trial.... Not the ansewer
-
-
 /*
  * Definition for singly-linked list.
  * public class ListNode {
@@ -12,22 +9,7 @@
  *     ListNode(int val) { this.val = val; }
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
- 
-class Solution {
-    public ListNode swapPairs(ListNode head) {
-        if(head==null || head.next==null )return head;
-        ListNode start=head,temp=null;
-        head=head.next;
-        while(start.next.next!=null){
-            temp=start;
-            start.next=start;
-            start=temp.next;
-        }
-        return head;
-    }
-}
-
-*/
+ */
 
 // This is answer
 

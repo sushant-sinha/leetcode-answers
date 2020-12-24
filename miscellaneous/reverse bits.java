@@ -1,6 +1,6 @@
 // SUSHANT SINHA
 
-
+// reverse bits.java remember
 
 public class Solution {
     // you need treat n as an unsigned value

@@ -8,6 +8,9 @@ class Solution {
         char[] ch1 = {'q','w','e','r','t','y','u','i','o','p','Q','W','E','R','T','Y','U','I','O','P'};
         char[] ch2 = {'a','A','s','S','d','D','F','f','G','g','h','H','J','j','K','k','l','L'};
         char[] ch3 = {'z','Z','x','X','C','c','v','V','b','B','n','N','m','M'};
+
+        // Or use Arrays.asList
+
         for(char c : ch1) map1.add(c);
         for(char c : ch2) map2.add(c); 
         for(char c : ch3) map3.add(c);

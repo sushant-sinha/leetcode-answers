@@ -1,7 +1,5 @@
 // SUSHANT SINHA
 
-// base 7.java
-
 class Solution {
     public String convertToBase7(int num) {
         

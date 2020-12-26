@@ -1,7 +1,5 @@
 // SUSHANT SINHA
 
-// matrix diagonal sum.java
-
 class Solution {
     public int diagonalSum(int[][] mat) {
         

@@ -1,6 +1,6 @@
 // SUSHANT SINHA
 
-// Took reference from github... as the regular iteration method was slow for big values ans timed out.
+// Took reference from github... as the regular iteration method was slow for big values and TLE.
 
 class Solution {
     public int divide(int dividend, int divisor) {

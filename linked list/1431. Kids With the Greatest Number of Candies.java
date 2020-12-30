@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 0 ms solution
+
 class Solution {
     public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
         List<Boolean> ans=new ArrayList<Boolean>();

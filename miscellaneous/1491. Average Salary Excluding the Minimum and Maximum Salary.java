@@ -1,6 +1,6 @@
 // SUSHANT SINHA
 
-
+// 0 ms Solution
 
 class Solution {
     public double average(int[] salary) {

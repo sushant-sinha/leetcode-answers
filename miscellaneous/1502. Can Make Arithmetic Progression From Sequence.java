@@ -1,6 +1,6 @@
 // SUSHANT SINHA
 
-
+// 1 ms 38.1 mb(97.85%)
 
 class Solution {
     public boolean canMakeArithmeticProgression(int[] arr) {

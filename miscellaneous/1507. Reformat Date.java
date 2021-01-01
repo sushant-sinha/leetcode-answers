@@ -1,7 +1,10 @@
 // SUSHANT SINHA
 
+// 1 ms 37.3mb (87.08%)
+
 class Solution {
     public String reformatDate(String date) {
+
         StringBuilder tempans= new StringBuilder();
         
         tempans.append(date.substring(date.length()-4,date.length()) + "-");

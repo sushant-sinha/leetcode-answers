@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 1ms
+
 class Solution {
     public int specialArray(int[] nums) {
         Arrays.sort(nums);

@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// slower solution
+
 class Solution {
     public double findMaxAverage(int[] nums, int k) {
         if (nums == null || nums.length == 0) {
@@ -22,3 +24,22 @@ class Solution {
     }
 }
 
+// faster solution
+
+class Solution {
+    public double findMaxAverage(int[] nums, int k) {
+        int n = nums.length;
+        int sum = 0;
+        for (int i = 0; i < k; i++) {
+            sum += nums[i];
+        }
+        long maxSum = sum;
+        for (int i = k; i < n; i++) {
+            sum += nums[i] - nums[i-k];
+            if (sum > maxSum) {
+                maxSum = sum;
+            }
+        }
+        return 1.0 * maxSum / k;
+    }
+}

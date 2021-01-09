@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 1ms Solution
+
 class Solution {
     public boolean isMonotonic(int[] A) {
         boolean increasing = true;

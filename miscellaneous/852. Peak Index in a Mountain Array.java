@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 0ms (43.3mb 6.82%)
+
 class Solution {
     public int peakIndexInMountainArray(int[] arr) {
         

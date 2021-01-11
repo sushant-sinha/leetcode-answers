@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 2ms 40.7mb
+
 class Solution {
     public boolean lemonadeChange(int[] bills) {
         

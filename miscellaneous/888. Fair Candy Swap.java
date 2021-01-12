@@ -57,6 +57,7 @@ class Solution {
         for (int bar : A) {
             set.add(bar);
         }
+        // ** here is the logic **
         for (int bar : B) {
             if (set.contains(bar + diff / 2)) {
                 ans[0] = bar + diff / 2;
@@ -65,5 +66,5 @@ class Solution {
             }
         }
         return ans;
-        }
+    }
 }

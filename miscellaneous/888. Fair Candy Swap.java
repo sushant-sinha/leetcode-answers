@@ -1,6 +1,6 @@
 // SUSHANT SINHA
 
-tle
+// TLE ( worked fine for small arrays )
 
 class Solution {
     public int[] fairCandySwap(int[] A, int[] B) {

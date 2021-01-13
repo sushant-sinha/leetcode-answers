@@ -1,5 +1,6 @@
 // SUSHANT SINHA
 
+// 0ms 36.6mb ( 21.48% )
 
 /**
  * Definition for singly-linked list.

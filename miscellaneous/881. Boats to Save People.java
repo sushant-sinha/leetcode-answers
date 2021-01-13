@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 14 ms (matches with indiacoder)
+
 class Solution {
     public int numRescueBoats(int[] people, int limit) {
         Arrays.sort(people);

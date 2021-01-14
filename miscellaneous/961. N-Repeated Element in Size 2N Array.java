@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 6ms ( 34.54% )
+
 class Solution {
     public int repeatedNTimes(int[] A) {
         Arrays.sort(A);

@@ -1,5 +1,6 @@
 // SUSHANT SINHA
 
+// 3ms(98.35 %)
  
 class Solution {
     public List<Integer> addToArrayForm(int[] A, int K) {

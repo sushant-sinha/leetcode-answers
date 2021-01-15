@@ -1,6 +1,6 @@
 // SUSHANT SINHA
 
-
+// 0ms ( 100% )
 
 class Solution {
     public List<Integer> powerfulIntegers(int x, int y, int bound) {

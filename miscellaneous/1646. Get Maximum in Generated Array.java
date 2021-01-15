@@ -1,6 +1,6 @@
 // SUSHANT SINHA
 
-// 1ms (20.54%)
+// 1ms ( 20.54% )
 
 class Solution {
     public int getMaximumGenerated(int n) {

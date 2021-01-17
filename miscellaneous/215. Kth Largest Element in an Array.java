@@ -1,6 +1,6 @@
 // SUSHANT SINHA
 
-
+// 1 ms (97.54%)
 
 class Solution {
     public int findKthLargest(int[] nums, int k) {

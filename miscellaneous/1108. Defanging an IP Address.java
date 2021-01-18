@@ -24,3 +24,26 @@ class Solution {
         
     }
 }
+
+// best solution 0ms (using replace)
+
+class Solution {
+    public String defangIPaddr(String address) {
+        String newAddress = address.replace(".", "[.]");
+        return newAddress;
+    }
+}
+
+// solution using stringbuilder 1ms
+
+class Solution {
+    public String defangIPaddr(String address) {
+        String[] addr = address.split("\\.");
+        StringBuilder sb = new StringBuilder(addr[0]);
+        for(int i = 1; i < addr.length; i++) {
+            sb.append("[.]" + addr[i]);
+        }
+
+        return sb.toString();
+    }
+}

@@ -2,6 +2,8 @@
 
 // my solution 5ms ( 11.23% )
 
+// cannot use "." in split... 🤔
+
 class Solution {
     public String defangIPaddr(String address) {
         
@@ -22,4 +24,3 @@ class Solution {
         
     }
 }
-

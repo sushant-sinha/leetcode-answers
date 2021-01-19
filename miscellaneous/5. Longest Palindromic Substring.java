@@ -65,39 +65,3 @@ private int expandAroundCenter(String s, int left, int right) {
     }
     return R - L - 1;
 }
-
-// 23ms ( 39.2mb )  dynamic programming
-
-class Solution {
-    int maxLen = 0, start = 0;
-    
-    public String longestPalindrome(String s) {
-        if (s.length() == 1) {
-            return s;
-        }
-        
-        for (int i = 0; i < s.length(); i++) {
-            // odd
-            expandFromMiddle(s, i, i);
-            
-            // even
-            expandFromMiddle(s, i, i + 1);
-        }
-        
-        return s.substring(start, start+maxLen);
-    }
-    
-    private void expandFromMiddle(String s, int lo, int hi) {        
-        while (lo >= 0 && hi < s.length() && s.charAt(lo) == s.charAt(hi)) {
-            lo--;
-            hi++;
-        }
-        
-        int len = hi - lo - 1;
-        
-        if (len > maxLen) {
-            maxLen = len;
-            start = lo + 1;
-        }
-    }
-}

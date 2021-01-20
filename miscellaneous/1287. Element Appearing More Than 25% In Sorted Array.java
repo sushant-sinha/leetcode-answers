@@ -1,5 +1,6 @@
 // SUSHANT SINHA
 
+// 0ms
 
 class Solution {
     public int findSpecialInteger(int[] arr) {

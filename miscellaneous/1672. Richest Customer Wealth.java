@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 0ms 38.5mb ( 84.43% )
+
 class Solution {
     public int maximumWealth(int[][] accounts) {
         

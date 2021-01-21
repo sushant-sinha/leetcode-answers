@@ -20,3 +20,22 @@ class Solution {
     }
 }
 
+// best solution 0 ms
+
+class Solution {
+    public String thousandSeparator(int n) {
+        String orig = String.valueOf(n);
+        if (n < 1000) return orig;
+        StringBuilder sb = new StringBuilder();
+        int sepLen = 3;
+        for (int i = orig.length()-1; i >= 0; --i) {
+            sb.append(orig.charAt(i));
+            --sepLen;
+            if (sepLen == 0 && i != 0) {
+                sepLen = 3;
+                sb.append('.');
+            }
+        }
+        return sb.reverse().toString();
+    }
+}

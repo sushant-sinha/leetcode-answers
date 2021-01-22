@@ -1,6 +1,6 @@
 // SUSHANT SINHA
 
-
+// 1ms ( 65.58% )
 
 class Solution {
     public int numIdenticalPairs(int[] nums) {

@@ -33,6 +33,7 @@ class Solution {
     }
 }
 
+// from discussion section korolev mikhail
 
 class Solution {
     public int[][] diagonalSort(int[][] mat) {

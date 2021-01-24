@@ -1,5 +1,11 @@
 // SUSHANT SINHA
 
+/* 
+	brute force
+	6 ms(34.16%)
+	39.9 mb(9.86%)
+
+*/
 
 /**
  * Definition for singly-linked list.

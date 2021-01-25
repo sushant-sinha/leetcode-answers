@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 0ms 
+
 class Solution {
     public int[] constructRectangle(int area) {
         for(int i = (int) Math.sqrt(area); i >= 1;i--){

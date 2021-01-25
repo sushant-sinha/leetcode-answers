@@ -1,5 +1,6 @@
 // SUSHANT SINHA
 
+// 1ms ( 100% )
 
 class Solution {
     public boolean kLengthApart(int[] nums, int k) {

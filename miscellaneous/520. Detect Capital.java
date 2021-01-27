@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 1ms ( 99.09% )
+
 class Solution {
     public boolean detectCapitalUse(String word) {
         

@@ -1,5 +1,6 @@
 // SUSHANT SINHA
 
+// 9ms ( 61.39% )
 
 class Solution {
     public String[] findRelativeRanks(int[] nums) {

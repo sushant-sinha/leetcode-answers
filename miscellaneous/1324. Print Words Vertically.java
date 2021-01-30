@@ -37,3 +37,49 @@ class Solution {
         
     }
 }
+
+
+// 0ms ( 100% ) 37.1mb ( understand the missed part )
+
+class Solution {
+    
+    public List<String> printVertically(String s) {
+        String [] ss=s.split(" ");
+        
+        int longest=0;
+        //find the current longest wordlength.
+        for(String e :ss){
+        longest=Math.max(longest,e.length());
+        }
+          
+        
+        List<String> ret=new ArrayList<>();
+       StringBuilder t=new StringBuilder();
+         
+         for(int i=0;i<longest;i++){
+             int missed=0;
+             
+        for(int j=0;j<ss.length;j++){ 
+            
+             if(i<ss[j].length()){
+                
+                while(missed>0){
+                    t.append(' ');
+                    --missed;
+                }
+                
+                t.append(ss[j].charAt(i));
+            } else {
+                missed++;
+            }
+             
+        } 
+             ret.add(t.toString());
+             // string builder can be reused.
+             t.setLength(0);
+          }
+        
+         
+        return ret; 
+    }
+}

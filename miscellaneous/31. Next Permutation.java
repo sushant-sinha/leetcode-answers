@@ -1,6 +1,7 @@
 // SUSHANT SINHA
 
 // fishercoder1534
+// 1ms ( 40.19% ) 40.1mb ( 12.58% )
 
 class Solution {
     /**

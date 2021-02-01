@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 12ms ( 28.11% ) from the solution tab
+
 class Solution {
     public int[] findErrorNums(int[] nums) {
         Arrays.sort(nums);

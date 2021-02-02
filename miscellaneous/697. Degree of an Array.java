@@ -1,5 +1,8 @@
 // SUSHANT SINHA
 
+// given in solution tab
+// 17ms ( 65.96% )  43mb ( 71.14% )
+
 class Solution {
     public int findShortestSubArray(int[] nums) {
         Map<Integer, Integer> left = new HashMap(),

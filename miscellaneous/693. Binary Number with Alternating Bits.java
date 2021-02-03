@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 0ms ( 100% ) 35.2mb( 99.69% )
+
 class Solution {
     public boolean hasAlternatingBits(int n) {
         

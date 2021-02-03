@@ -1,5 +1,8 @@
 // SUSHANT SINHA
 
+// 5ms ( 59.43% ) 38.6mb ( 96.16% )
+// we can also use string ( substring )
+
 class Solution {
     public boolean judgeCircle(String moves) {
         

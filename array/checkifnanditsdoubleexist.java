@@ -1,5 +1,5 @@
 // SUSHANT SINHA
-//VANSHIKA 
+// VANSHIKA raj sharma
 class Solution {
     public boolean checkIfExist(int[] arr) {
         int temp;

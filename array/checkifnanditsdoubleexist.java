@@ -1,4 +1,5 @@
 // SUSHANT SINHA
+//vanshika raj
 class Solution {
     public boolean checkIfExist(int[] arr) {
         int temp;

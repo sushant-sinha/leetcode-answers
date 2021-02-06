@@ -23,3 +23,19 @@ class Solution {
         
     }
 }
+
+// 0ms 36.9mb
+
+class Solution {
+    public boolean rotateString(String A, String B) {
+        if(A.length() != B.length())return false;
+        
+         String res = A + A;
+        
+        if(res.contains(B)){
+          return true;
+        }
+        
+        return false;
+    }
+}

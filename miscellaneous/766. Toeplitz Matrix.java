@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 0ms 39.2mb ( 57.04% )
+
 class Solution {
 
   public boolean isToeplitzMatrix(int[][] matrix) {

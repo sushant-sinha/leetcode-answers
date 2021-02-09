@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 0ms 37mb ( 96.17% ) ( similar to the solution given in 'Solution' tab )
+
 class Solution {
     public int[] numberOfLines(int[] widths, String S) {
         

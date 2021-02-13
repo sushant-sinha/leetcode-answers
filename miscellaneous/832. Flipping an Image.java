@@ -1,7 +1,7 @@
 // SUSHANT SINHA
 
 // my solution
-// 0ms 39.1mb ( 81.01% )
+// 0ms 38.9mb ( 94.96% )
 
 class Solution {
     public int[][] flipAndInvertImage(int[][] A) {

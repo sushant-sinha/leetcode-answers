@@ -1,6 +1,6 @@
 // SUSHANT SINHA
 
-// 3ms ( 65.26% ) 39.1mb ( 36.38% )
+// 3ms ( 65.26% ) 39.1mb ( 46.93% )
 
 class Solution {
     public String toGoatLatin(String s) {

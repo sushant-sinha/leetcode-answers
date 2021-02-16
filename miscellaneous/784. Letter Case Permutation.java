@@ -1,5 +1,7 @@
 // FROM indiacoder @ https://www.youtube.com/watch?v=PTnmmYmtQYs&feature=emb_logo
 
+// 1ms ( 100% ) 39.8mb ( 59.08% )
+
 class Solution {
     public List<String> letterCasePermutation(String S) {
         List<String> ans = new ArrayList<>();

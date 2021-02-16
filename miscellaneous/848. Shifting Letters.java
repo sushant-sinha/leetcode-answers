@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 2ms ( 100% ) 41.3mb ( 52.46% )
+
 class Solution {
     public String shiftingLetters(String S, int[] shifts) {
         char[] ch = S.toCharArray();

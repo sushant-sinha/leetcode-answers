@@ -17,22 +17,23 @@ class Solution {
         
         // fast method
         
-        if(height == null || height.length == 0) return 0;
+    //     if(height == null || height.length == 0) return 0;
 
-        // Set two pointers at both ends of array
-        int left = 0;
-        int right = height.length - 1;
-        int maxArea = 0;
+    //     // Set two pointers at both ends of array
+    //     int left = 0;
+    //     int right = height.length - 1;
+    //     int maxArea = 0;
 
-        while(left < right){
+    //     while(left < right){
 
-        	// update max value
-            maxArea = Math.max(maxArea, Math.min(height[left], height[right]) * (right - left));      
+    //     	// update max value
+    //         maxArea = Math.max(maxArea, Math.min(height[left], height[right]) * (right - left));      
             
-            // Move pointers
-            if(height[left] < height[right]) left++;
-            else right--;
-        }
-        return maxArea;
-    }
+    //         // Move pointers
+    //         if(height[left] < height[right]) left++;
+    //         else right--;
+    //     }
+    //     return maxArea;
+    // }
+        
 }

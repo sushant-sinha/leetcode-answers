@@ -63,3 +63,25 @@ class Solution {
         
     }
 }
+
+// gievn solution
+// 3ms ( 99.72% ) 39.4mb ( 74.65% )
+
+class Solution {
+    public String removeDuplicates(String S) {
+        char[] in = S.toCharArray();
+        int j = 0;
+        for (int i = 0; i < in.length; i++) {
+            in[j] = in[i];
+            
+            
+            if (j != 0 && in[j] == in[j - 1]) {
+                j = j - 1;
+            } else {
+                j++;
+            }
+        }
+        
+        return new String(in, 0, j);
+    }
+}

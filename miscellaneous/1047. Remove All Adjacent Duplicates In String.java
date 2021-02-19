@@ -1,5 +1,8 @@
 // SUSHANT SINHA
 
+// my solution using string
+// 817ms 46.8mb
+
 class Solution {
     public String removeDuplicates(String S) {
         

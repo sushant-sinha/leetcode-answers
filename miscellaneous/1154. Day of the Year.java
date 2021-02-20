@@ -20,6 +20,9 @@ class Solution {
     }
 }
 
+// better representation
+// 2ms ( 58.11% ) 36.9mb ( 93.51% )
+
 class Solution {
     public int dayOfYear(String date) {
         String[] temp = date.split("-");

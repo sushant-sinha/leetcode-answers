@@ -31,20 +31,40 @@ class Solution {
 
 	*/
 
-     if(idx==target.length()){
-         return true;
-     }
-     if(i==s.length()){
-         return false;
-     }
-     if(target.charAt(idx)!=s.charAt(i)){
-         return helper(s,target,idx,i+1);
-     }
-     boolean res=helper(s,target,idx+1,i+1);
-     if(res){
-         return true;
-     }
-     return false;
-      
+	     if(idx==target.length()){
+	         return true;
+	     }
+	     if(i==s.length()){
+	         return false;
+	     }
+	     if(target.charAt(idx)!=s.charAt(i)){
+	         return helper(s,target,idx,i+1);
+	     }
+	     boolean res=helper(s,target,idx+1,i+1);
+	     if(res){
+	         return true;
+	     }
+	     return false;
+	      
+	}
 }
+
+class Solution {
+    public String findLongestWord(String s, List<String> d) {
+
+        String res="";
+        for (String c: d)
+            if ((c.length() > res.length() || c.length()==res.length() && c.compareTo(res)<0) && isSubseq(c, s)) res=c;
+        return res;
+    }
+    public boolean isSubseq(String a, String b){
+        int j = -1;
+        for(int i = 0; i < a.length(); i++){
+            j = b.indexOf(a.charAt(i), j + 1);
+            if(j == -1) {
+                return false;
+            }
+        }
+        return true;
+    }
 }

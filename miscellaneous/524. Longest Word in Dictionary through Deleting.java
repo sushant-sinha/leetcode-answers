@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 32ms ( 15.80% ) 40.6mb ( 29.90% )
+
 class Solution {
     public String findLongestWord(String s, List<String> d) {
         String  max="";
@@ -28,7 +30,7 @@ class Solution {
 		using rescursion to find whether target string is a subsequence in string s, if yes then we can form the word by deleting some characters of the given string 
 
 	*/
-		
+
      if(idx==target.length()){
          return true;
      }

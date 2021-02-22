@@ -49,6 +49,8 @@ class Solution {
 	}
 }
 
+// 5ms ( 99.50% ) solution given in solution tab
+
 class Solution {
     public String findLongestWord(String s, List<String> d) {
 

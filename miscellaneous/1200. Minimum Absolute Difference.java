@@ -28,6 +28,7 @@ class Solution {
                     break;
                     
                 }
+                // to break as the array is sorted and we have passed the possible number with x-y=min
                 if(arr[j]-arr[i]>min)break;
             }
             if(temp.size()!=0)

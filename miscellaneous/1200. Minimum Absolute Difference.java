@@ -40,3 +40,56 @@ class Solution {
         
     }
 }
+
+// best solution 10ms
+
+class Solution {
+    public List<List<Integer>> minimumAbsDifference(int[] arr) {
+        // Used sort
+        // Arrays.sort(arr);
+        // List<List<Integer>> list = new ArrayList();
+        // int delta = Integer.MAX_VALUE;
+        // for(int i =1; i< arr.length; i++){
+        //     int t = arr[i] - arr[i-1];
+        //     if(t ==delta){
+        //         list.add(Arrays.asList(arr[i-1], arr[i]));
+        //     }else if (t < delta){
+        //         list.clear();
+        //         list.add(Arrays.asList(arr[i-1], arr[i]));
+        //         delta = t;
+        //     }
+        // }
+        // return list;
+        // Used counting sort
+        int min = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
+        for(int i =0; i < arr.length; i++){
+            min = Math.min(arr[i], min);
+            max = Math.max(arr[i], max);
+        }
+        boolean[] bucket = new boolean[max - min +1];
+        for(int i =0; i< arr.length; i++){
+            bucket[arr[i]- min] = true;
+        }
+        List<List<Integer>> list = new ArrayList();
+        int delta = Integer.MAX_VALUE;
+        int pre = -1;
+        for(int i =0; i< bucket.length; i++){
+            if(bucket[i]){
+                if(pre!=-1){
+                    int t = i- pre;
+                    if(t ==delta){
+                        list.add(Arrays.asList(pre+min, i+min));
+                    }else if (t < delta){
+                        list.clear();
+                        list.add(Arrays.asList(pre+min, i+min));
+                        delta = t;
+                    }
+                }
+                pre =i;
+            }
+            
+        }
+        return list;
+    }
+}

@@ -1,6 +1,6 @@
 // SUSHANT SINHA
 
-// 16ms ( 33.86% ) 50.9mb ( 24.72% )
+// my solution 16ms ( 33.86% ) 50.9mb ( 24.72% )
 
 class Solution {
     public List<List<Integer>> minimumAbsDifference(int[] arr) {

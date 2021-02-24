@@ -2,25 +2,29 @@
 
 //trying 
 
-// class Solution {
-//     public boolean searchMatrix(int[][] matrix, int target) {
+/*
+
+class Solution {
+    public boolean searchMatrix(int[][] matrix, int target) {
         
-//         boolean ans=false;
+        boolean ans=false;
         
-//         int i=0;j=0;
+        int i=0;j=0;
         
-//         for(i=0 ;i<matrix[0].length;i++){
+        for(i=0 ;i<matrix[0].length;i++){
             
-//             for(j=0 ;j<matrix.length;j++){
+            for(j=0 ;j<matrix.length;j++){
                 
-//                 if(matrix[])
+                if(matrix[])
                 
-//             }
+            }
             
-//         }
+        }
         
-//     }
-// }
+    }
+}
+
+*/
 
 // 4ms ( 100% ) 44.4% ( 89.00% )
 

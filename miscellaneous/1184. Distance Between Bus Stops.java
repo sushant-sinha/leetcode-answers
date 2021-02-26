@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 0ms ( 100% ) 38.4mb ( 94.27% )
+
 class Solution {
     public int distanceBetweenBusStops(int[] distance, int start, int destination) {
         

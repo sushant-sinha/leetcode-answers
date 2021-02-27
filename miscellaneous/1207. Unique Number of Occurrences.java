@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 1ms ( 99.86% ) 36.5mb ( 98.75% )
+
 class Solution {
     public boolean uniqueOccurrences(int[] arr) {
         

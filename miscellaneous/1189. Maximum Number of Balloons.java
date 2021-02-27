@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 1ms ( 100% ) 37.5mb ( 91.09% )
+
 class Solution {
     public int maxNumberOfBalloons(String text) {
         

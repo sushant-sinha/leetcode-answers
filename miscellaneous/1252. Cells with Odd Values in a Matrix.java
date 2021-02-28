@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 1ms ( 74.53% ) 37mb ( 63.27% )
+
 class Solution {
     public int oddCells(int n, int m, int[][] indices) {
         

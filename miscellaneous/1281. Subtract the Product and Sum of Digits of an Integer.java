@@ -17,6 +17,8 @@ class Solution {
     }
 }
 
+// best solution 0ms
+
 class Solution {
     public int subtractProductAndSum(int n) {
         int product = 1;

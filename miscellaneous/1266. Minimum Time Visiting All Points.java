@@ -1,5 +1,7 @@
 // took from prashant404's solution in discuss tab
 
+// 0ms ( 100% ) 38.2mb ( 98.74% )
+
 class Solution {
     public int minTimeToVisitAllPoints(int[][] points) {
         int time = 0;

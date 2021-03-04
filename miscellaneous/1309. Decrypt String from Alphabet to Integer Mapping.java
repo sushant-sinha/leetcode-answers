@@ -35,6 +35,9 @@ class Solution {
     }
 }
 
+// using StringBuilder
+// 1ms ( 77.21% ) 37.2mb ( 82.64% )
+
 class Solution {
     public String freqAlphabets(String s) {
         

@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 2ms ( 51.31% ) 39mb ( 25.80% )
+
 class Solution {
     public String freqAlphabets(String s) {
         

@@ -34,3 +34,31 @@ class Solution {
         
     }
 }
+
+class Solution {
+    public String freqAlphabets(String s) {
+        
+        StringBuilder sb1 = new StringBuilder();
+        
+        for(int i=s.length()-1; i>=0 ;i--){
+            if(s.charAt(i)=='#'){
+                
+                char temp=(char)(Integer.parseInt(s.substring(i-2,i))+96);
+                sb1.append(temp);
+                i-=2;
+                
+            }
+            else{
+                
+                char temp=(char)(Integer.parseInt(s.substring(i,i+1))+96);
+                sb1.append(temp);
+                
+            }
+        }
+        
+        sb1.reverse();
+        
+        return sb1.toString();
+        
+    }
+}

@@ -1,5 +1,6 @@
 // from the solution tab
 
+// 22ms ( 94.37% ) 55.6mb ( 54.77% )
 
 // so we are given with an array of numbers and based on larger or smaller, they have ranks and we have to return an array by showing their ranks instead of the number.
 // one of the possible way is to sort the array and store the sorted one into a new array.

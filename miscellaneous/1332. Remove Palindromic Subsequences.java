@@ -1,5 +1,15 @@
 // SUSHANT SINHA
 
+/*
+												IMPORTANT
+
+						Here we just need to check whether the string is palindrome or not...
+						If "s" is palindrome we will need 1 attempt to make the string empty...
+						Else we can do it in 2 attempt
+
+*/
+
+
 class Solution {
     public int removePalindromeSub(String s) {
         

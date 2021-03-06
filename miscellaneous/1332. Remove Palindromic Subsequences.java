@@ -35,7 +35,7 @@ class Solution {
     
 }
 
-// for better memory
+// for better memory 0ms 36.6mb ( 86.85% )
 
 class Solution {
     public int removePalindromeSub(String s) {
@@ -60,7 +60,7 @@ class Solution {
     
 }
 
-// realisation of this method from vinsinin
+// realisation of this method from vinsinin using reverse check
 
 class Solution {
     public int removePalindromeSub(String s) {

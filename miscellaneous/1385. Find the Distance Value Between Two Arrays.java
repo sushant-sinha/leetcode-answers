@@ -1,5 +1,7 @@
 // TRY
 
+// 2ms ( 97.97% ) 38.6mb ( 62.18% )
+
 class Solution {
     public int findTheDistanceValue(int[] arr1, int[] arr2, int d) {
         Arrays.sort(arr1);

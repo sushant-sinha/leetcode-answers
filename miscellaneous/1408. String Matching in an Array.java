@@ -1,6 +1,6 @@
 // SUSHANT SINHA
 
-// 10ms ( 10.80% ) 39.5mb ( 14.77% )
+// 10ms ( 10.80% ) 39.3mb ( 41.92% )
 
 class Solution {
     public List<String> stringMatching(String[] words) {
@@ -37,5 +37,21 @@ class Solution {
         }
         
         return false;
+    }
+}
+
+class Solution {
+    public List<String> stringMatching(String[] words) {
+        StringBuilder sb = new StringBuilder();
+        for(String str : words)
+            sb.append(" ").append(str);
+        String allstr = sb.toString();
+        
+        List<String> result = new LinkedList<>();
+        for(String str : words)
+            if(allstr.indexOf(str) != allstr.lastIndexOf(str))
+                result.add(str);
+        
+        return result;
     }
 }

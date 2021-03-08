@@ -40,6 +40,9 @@ class Solution {
     }
 }
 
+// best solution
+// 2ms ( 97.23% ) 39.1mb ( 54.66% )
+
 class Solution {
     public List<String> stringMatching(String[] words) {
         StringBuilder sb = new StringBuilder();

@@ -52,3 +52,36 @@ class Solution {
         
     }
 }
+
+// 1ms solution
+
+class Solution {
+    public List<Integer> luckyNumbers (int[][] matrix) {
+        List<Integer> ans = new ArrayList<Integer>();
+		
+		// traverse all rows
+        for(int i = 0 ; i < matrix.length ; i++){
+            int min = Integer.MAX_VALUE;
+            int minIndex = 0;
+            for(int j = 0 ; j < matrix[i].length ; j++) //traverse columns for current row
+            {
+                if(matrix[i][j] < min)
+                {
+                    min = matrix[i][j];
+                    minIndex = j;
+                }
+            }
+            boolean valid = true;
+			//traverse all rows for required column from previous loop
+            for(int j = 0 ; j < matrix.length ; j++){ 
+                if(matrix[j][minIndex] > min){ // if not max, then not valid
+                    valid = !valid;
+                    break;
+                }
+            }   
+            if(valid)
+                ans.add(min);
+        }
+        return ans;
+    }
+}

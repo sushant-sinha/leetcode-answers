@@ -1,6 +1,6 @@
 // SUSHANT SINHA 
 
-// 61ms ( 5.33% ) 39.4mb ( 64.07% )
+// my solution 61ms ( 5.33% ) 39.4mb ( 64.07% )
 
 class Solution {
     public List<Integer> luckyNumbers (int[][] matrix) {
@@ -83,5 +83,40 @@ class Solution {
                 ans.add(min);
         }
         return ans;
+    }
+}
+
+// 0ms solution 39.2mb ( 93.78% )
+
+class Solution {
+    public List<Integer> luckyNumbers (int[][] matrix) {
+        List<Integer> list = new ArrayList<Integer>();
+        for(int i = 0; i < matrix.length; i++){
+            int minCol = minColInRow(matrix,i);
+            int val = matrix[i][minCol];
+            if(maxRowInCol(matrix,val,minCol))
+                list.add(val);
+        }
+        return list; 
+    }
+    
+    public int minColInRow(int[][] matrix,int row){
+        int min = matrix[row][0];
+        int minCol = 0;
+        for(int j = 1;j < matrix[row].length;j++){
+            if(matrix[row][j] < min){
+                min = matrix[row][j];
+                minCol = j;
+            }
+        }
+        return minCol;
+    }
+    
+    public boolean maxRowInCol(int[][] matrix,int val,int col){
+        for(int i = 0; i < matrix.length; i++){
+            if(matrix[i][col] > val)
+                return false;
+        }
+        return true;
     }
 }

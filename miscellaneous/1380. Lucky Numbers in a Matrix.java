@@ -1,5 +1,7 @@
 // SUSHANT SINHA 
 
+// 61ms ( 5.33% ) 39.4mb ( 64.07% )
+
 class Solution {
     public List<Integer> luckyNumbers (int[][] matrix) {
         

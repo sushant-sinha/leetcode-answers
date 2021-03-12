@@ -1,5 +1,8 @@
 // SUSHANT SINHA
 
+// do not use arraylist ... results in TLE
+// 84ms ( 71.43% ) 50.1mb ( 52.12% )
+
 class Solution {
     public boolean hasAllCodes(String s, int k) {
         int need = 1 << k;

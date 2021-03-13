@@ -1,6 +1,6 @@
 // SUSHANT SINHA
 
-// 1ms ( 100% ) 37.5mb ( 73.53% )
+// 1ms ( 100% ) 37.4mb ( 83.38% )
 
 class Solution {
     public int maxPower(String s) {

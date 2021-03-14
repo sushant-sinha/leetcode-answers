@@ -62,3 +62,32 @@ class Solution {
 
     }
 }
+
+// best solution 0ms
+
+class Solution {
+    public ListNode swapNodes(ListNode head, int k) {
+        int listLength = 0;
+        ListNode frontNode = null, endNode = null;
+        ListNode currentNode = head;
+        while (currentNode != null) {
+            listLength++;
+            if (listLength == k) {
+                frontNode = currentNode;
+            }
+            currentNode = currentNode.next;
+        }
+        int count = 0;
+        currentNode = head;
+        while (count != listLength - k) {
+            count++;
+            currentNode = currentNode.next;
+        }
+        endNode = currentNode;
+        // swap front node and end node values
+        int tempNode = frontNode.val;
+        frontNode.val = endNode.val;
+        endNode.val = tempNode;
+        return head;
+    }
+}

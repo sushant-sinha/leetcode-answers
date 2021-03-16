@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 1ms ( 100% ) 38.5mb ( 74.88% )
+
 class Solution {
     public String destCity(List<List<String>> paths) {
         HashMap<String, String> map = new HashMap<String, String>(); //hashmap to store relationship between points

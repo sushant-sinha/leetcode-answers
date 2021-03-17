@@ -18,6 +18,9 @@ class Solution {
     }
 }
 
+// better solution 
+// 1ms ( 99.14% ) 39.3mb ( 30.57%)
+
 class Solution {
     public boolean canBeEqual(int[] target, int[] arr) {
         int test[] = new int[1001];

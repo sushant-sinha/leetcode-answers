@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 2ms ( 80.31% ) 38.8mb ( 92.01% )
+
 class Solution {
     public boolean canBeEqual(int[] target, int[] arr) {
         

@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 0ms ( 100% ) 38.8mb ( 92.38% )
+
 class Solution {
     public int[] shuffle(int[] nums, int n) {
         

@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 0ms ( 100% ) 35.4mb ( 91.85% )
+
 class Solution {
     public int xorOperation(int n, int start) {
         

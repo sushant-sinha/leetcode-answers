@@ -1,5 +1,13 @@
 // SUSHANT SINHA
 
+/*
+
+	my code has technically no errors
+	just doesnt passes the test cases with k > 999
+	but at the same time k > 999 is not allowed to be run
+
+*/
+
 // my solution
 
 class Solution {

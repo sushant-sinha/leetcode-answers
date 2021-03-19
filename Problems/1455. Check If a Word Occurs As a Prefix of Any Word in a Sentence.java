@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 0ms ( 100% ) 36.7mb ( 83.31% )
+
 class Solution {
     public int isPrefixOfWord(String sentence, String searchWord) {
         

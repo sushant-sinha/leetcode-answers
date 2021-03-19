@@ -12,6 +12,17 @@ class Solution {
         }
         
         return ans;
+
+        /*
+			or use
+			int ans=start;
+        
+        	while((--n)!=0)
+            	ans^=(start+2*n);
+        
+        	return ans;
+
+        */
         
         
     }

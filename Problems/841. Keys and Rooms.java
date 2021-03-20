@@ -29,6 +29,8 @@ class Solution {
     }
 }
 
+// best solution
+// 0ms ( 100% ) 38.7mb ( 92.56% )
 
 class Solution {
     public boolean canVisitAllRooms(List<List<Integer>> rooms) {

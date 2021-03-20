@@ -34,3 +34,72 @@ class Solution {
         }
     }
 }
+
+
+// class Solution {
+//     public boolean isPathCrossing(String path) {
+        
+//         ArrayList<int[]> visited=new ArrayList<>();
+        
+//         int cur[]=new int[2];
+//         cur[0]=0;
+//         cur[1]=0;
+//         visited.add(cur);
+        
+//         for(String x:path.split("")){
+            
+//             int temp[]=new int[2];
+//             temp[0]=cur[0];
+//             temp[1]=cur[1];
+            
+//             if(x.equals("N")){
+//                 temp[1]++;
+//             }
+//             else if(x.equals("S")){
+//                 temp[1]--;
+//             }
+//             else if(x.equals("W")){
+//                 temp[0]--;
+//             }
+//             else if(x.equals("E")){
+//                 temp[0]++;
+//             }
+            
+            
+            
+//             if(check(visited,temp))
+//                 return true;
+            
+//             // if(check(visited,cur)){
+//             //     return true;
+//             // }
+//             // else
+//             //     visited.add(cur);
+            
+//             visited.add(temp);
+//             cur[0]=temp[0];
+//             cur[1]=temp[1];
+//             //System.out.println(cur[0]+" "+cur[1]);
+//         }
+        
+//         return false;
+        
+        
+//     }
+    
+//     boolean check(ArrayList<int[]> x,int[] y){
+        
+//         System.out.println("----------");
+        
+//         for(int[] a:x){
+//             System.out.println(a[0]+" "+a[1]);
+//             if(a[0]==y[0] && a[1]==y[1])
+//                 return true;
+//         }
+            
+        
+//         return false;
+        
+//     }
+    
+}

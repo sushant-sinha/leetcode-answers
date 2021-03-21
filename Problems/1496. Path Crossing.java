@@ -1,5 +1,8 @@
 // SUSHANT SINHA
 
+// my solution using int[][]
+// 2ms ( 58.90% ) 38.9mb ( 48.80% )
+
 class Solution {
     public boolean isPathCrossing(String path) {
         

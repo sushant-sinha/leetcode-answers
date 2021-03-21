@@ -1,3 +1,62 @@
+// SUSHANT SINHA
+
+class Solution {
+    public boolean isPathCrossing(String path) {
+        
+        int visited[][]=new int[path.length()+1][2];
+        
+        int cur[]=new int[2];
+        cur[0]=0;
+        cur[1]=0;
+        int i=0;
+        visited[0][0]=0;
+        visited[0][1]=0;
+        
+        for(char x:path.toCharArray()){
+            
+            
+            if(x=='N'){
+                cur[1]++;
+            }
+            else if(x=='S'){
+                cur[1]--;
+            }
+            else if(x=='W'){
+                cur[0]--;
+            }
+            else{
+                cur[0]++;
+            }
+            
+            
+            
+            if(check(visited,cur))
+                return true;
+            
+            visited[++i][0]=cur[0];
+            visited[i][1]=cur[1];
+        }
+        
+        return false;
+        
+        
+    }
+    
+    boolean check(int[][] x,int[] y){
+        for(int[] a:x){
+            if(a[0]==y[0] && a[1]==y[1])
+                return true;
+        }
+            
+        
+        return false;
+        
+    }
+    
+}
+
+// 1ms ( 92.12% ) 37.4mb ( 96.40% )
+
 class Solution {
     public boolean isPathCrossing(String path) {
         var cache = new HashSet<Point>();
@@ -35,71 +94,3 @@ class Solution {
     }
 }
 
-
-// class Solution {
-//     public boolean isPathCrossing(String path) {
-        
-//         ArrayList<int[]> visited=new ArrayList<>();
-        
-//         int cur[]=new int[2];
-//         cur[0]=0;
-//         cur[1]=0;
-//         visited.add(cur);
-        
-//         for(String x:path.split("")){
-            
-//             int temp[]=new int[2];
-//             temp[0]=cur[0];
-//             temp[1]=cur[1];
-            
-//             if(x.equals("N")){
-//                 temp[1]++;
-//             }
-//             else if(x.equals("S")){
-//                 temp[1]--;
-//             }
-//             else if(x.equals("W")){
-//                 temp[0]--;
-//             }
-//             else if(x.equals("E")){
-//                 temp[0]++;
-//             }
-            
-            
-            
-//             if(check(visited,temp))
-//                 return true;
-            
-//             // if(check(visited,cur)){
-//             //     return true;
-//             // }
-//             // else
-//             //     visited.add(cur);
-            
-//             visited.add(temp);
-//             cur[0]=temp[0];
-//             cur[1]=temp[1];
-//             //System.out.println(cur[0]+" "+cur[1]);
-//         }
-        
-//         return false;
-        
-        
-//     }
-    
-//     boolean check(ArrayList<int[]> x,int[] y){
-        
-//         System.out.println("----------");
-        
-//         for(int[] a:x){
-//             System.out.println(a[0]+" "+a[1]);
-//             if(a[0]==y[0] && a[1]==y[1])
-//                 return true;
-//         }
-            
-        
-//         return false;
-        
-//     }
-    
-}

@@ -20,3 +20,28 @@ class Solution {
         return res;
     } 
 }
+
+class Solution {
+    public int longestSubarray(int[] nums) {
+        int len=0;
+        for(int i=0;i<nums.length;i++){
+            int temp=i;
+            int len1=0;
+            int zero=0;
+            while(i<nums.length && zero<2){
+                if(nums[i]==1)
+                    len1++;
+                else
+                    zero++;
+                i++;
+            }
+            if(len1==nums.length)return len1-1;
+            len = len1 > len ? len1 : len;
+            i=temp++;
+            
+            
+        }
+        return len;
+        
+    }
+}

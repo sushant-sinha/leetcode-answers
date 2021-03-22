@@ -21,6 +21,9 @@ class Solution {
     } 
 }
 
+// My solution
+// 492ms ( 5.40% ) 47.6mb ( 89.97% )
+
 class Solution {
     public int longestSubarray(int[] nums) {
         int len=0;

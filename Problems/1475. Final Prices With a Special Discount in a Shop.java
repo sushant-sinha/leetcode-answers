@@ -22,6 +22,9 @@ class Solution {
     }
 }
 
+// without temp variable
+// 1ms ( 97.36% ) 38.8mb ( 91.43% )
+
 class Solution {
     public int[] finalPrices(int[] prices) {
         

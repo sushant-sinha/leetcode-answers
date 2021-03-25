@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 0ms ( 100% ) 38.4mb ( 81.25% )
+
 class Solution {
     public boolean threeConsecutiveOdds(int[] arr) {
         

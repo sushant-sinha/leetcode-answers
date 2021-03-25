@@ -1,6 +1,8 @@
 // try
 // SUSHANT SINHA
 
+// 5ms ( 99.38% ) 38.6mb ( 39.75% )
+
 class Solution {
     public int maxDotProduct(int[] A, int[] B) {
         int m = A.length+1;

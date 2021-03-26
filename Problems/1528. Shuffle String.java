@@ -24,6 +24,9 @@ class Solution {
     }
 }
 
+// better solution using char array
+// 1ms ( 100% ) 38.7mb ( 91.83% )
+
 class Solution {
     public String restoreString(String s, int[] indices) {
         

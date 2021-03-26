@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 3ms ( 23.60% ) 39.3mb ( 43.15% )
+
 class Solution {
     public String restoreString(String s, int[] indices) {
         

@@ -3,6 +3,8 @@
 // hint solution
 // 132ms ( 12.59% ) 39mb ( 75.56% )
 
+// ideal solution has stack implementation
+
 class Solution {
     public boolean find132pattern(int[] nums) {
 

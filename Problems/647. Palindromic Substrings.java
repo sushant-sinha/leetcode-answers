@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 482ms ( 6.56% ) 39.5mb ( 20.30% )
+
 class Solution {
     public int countSubstrings(String s) {
         

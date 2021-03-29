@@ -1,5 +1,8 @@
 // SUSHANT SINHA
 
+// brute force
+// 13ms ( 65.34% ) 36.3mb ( 95.30% )
+
 class Solution {
     public int countGoodTriplets(int[] arr, int a, int b, int c) {
         

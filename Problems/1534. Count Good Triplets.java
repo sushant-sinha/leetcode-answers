@@ -26,6 +26,9 @@ class Solution {
     }
 }
 
+// less number of iterations
+// 9ms ( 98.92% ) 36.2mb ( 95.30% )
+
 class Solution {
     public int countGoodTriplets(int[] arr, int a, int b, int c) {
         

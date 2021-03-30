@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 1ms ( 78.58% ) 38.5mb ( 71.25% )
+
 class Solution {
     public int minOperations(String[] logs) {
         

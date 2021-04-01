@@ -1,4 +1,42 @@
 // SUSHANT SINHA
+
+// easy to understand
+// 7ms 
+
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+class Solution {
+    public boolean isPalindrome(ListNode head) {
+        
+        ArrayList<Integer> ar=new ArrayList<>();
+        
+        while(head!=null){
+            ar.add(head.val);
+            head=head.next;
+        }
+        
+        for(int i=0 ; i<ar.size()/2 ; i++){
+            
+            if(ar.get(i) != ar.get(ar.size()-i-1))
+                return false;
+            
+        }
+        
+        return true;
+        
+    }
+}
+
+// 6ms
+
 public class Solution {
     public boolean isPalindrome(ListNode head) {
         // get the length of the linked list.
@@ -49,3 +87,4 @@ public class Solution {
         return prev;
     }
 }
+

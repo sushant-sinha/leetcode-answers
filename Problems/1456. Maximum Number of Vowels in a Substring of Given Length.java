@@ -4,7 +4,7 @@
 
 	my code has technically no errors
 	just doesnt passes the test cases with k > 999
-	but at the same time k > 999 is not allowed to be run
+	but k > 999 is not allowed to run, but k > 999 is being tested when submitted
 
 */
 

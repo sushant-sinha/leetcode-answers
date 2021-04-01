@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 2ms ( 47.28% ) 36.4mb ( 89.12% )
+
 class Solution {
     public int sumOddLengthSubarrays(int[] arr) {
         

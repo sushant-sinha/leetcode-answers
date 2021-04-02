@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 1ms ( 69.00% ) 39mb ( 63.52% )
+
 class Solution {
     public char slowestKey(int[] releaseTimes, String keysPressed) {
         

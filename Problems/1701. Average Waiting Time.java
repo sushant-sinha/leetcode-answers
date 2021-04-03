@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 2ms ( 99.70% ) 89.9mb ( 43.79% )
+
 class Solution {
     public double averageWaitingTime(int[][] customers) {
         

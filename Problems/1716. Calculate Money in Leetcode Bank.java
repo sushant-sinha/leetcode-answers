@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 0ms ( 100% ) 35.8mb ( 37.89% )
+
 class Solution {
     public int totalMoney(int n) {
         

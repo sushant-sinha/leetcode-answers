@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 0ms ( 100% ) 37mb ( 100% )
+
 class Solution {
     public boolean squareIsWhite(String coordinates) {
         

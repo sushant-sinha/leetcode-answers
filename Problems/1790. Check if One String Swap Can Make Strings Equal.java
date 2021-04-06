@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 0ms ( 100% ) 37mb ( 80.32% )
+
 class Solution {
     public boolean areAlmostEqual(String s1, String s2) {
         

@@ -19,3 +19,13 @@ class Solution {
         
     }
 }
+
+// on the basis of observation
+// 0ms ( 100% ) 35.7mb ( 62.99% )
+
+class Solution {
+    public int minOperations(int n) {
+        
+        return (n*n/4);
+    }
+}

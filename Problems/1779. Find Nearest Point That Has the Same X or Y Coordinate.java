@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 1ms ( 100% ) 46.5mb ( 84.81% )
+
 class Solution {
     public int nearestValidPoint(int x, int y, int[][] points) {
         

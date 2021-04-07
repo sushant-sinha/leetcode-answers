@@ -29,3 +29,33 @@ class Solution {
         
     }
 }
+
+// 28ms ( 16.18% ) 39.4mb ( 94.18% )
+
+class Solution {
+    public int countConsistentStrings(String allowed, String[] words) {
+        
+        ArrayList<Character> all=new ArrayList<>();
+        
+        for(char x:allowed.toCharArray())
+            all.add(x);
+        
+        int ans=0;
+        
+        for(int i=0;i<words.length;i++){
+            int ck=0;
+            for(char x:words[i].toCharArray())
+                if(!all.contains(x)){
+                    ck++;
+                    break;
+                }
+            
+            if(ck==0)
+                ans++;
+            
+        }
+        
+        return ans;
+        
+    }
+}

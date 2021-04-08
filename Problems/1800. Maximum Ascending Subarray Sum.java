@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 0ms ( 100% ) 36.3mb ( 95.48% )
+
 class Solution {
     public int maxAscendingSum(int[] nums) {
         

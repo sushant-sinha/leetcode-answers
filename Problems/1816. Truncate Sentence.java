@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 5ms ( 24.09% ) 38.7mb ( 59.60% )
+
 class Solution {
     public String truncateSentence(String s, int k) {
         

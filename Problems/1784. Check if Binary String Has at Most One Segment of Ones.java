@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 0ms ( 100% ) 36.6mb ( 99.58% )
+
 class Solution {
     public boolean checkOnesSegment(String s) {
         

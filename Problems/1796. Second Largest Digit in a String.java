@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 9ms ( 12.67% ) 38.8mb ( 61.07% )
+
 class Solution {
     public int secondHighest(String s) {
         

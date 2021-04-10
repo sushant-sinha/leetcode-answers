@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 3ms ( 98.07% ) 43.5mb ( 72.25% )
+
 class Solution {
     public int countMatches(List<List<String>> items, String ruleKey, String ruleValue) {
         

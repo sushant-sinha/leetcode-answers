@@ -8,6 +8,8 @@ class Solution {
         String ans="";
         
         for(int i=0;i<command.length();i++){
+
+            // condition for "G", "o" and "al"
             
             if(command.charAt(i)=='G')
                 ans+="G";

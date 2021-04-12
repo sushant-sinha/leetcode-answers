@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 0ms ( 100% ) 36.9mb ( 49.41% )
+
 class Solution {
     public int dominantIndex(int[] nums) {
         

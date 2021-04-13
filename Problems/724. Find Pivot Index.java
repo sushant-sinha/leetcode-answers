@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 1ms ( 100% ) 39.3mb ( 92.01% )
+
 class Solution {
     public int pivotIndex(int[] nums) {
         

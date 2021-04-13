@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 6ms ( 67.68% ) 44.1mb ( 70.20% )
+
 class Solution {
     public int kthSmallest(int[][] matrix, int k) {
         

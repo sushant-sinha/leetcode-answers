@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 1ms ( 100% ) 47.1mb ( 99.74% )
+
 class Solution {
     public int[] productExceptSelf(int[] nums) {
         

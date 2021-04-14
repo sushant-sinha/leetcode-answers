@@ -1,5 +1,9 @@
 // SUSHANT SINHA
 
+// from discuss section
+
+// 1ms ( 100% ) 38.7mb ( 91.69% )
+
 class Solution {
     public boolean isIsomorphic(String s, String t) {
         char[] sCharList = s.toCharArray();

@@ -22,3 +22,25 @@ class Solution {
         
     }
 }
+
+// using 2 char arrays
+// 1ms ( 66.19% ) 37.6mb ( 19.28% )
+
+class Solution {
+    public int numJewelsInStones(String jewels, String stones) {
+       char[]ch = jewels.toCharArray();
+       char[]c = stones.toCharArray();
+        int count=0;
+        for(int i=0; i<jewels.length(); i++)
+        {
+            for(int j =0; j<stones.length(); j++)
+            {
+                if(ch[i]==c[j])
+                {
+                    count++;
+                }
+            }
+        }
+        return count;
+    }
+}

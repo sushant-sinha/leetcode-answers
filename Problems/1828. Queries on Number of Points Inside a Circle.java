@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 54ms ( 100% ) 47.7mb ( 100% )
+
 class Solution {
     public int[] countPoints(int[][] points, int[][] queries) {
         

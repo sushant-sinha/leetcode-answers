@@ -1,5 +1,8 @@
 // SUSHANT SINHA
 
+// using boolean
+// 1ms ( 100% ) 36.9mb ( 25.00%)
+
 class Solution {
     public boolean checkIfPangram(String sentence) {
         

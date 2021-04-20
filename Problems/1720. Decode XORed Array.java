@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 1ms ( 100% ) 39.8mb ( 66.19% )
+
 class Solution {
     public int[] decode(int[] encoded, int first) {
         

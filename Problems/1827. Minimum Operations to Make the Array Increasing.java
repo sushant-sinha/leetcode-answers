@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 2ms ( 92.47% ) 39.1mb ( 97.30% )
+
 class Solution {
     public int minOperations(int[] nums) {
         

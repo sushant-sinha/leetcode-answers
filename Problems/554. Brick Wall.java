@@ -1,6 +1,8 @@
 // from discuss section
 // https://leetcode.com/problems/brick-wall/discuss/1170889/JS-Python-Java-C%2B%2B-or-Easy-Frequency-Map-Solution-w-Explanation
 
+// 4ms ( 99.83% ) 41.9mb ( 79.03% )
+
 class Solution {
     
     int best = 0;

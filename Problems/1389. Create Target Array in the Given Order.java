@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 0ms ( 100% ) 37.6mb ( 44.30% )
+
 class Solution {
     public int[] createTargetArray(int[] nums, int[] index) {
         

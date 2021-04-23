@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 8ms ( 86.33% ) 39.4mb ( 57.48% )
+
 class Solution {
     public int countBinarySubstrings(String s) {
         int curr = 1, prev = 0, ans = 0;

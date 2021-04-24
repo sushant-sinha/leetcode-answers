@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 1ms ( 25.16% ) 37.2mb ( 26.63 )
+
 class Solution {
     public int maxDepth(String s) {
         

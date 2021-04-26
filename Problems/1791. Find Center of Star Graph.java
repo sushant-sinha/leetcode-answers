@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 0ms (  100% ) 64.1mb ( 96.32% )
+
 class Solution {
     public int findCenter(int[][] edges) {
         

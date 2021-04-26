@@ -1,5 +1,8 @@
 // SUSHANT SINHA
 
+// discuss tab 
+// 14ms ( 83.98% ) 49.4mb ( 91.93% )
+
 class Solution {
     public int furthestBuilding(int[] H, int B, int L) {
         int len = H.length - 1;

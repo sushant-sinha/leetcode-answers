@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 11ms ( 99.82% ) 67.5mb ( 36.43% )
+
 class Solution {
     public int maxWidthOfVerticalArea(int[][] points) {
         

@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 0ms ( 100% ) 38.3mb ( 87.88% )
+
 class Solution {
     public int arraySign(int[] nums) {
         

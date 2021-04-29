@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 1ms ( 47.86% ) 36.6mb ( 34.51% )
+
 class Solution {
     public String generateTheString(int n) {
         

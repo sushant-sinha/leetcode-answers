@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 1ms ( 99.69% ) 36.6mb ( 68.48%)
+
 class Solution {
     public List<Integer> selfDividingNumbers(int left, int right) {
         

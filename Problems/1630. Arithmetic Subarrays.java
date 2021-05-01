@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 15ms ( 77.15% ) 39.4mb ( 66.43% )
+
 class Solution {
     public List<Boolean> checkArithmeticSubarrays(int[] nums, int[] l, int[] r) {
         

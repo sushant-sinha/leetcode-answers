@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 5ms ( 76.98% ) 40mb ( 35.19% )
+
 class CustomStack {
     
     // definind global variables

@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 12ms 67.7mb
+
 class Solution {
     public int maximumElementAfterDecrementingAndRearranging(int[] arr) {
         

@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 70ms ( 100% ) 88.4mb ( 100% )
+
 class SeatManager {
 
     ArrayList<Integer> unr=new ArrayList<>();

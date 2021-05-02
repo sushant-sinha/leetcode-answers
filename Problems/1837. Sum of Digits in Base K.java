@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 0ms ( 100% ) 35.3mb ( 98.16% )
+
 class Solution {
     public int sumBase(int n, int k) {
         

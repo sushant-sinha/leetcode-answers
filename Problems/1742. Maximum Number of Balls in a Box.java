@@ -1,18 +1,20 @@
 // SUSHANT SINHA
 
+// 23ms ( 54.73% ) 35.6mb ( 91.31% )
+
 class Solution {
     public int countBalls(int lowLimit, int highLimit) {
         
-        int index[]=new int[54];
+        int index[]=new int[45];
         
         while(lowLimit<=highLimit){
-            index[sum(lowLimit)]++;
+            index[sum(lowLimit)-1]++;
             lowLimit++;
         }
         
         Arrays.sort(index);
         
-        return index[53];
+        return index[44];
         
     }
     
@@ -25,6 +27,10 @@ class Solution {
             n/=10;
         }
         
+        return ans;
+        
+    }
+}    
         return ans;
         
     }

@@ -49,6 +49,9 @@ Use binary search to speed up the search time.
 
 */
 
+// TLE solution .... gives correct answer for small testcases...
+// need better search time for rooms
+
 class Solution {
     public int[] closestRoom(int[][] rooms, int[][] queries) {
         

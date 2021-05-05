@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 0ms ( 100% ) 36.2mb ( 84.75% )
+
 class Solution {
     public int jump(int[] nums) {
         

@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 19ms ( 94.22% ) 38.3mb ( 93.29% )
+
 class Solution {
     public int numTeams(int[] arr) {
         

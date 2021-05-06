@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 2ms ( 95.04% ) 39.1mb ( 65.09% )
+
 class Solution {
     public List<String> commonChars(String[] A) {
         

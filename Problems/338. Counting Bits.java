@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 9ms ( 11.97% ) 43.8mb ( 11.21% )
+
 class Solution {
     public int[] countBits(int num) {
         

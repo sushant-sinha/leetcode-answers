@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 98ms ( 18.75% ) 47.6mb ( 32.18% )
+
 class RecentCounter {
 
     ArrayList<Integer> count=new ArrayList<>();

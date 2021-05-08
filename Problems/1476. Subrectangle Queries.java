@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 25ms ( 44.05% ) 42.4mb ( 92.92% )
+
 class SubrectangleQueries {
 
     int ar[][];

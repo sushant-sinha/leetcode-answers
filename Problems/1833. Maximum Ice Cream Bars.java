@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 31ms ( 78.45% ) 55.3mb ( 95.50% )
+
 class Solution {
     public int maxIceCream(int[] costs, int coins) {
         

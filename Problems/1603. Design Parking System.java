@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 6ms ( 99.90% ) 39.7mb ( 47.31% )
+
 class ParkingSystem {
     
     int slot[]=new int[3];

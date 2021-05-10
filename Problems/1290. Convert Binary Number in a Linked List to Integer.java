@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 0ms ( 100% ) 36.3mb ( 74.27% )
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {

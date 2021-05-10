@@ -47,3 +47,45 @@ class Solution {
     }
 }
 
+// best solution
+// 2ms
+
+class Solution {
+    public List<List<Integer>> groupThePeople(int[] groupSizes) 
+    {
+        int n = groupSizes.length;
+        ArrayList<Integer> a= new ArrayList<>();
+        List<List<Integer>> ret = new ArrayList<>();
+        
+        for(int i =0; i<n ; i++)
+        {
+            if( groupSizes[i] !=0 )
+            {
+                a= new ArrayList<>();
+                a.add(i);
+                for(int j=i+1;  j <n; j++ )
+                {
+                    if(groupSizes[i] == groupSizes[j])
+                    {
+                        if(a.size() != groupSizes[i])
+                        {
+                            a.add(j);
+                            groupSizes[j] =0;
+                        }
+                        else if( a.size() == groupSizes[i])
+                        {
+                            ret.add(a);
+                            a= new ArrayList<>();
+                            a.add(j);
+                            groupSizes[j] =0;
+                        }
+                    }
+                }
+                ret.add(a);
+            }
+            
+        }
+        return ret;
+        
+    }
+}

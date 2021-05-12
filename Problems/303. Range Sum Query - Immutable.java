@@ -1,5 +1,8 @@
 // SUSHANT SINHA
 
+// using predefined sum of all previous+current_element
+// 6ms ( 100% ) 41.6mb ( 87.58% )
+
 class NumArray {
     
     int cursum[];

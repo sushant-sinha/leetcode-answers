@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 28ms ( 47.25% ) 38.9mb ( 8.77% )
+
 class Solution {
     public int triangleNumber(int[] nums) {
         if (nums == null || nums.length == 0) {

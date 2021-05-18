@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 1ms ( 87.95% ) 36.7mb ( 95.53% )
+
 class Solution {
     public int compareVersion(String version1, String version2) {
         

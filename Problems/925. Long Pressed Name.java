@@ -1,5 +1,8 @@
 // SUSHANT SINHA
 
+// second code from discuss tab, first has loop issues
+// 0ms ( 100% ) 36.9mb ( 78.20% )
+
 // class Solution {
 //     public boolean isLongPressedName(String name, String typed) {
         

@@ -1,5 +1,8 @@
 // SUSHANT SINHA
 
+// used char array to map the words between pattern and the given word.
+// 3ms ( 11.32% ) 37.5mb ( 99.89% )
+
 class Solution {
     public List<String> findAndReplacePattern(String[] words, String pattern) {
         

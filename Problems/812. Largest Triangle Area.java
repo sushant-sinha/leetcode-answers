@@ -1,8 +1,7 @@
 // SUSHANT SINHA
 
-// it skips the max value sometimes 
-
-/*
+// sice there is a possibility of s*(s-side1)*(s-side2)*(s-side3) being smaller than zero..... we have to add and if for this case
+// 6ms ( 42.41% ) 36.9mb ( 28.27% )
 
 class Solution {
     public double largestTriangleArea(int[][] points) {
@@ -20,7 +19,7 @@ class Solution {
                 
             }
             
-            System.out.println(max);
+            //System.out.println(max);
         }
         
         return max;
@@ -33,13 +32,13 @@ class Solution {
         double side2=Math.sqrt( Math.pow((a[0]-c[0]),2) + Math.pow((a[1]-c[1]),2) );
         double side3=Math.sqrt( Math.pow((c[0]-b[0]),2) + Math.pow((c[1]-b[1]),2) );
         double s=(side1+side2+side3)/2;
-        
+        if((s*(s-side1)*(s-side2)*(s-side3)<0))
+           return -1;
         return Math.sqrt(s*(s-side1)*(s-side2)*(s-side3));
         
     }
 }
 
-*/
 
 // from discussion tab
 // 15ms ( 8.64% ) 36.9mb ( 48.64% )

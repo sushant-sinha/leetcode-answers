@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 12ms ( 97.88% ) 35.3mb ( 96.39% )
+
 public class Solution extends VersionControl {
   public int firstBadVersion(int n) {
     int min = n;

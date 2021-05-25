@@ -47,6 +47,7 @@ class Solution {
 }
 
 // best solution
+// 0ms ( 100% ) 35.7mb ( 60.29% )
 
 class Solution {
     public int binaryGap(int n) {

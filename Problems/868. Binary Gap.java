@@ -1,5 +1,6 @@
 // SUSHANT SINHA
 
+// my solution
 // 5ms ( 8.12% ) 36.1mb ( 15.34% )
 
 class Solution {
@@ -42,5 +43,22 @@ class Solution {
         
         return max;
         
+    }
+}
+
+// best solution
+
+class Solution {
+    public int binaryGap(int n) {
+         int[] A = new int[32];
+        int t = 0;
+        for (int i = 0; i < 32; ++i)
+            if (((n >> i) & 1) != 0)
+                A[t++] = i;
+
+        int ans = 0;
+        for (int i = 0; i < t - 1; ++i)
+            ans = Math.max(ans, A[i+1] - A[i]);
+        return ans;
     }
 }

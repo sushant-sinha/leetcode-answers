@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 5ms ( 8.12% ) 36.1mb ( 15.34% )
+
 class Solution {
     public int binaryGap(int n) {
         

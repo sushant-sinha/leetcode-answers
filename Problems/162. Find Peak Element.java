@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 0ms ( 100% ) 38.7mb ( 42.07% )
+
 class Solution {
     public int findPeakElement(int[] nums) {
         

@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 0ms ( 100% ) 38.1 mb ( 88.05% )
+
 class Solution {
     public int findMin(int[] nums) {
         

@@ -1,5 +1,8 @@
 // SUSHANT SINHA
 
+// see the best solution using bits 5ms
+// 376 ms ( 14.95% ) 39.3mb ( 33.44% )
+
 class Solution {
     public int maxProduct(String[] words) {
         

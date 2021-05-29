@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 18ms ( 36.19% ) 75.5mb ( 56.49% )
+
 class Solution {
     public char[][] rotateTheBox(char[][] box) {
         
@@ -23,6 +25,8 @@ class Solution {
         
         char ans[][]=new char[box[0].length][box.length];
         
+        // following transposing loops can be avoided if we were assigning the charcters in the ans array while updating the box array
+
         for(int i=0;i<box.length;i++){
             for(int j=0;j<box[0].length;j++){
                 ans[j][box.length-i-1]=box[i][j];

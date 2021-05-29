@@ -1,44 +1,50 @@
 // SUSHANT SINHA
 
-// second code from discuss tab, first has loop issues
-// 0ms ( 100% ) 36.9mb ( 78.20% )
+// has loop issues
 
-// class Solution {
-//     public boolean isLongPressedName(String name, String typed) {
+/*
+
+class Solution {
+    public boolean isLongPressedName(String name, String typed) {
         
-//         char s1[]=name.toCharArray();
-//         char s2[]=typed.toCharArray();
+        char s1[]=name.toCharArray();
+        char s2[]=typed.toCharArray();
         
-//         if(s2.length<s1.length)
-//             return false;
+        if(s2.length<s1.length)
+            return false;
         
-//         int i=0,j=0;
-//         boolean end=false;
+        int i=0,j=0;
+        boolean end=false;
         
-//         for(;i<s1.length;i++){
+        for(;i<s1.length;i++){
             
-//             if(s1[i]!=s2[j])
-//                 return false;
+            if(s1[i]!=s2[j])
+                return false;
             
-//             if(s1[i]==s2[j]){
-//                 while(i>0 && s1[i-1]==s2[j]){
-//                     j++;
-//                     if(j==s2.length){
-//                         end=true;
-//                         break;
-//                     }
-//                 }
-//             }
+            if(s1[i]==s2[j]){
+                while(i>0 && s1[i-1]==s2[j]){
+                    j++;
+                    if(j==s2.length){
+                        end=true;
+                        break;
+                    }
+                }
+            }
             
-//             if(end)
-//                 break;
+            if(end)
+                break;
             
-//         }
+        }
         
-//         return true;
+        return true;
         
-//     }
-// }
+    }
+}
+
+*/
+
+// from discuss tab
+// 0ms ( 100% ) 36.9mb ( 78.20% )
 
 class Solution {
     public boolean isLongPressedName(String name, String typed) {

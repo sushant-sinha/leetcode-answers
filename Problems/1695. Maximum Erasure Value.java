@@ -1,5 +1,9 @@
 // solution by hiepit 
 
+// https://leetcode.com/problems/maximum-erasure-value/discuss/1235666/pythonjavac-sliding-window-hashmap-clean-concise-on
+
+// 41ms ( 80.29% ) 51,4mb ( 85.68% )
+
 class Solution {
     public int maximumUniqueSubarray(int[] nums) {
         

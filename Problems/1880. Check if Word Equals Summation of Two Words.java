@@ -25,3 +25,30 @@ class Solution {
 
     }
 }
+
+// get the integer value directly........... no need of using a String
+// 0ms ( 100% ) 37.3mb
+
+class Solution {
+    public boolean isSumEqual(String firstWord, String secondWord, String targetWord) {
+        
+        return convert(firstWord)+convert(secondWord)==convert(targetWord);
+        
+    }
+
+    static int convert(String s){
+
+        int ans=0;
+
+        for(char c:s.toCharArray()){
+
+            ans = (ans*10) + (c-'a');
+
+        }
+
+
+        return ans;
+
+
+    }
+}

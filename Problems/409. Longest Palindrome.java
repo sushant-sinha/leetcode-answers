@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 2ms ( 67.09% ) 39.4mb ( ~5-10% )
+
 class Solution {
     public int longestPalindrome(String s) {
         

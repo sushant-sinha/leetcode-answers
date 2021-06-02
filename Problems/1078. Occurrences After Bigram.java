@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 1ms ( 30.97% ) 38.8mb ( 5.55% )
+
 class Solution {
     public String[] findOcurrences(String text, String first, String second) {
         

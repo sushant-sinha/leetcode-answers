@@ -42,7 +42,8 @@ class Solution {
             
         }
         
-        // forming the array by iterating makes the code slow... use list.toArray(new String[0])
+        // forming the array by iterating the list in the previous code makes the code slow...
+        // use list.toArray(new String[0])
         return ans.toArray(new String[0]);
         
     }

@@ -1,3 +1,8 @@
+// from discuss tab
+// https://leetcode.com/problems/display-table-of-food-orders-in-a-restaurant/discuss/809412/Java-simple-TreeMap-of-TreeMap-solution
+
+// 184ms ( 5.00% ) 145.6ms ( 5.00% )
+
 class Solution {
     public List<List<String>> displayTable(List<List<String>> orders) {
         List<List<String>> res = new ArrayList<List<String>>();

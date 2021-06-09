@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 0ms ( 100% ) 36.2mb ( 78.02% )
+
 class Solution {
     public int numRookCaptures(char[][] board) {
         

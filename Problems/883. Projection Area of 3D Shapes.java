@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 1ms ( 100% ) 38.7mb ( 57.61% )
+
 class Solution {
     public int projectionArea(int[][] grid) {
         

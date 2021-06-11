@@ -1,3 +1,30 @@
+// https://leetcode.com/problems/matrix-cells-in-distance-order/discuss/1004716/JAVA-oror-Comparator-oror-Easy-to-understand
+
+// 11ms ( 63.87% ) 41.4mb ( 24.43% )
+
+class Solution {
+    public int[][] allCellsDistOrder(int R, int C, int r, int c) {
+        int index = 0;
+        int[][] result = new int[R*C][2];
+        
+        for(int i = 0; i < R; i++){
+            for(int j = 0; j < C; j++){
+                result[index][0] = i;
+                result[index][1] = j;
+                index++;
+            }
+        }
+        
+        Arrays.sort(result, (a, b)-> 
+            (Math.abs(r-a[0])+Math.abs(c-a[1])) - (Math.abs(r-b[0])+Math.abs(c-b[1]))
+        );
+        
+        return result;
+    }
+}
+
+// couldnt complete
+
 class Solution {
     public int[][] allCellsDistOrder(int rows, int cols, int rCenter, int cCenter) {
         

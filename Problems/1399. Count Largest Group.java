@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 3ms ( 97.38% ) 35.6mb ( 91.33% )
+
 class Solution {
     public int countLargestGroup(int n) {
         

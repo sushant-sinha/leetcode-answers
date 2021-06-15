@@ -1,5 +1,10 @@
 // SUSHANT SINHA
 
+// 268ms ( 5.62% ) 39.5mb ( 41.40% )
+
+// solution using arraylist
+// for removing element from arraylist on the basis of value https://www.geeksforgeeks.org/remove-element-arraylist-java/
+
 class Solution {
     public int[] singleNumber(int[] nums) {
          

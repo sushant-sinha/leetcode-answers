@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 18ms ( 80.25% ) 41.6mb ( 99.57% )
+
 class Solution {
     public List<List<String>> suggestedProducts(String[] products, String searchWord) {
         

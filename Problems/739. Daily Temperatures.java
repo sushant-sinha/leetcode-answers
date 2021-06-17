@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 1102ms ( 6.85% ) 52.4mb ( 19.75% )
+
 class Solution {
     public int[] dailyTemperatures(int[] temperatures) {
 

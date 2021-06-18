@@ -1,5 +1,8 @@
 // SUSHANT SINHA
 
+// using ArrayList
+// 312ms ( 6.10% ) 46.8mb ( 35.49% )
+
 class MyHashMap {
 
     ArrayList<Integer> lkey;

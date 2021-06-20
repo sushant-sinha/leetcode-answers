@@ -11,7 +11,6 @@ class Solution {
 			int x = n % 3;
 			n /= 3;
 			
-
 			if (x + (3 * -1)==2 || x==2)
 				return false;
             

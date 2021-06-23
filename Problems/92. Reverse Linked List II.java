@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 0ms ( 100% ) 36.8mb ( 34.47% )
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -37,7 +39,7 @@ class Solution {
         ar[i]=head1.val;
         
         
-        // reversing
+        // reversing the array
         
         for(int j=0;j<ar.length/2;j++){
             int temp=ar[j];

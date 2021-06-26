@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 17ms ( 58.82% ) 40mb ( 59.11% )
+
 class Solution {
 	public List<String> subdomainVisits(String[] cpdomains) {
 

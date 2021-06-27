@@ -42,3 +42,30 @@ class Solution {
     }
     
 }
+
+// best solution
+// 2ms ( 98.45% ) 39.3mb ( 37.41% )
+
+class Solution {
+    public int[] deckRevealedIncreasing(int[] deck) {
+        if(deck.length==1) return deck;
+        int n=deck.length;
+        int[] res=new int[n];
+        Arrays.sort(deck);
+        res[0]=deck[0];
+        int k=1,c=0;
+        while(k<n){
+            for(int i=1;i<n;i++){
+                if(res[i]==0){
+                    c++;
+                    if(c==2){
+                        res[i]=deck[k];
+                        k++;
+                        c=0;
+                    }
+                }
+            }
+        }
+    return res;
+    }
+}

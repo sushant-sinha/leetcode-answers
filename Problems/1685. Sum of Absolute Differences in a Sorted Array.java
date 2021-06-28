@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 3ms ( 78.26% ) 59.3mb ( 18.69% )
+
 class Solution {
     public int[] getSumAbsoluteDifferences(int[] nums) {
         
@@ -22,5 +24,27 @@ class Solution {
         
         return nums;
         
+    }
+}
+
+// best solution
+// 2ms ( 100% ) 53.9mb ( 40.50% )
+
+class Solution {
+    public int[] getSumAbsoluteDifferences(int[] nums) {
+        int n=nums.length;
+        int result[]=new int[n];
+        int sum1=0,sum2=0;
+        for(int i=0;i<n;i++)
+        {
+           sum1+=nums[i];
+        }
+        for(int i=0;i<n;i++)
+        {
+           sum1-=nums[i];
+           result[i]=(sum1-(n-i-1)*nums[i])+(i*nums[i]-sum2);
+           sum2+=nums[i];
+        }
+        return result;
     }
 }

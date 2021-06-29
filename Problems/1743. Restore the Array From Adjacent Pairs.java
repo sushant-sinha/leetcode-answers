@@ -43,3 +43,36 @@ class Solution {
 
      }
 }
+
+// best solution
+
+// 17ms ( 99.86% ) 77.7mb ( 95.88% )
+
+class Solution {
+    public int[] restoreArray(int[][] adjacentPairs) {
+        int[] index = new int[200001], res = new int[adjacentPairs.length + 1];
+        boolean[] exist = new boolean[200001];
+        for (int i = 0; i < adjacentPairs.length; ++i) {
+            index[adjacentPairs[i][0] + 100000] += i;
+            index[adjacentPairs[i][1] + 100000] += i;
+            exist[adjacentPairs[i][0] + 100000] = !exist[adjacentPairs[i][0] + 100000];
+            exist[adjacentPairs[i][1] + 100000] = !exist[adjacentPairs[i][1] + 100000];
+        }
+        //find start
+        int start = 0;
+        for (int i = 0; i <= 200000; ++i) {
+            if (exist[i]) {
+                start = i - 100000;
+                break;
+            }
+        }
+        int lastIndex = 0, next = start;
+        for (int i = 0; i < res.length; ++i) {
+            res[i] = next;
+            int[] pair = adjacentPairs[index[next + 100000] - lastIndex];
+            lastIndex = index[next + 100000] - lastIndex;
+            next = pair[0] + pair[1] - next;
+        }
+        return res;
+    }
+}

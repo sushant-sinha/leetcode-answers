@@ -5,6 +5,7 @@
 class Solution {
     public int[] getSumAbsoluteDifferences(int[] nums) {
         
+        // this sum array can be eliminated by using a simple variable whose value is being updated in every iteration of last loop
         int sum[]=new int[nums.length];
         sum[0]=nums[0];
         

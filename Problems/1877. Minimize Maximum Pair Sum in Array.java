@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 50ms ( 86.44% ) 54.8mb ( 74.78% )
+
 class Solution {
     public int minPairSum(int[] nums) {
         

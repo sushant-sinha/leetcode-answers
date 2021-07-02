@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 5ms ( 46.82% ) 39.4mb ( >55% )
+
 class Solution {
     public String removeOccurrences(String s, String part) {
         

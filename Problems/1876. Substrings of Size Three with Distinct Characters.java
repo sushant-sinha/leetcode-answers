@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms ( 81.45% ) 39.3mb ( 18.24% )
+
 class Solution {
     public int countGoodSubstrings(String s) {
         

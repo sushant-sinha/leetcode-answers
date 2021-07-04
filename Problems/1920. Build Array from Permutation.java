@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms 39.5mb (not enough accepted submission to show distribution)
+
 class Solution {
     public int[] buildArray(int[] nums) {
         

@@ -1,6 +1,7 @@
 // SUSHANT SINHA
 
 // 70ms ( 19.97% ) 62.7mb ( 21.15% )
+// complicated and not fast
 
 class Solution {
     public int minSetSize(int[] arr) {
@@ -65,4 +66,34 @@ class Solution {
         return ans;
     }
     
+}
+
+// 23ms ( 94.27% ) 52mb ( 56.09% )
+// simple and faster
+
+class Solution {
+    public int minSetSize(int[] arr) {
+        
+        int len=arr.length/2;
+        
+        int num[]=new int[100001];
+        
+        for(int i:arr){
+            num[i]++;
+        }
+        
+        Arrays.sort(num);
+        
+        int curlen=0,ans=0;
+        
+        for(int i=num.length-1;i>=0;i--){
+            if(curlen>=len)
+                return ans;
+            ans++;
+            curlen+=num[i];
+        }
+        
+        return ans;
+        
+    }
 }

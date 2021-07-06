@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 70ms ( 19.97% ) 62.7mb ( 21.15% )
+
 class Solution {
     public int minSetSize(int[] arr) {
         

@@ -74,6 +74,10 @@ class Solution {
         return false;
         
     }
+
+    // this function is from GFG
+    // https://www.geeksforgeeks.org/inplace-rotate-square-matrix-by-90-degrees/
+
     static void rotate(int N, int mat[][]){
         // Consider all squares one by one
         for (int x = 0; x < N / 2; x++) {

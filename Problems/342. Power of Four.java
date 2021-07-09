@@ -23,3 +23,15 @@ class Solution {
         
     }
 }
+
+// expected solution... no loops needed
+// 2ms ( 12.99% ) 38mb ( 9.76% )
+// by https://leetcode.com/Abhishekpatel_/
+
+class Solution {
+    public boolean isPowerOfFour(int n) {
+        if(n <= 0)
+            return false;
+        return (Math.log(n)/Math.log(4)) % 1 == 0;
+    }
+}

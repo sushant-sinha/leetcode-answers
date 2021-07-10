@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 5ms ( 39.68% ) 54.5mb ( 6.29% )
+
 class Solution {
     public int majorityElement(int[] nums) {
         

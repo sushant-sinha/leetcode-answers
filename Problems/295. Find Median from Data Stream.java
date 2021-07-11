@@ -1,3 +1,8 @@
+// SUSHANT SINHA
+
+// 1596ms ( 6.12% ) 50.3mb ( 61.79% )
+// basic implementation.... bad performance
+
 class MedianFinder {
     
     ArrayList<Integer> ar=new ArrayList<>();

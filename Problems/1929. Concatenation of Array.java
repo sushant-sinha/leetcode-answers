@@ -1,3 +1,8 @@
+// SUSHANT SINHA
+
+// 2ms ( 100% ) 39.8mb ( 100% )
+// not enough accepted submissions
+
 class Solution {
     public int[] getConcatenation(int[] nums) {
         

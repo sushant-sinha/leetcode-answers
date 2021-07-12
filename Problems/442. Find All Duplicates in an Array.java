@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 16ms ( 27.37% ) 44.2mb ( 100% )
+
 class Solution {
     public List<Integer> findDuplicates(int[] nums) {
         

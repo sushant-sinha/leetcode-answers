@@ -1,3 +1,16 @@
+// SUSHANT SINHA
+
+/*
+
+    wasnt aware of return string.chars().distinct().count();
+    it returns the number of distinct characters in the given string
+
+    found @ https://stackoverflow.com/questions/32113833/how-to-find-number-of-distinct-characters-in-a-string
+
+*/
+
+// 501ms ( 29.61% ) 51.9mb ( 42.52% )
+
 class Solution {
     public int countPalindromicSubsequence(String s) {
         

@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 6ms ( 85.97% ) 39.2mb ( 39.58% )
+
 class Solution {
     public int minDeletionSize(String[] strs) {
         

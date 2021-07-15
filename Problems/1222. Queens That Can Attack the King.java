@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms ( 78.48% ) 38.9mb ( 91.71% )
+
 class Solution {
     public List<List<Integer>> queensAttacktheKing(int[][] queens, int[] king) {
         

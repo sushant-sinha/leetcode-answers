@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 2ms ( 69.54% ) 36mb ( 67.02% ) 
+
 class Solution {
     public int findTheWinner(int n, int k) {
         

@@ -1,3 +1,8 @@
+// SUSHANT SINHA
+
+// implementation according to given hint
+// 124ms ( 13.66% ) 36.9mb ( 64.76% )
+
 /*
  * // This is the custom function interface.
  * // You should not implement it, or speculate about its implementation

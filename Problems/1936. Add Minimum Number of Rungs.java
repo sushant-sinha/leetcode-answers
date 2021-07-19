@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 2ms ( 28.57% ) 51.7mb ( 28.57% )
+
 class Solution {
     public int addRungs(int[] rungs, int dist) {
         

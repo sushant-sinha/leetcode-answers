@@ -1,7 +1,7 @@
 // SUSHANT SINHA
 
 // implementation according to given hint
-// 124ms ( 13.66% ) 36.9mb ( 64.76% )
+// 123ms ( 14.67% ) 36.8mb ( 79..49% )
 
 /*
  * // This is the custom function interface.
@@ -26,6 +26,7 @@ class Solution {
                     temp.add(x);
                     temp.add(y);
                     ans.add(temp);
+                    break;
                 }
             }
         }

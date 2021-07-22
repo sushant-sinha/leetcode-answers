@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 2ms ( 66.54% ) 39mb ( 92.96% )
+
 class Solution {
     public int partitionDisjoint(int[] nums) {
 
@@ -17,7 +21,7 @@ class Solution {
                     break;
                 }
             }
-            
+
             if(f)
                 return i+1;
         }

@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 6ms ( 95.08% ) 35.4mb ( 99.31% )
+
 class Solution {
     public int countTriples(int n) {
         

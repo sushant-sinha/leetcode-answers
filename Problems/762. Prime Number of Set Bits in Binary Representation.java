@@ -1,0 +1,38 @@
+class Solution {
+    public int countPrimeSetBits(int left, int right) {
+        
+        int prime[]={2,3,5,7,11,13,17,19};
+        
+        int ans=0;
+        
+        while(left!=right+1){
+            
+            int c=isPrime(left);
+            
+            for(int i:prime){
+                if(i==c){
+                    ans++;
+                    break;
+                }
+            }
+            
+            left++;
+        }
+        
+        return ans;
+        
+    }
+    
+    int isPrime(int n){        
+        int one=0;
+        
+        while(n!=0){
+            if(n%2==1)
+                one++;
+            n/=2;
+        }
+        
+        return one;
+        
+    }
+}

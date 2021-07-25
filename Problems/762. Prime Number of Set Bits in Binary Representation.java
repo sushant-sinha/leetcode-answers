@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 112ms ( 12.83% ) 35.7mb ( 84.57% )
+
 class Solution {
     public int countPrimeSetBits(int left, int right) {
         

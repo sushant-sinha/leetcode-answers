@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms ( 75% ) 37.2mb ( 75% )
+
 class Solution {
     public int getLucky(String s, int k) {
         

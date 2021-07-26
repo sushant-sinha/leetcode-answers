@@ -3,7 +3,7 @@
 // my solution 5ms ( 11.23% )
 // Sushant has made changes
 
-// cannot use "." in split... 🤔
+// use "\\." for splitting string wrt "."
 
 class Solution {
     public String defangIPaddr(String address) {

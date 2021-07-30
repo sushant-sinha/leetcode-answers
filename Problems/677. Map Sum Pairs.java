@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 11ms ( 93.27% ) 39.1mb ( 54.18% )
+
 class MapSum {
 
     HashMap<String,Integer> map;

@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// :)) Almost everyone has the same answer
+
 class Solution {
     public boolean isThree(int n) {
      

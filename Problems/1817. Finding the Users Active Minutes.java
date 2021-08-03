@@ -1,3 +1,8 @@
+// SUSHANT SINHA
+
+// my lame brute force 🤣🤣😶😑
+// 1953 ( 5.02% ) 53.7mb ( 20.29% )
+
 class Solution {
     public int[] findingUsersActiveMinutes(int[][] logs, int k) {
         

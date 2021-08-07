@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 3ms ( 16.09% ) 51.9mb ( 10.91% )
+
 class Solution {
     public int findPoisonedDuration(int[] timeSeries, int duration) {
         

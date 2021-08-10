@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms ( 70.10% ) 39mb ( 68.84% )
+
 class Solution {
     public int[] decrypt(int[] code, int k) {
         

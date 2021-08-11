@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 0ms ( 100% ) 35.8mb ( 71.52% )
+
 class Solution {
     public int kthFactor(int n, int k) {
         

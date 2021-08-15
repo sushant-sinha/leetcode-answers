@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 0ms ( 100% ) 36.2mb ( 98.02% )
+
 class Solution {
     public int minCostToMoveChips(int[] position) {
         

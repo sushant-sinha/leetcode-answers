@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 4ms ( 50% ) 38.9mb ( 50% )
+
 class Solution {
     public int numOfStrings(String[] patterns, String word) {
 
@@ -13,7 +17,7 @@ class Solution {
                     ans++;
                     break;
                 }
-                
+
             }
         }
         

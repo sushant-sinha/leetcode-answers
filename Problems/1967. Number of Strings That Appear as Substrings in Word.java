@@ -24,3 +24,18 @@ class Solution {
         return ans;
     }    
 }
+
+// best solution
+// 0ms
+
+class Solution {
+    public int numOfStrings(String[] patterns, String word) {
+        int res = 0;
+        for (String str: patterns) {
+            // indexOf return -4 if there is no occurence is found
+            if (word.indexOf(str) >= 0) res++;
+        }
+        
+        return res;
+    }
+}

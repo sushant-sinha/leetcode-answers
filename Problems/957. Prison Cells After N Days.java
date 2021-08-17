@@ -1,3 +1,17 @@
+class Solution {
+    public int[] prisonAfterNDays(int[] c, int n) {
+        for (int j=(n-1)%14 +1; j>0;j--){
+            int[] c2=new int[8];
+            for (int i=1;i<7;++i){
+                c2[i]= (c[i-1]==c[i+1])?1:0;
+            }
+            c=c2;
+        }   
+        return c;
+    }
+}
+
+
 // this code gives TLE for large number of days (as expected)
 
 class Solution {

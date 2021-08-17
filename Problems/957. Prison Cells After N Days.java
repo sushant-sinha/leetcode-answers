@@ -1,3 +1,15 @@
+/*
+
+ https://leetcode.com/problems/prison-cells-after-n-days/discuss/1294134/Short-and-Easy-Solution-JAVA
+
+ the above link shows the repetition after evey 14 days....
+
+ for n=7 the solution is same as n=21 and n=35
+
+*/
+
+// 0ms ( 100% ) 39.1mb ( 58.00% )
+
 class Solution {
     public int[] prisonAfterNDays(int[] c, int n) {
         for (int j=(n-1)%14 +1; j>0;j--){

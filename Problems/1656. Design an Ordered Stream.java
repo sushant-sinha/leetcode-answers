@@ -1,3 +1,5 @@
+// 66ms ( 86.59% ) 40.4mb ( 66.41% )
+
 class OrderedStream {
     String[] words = null;
     int ptr = 0;

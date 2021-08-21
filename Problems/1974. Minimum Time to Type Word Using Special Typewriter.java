@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 0ms ( 100% ) 36.7mb ( 100% )
+
 class Solution {
     public int minTimeToType(String word) {
                 

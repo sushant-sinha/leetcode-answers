@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 2ms ( 28.57% ) 38.9mb ( 28.57% )
+
 class Solution {
     public int findGCD(int[] nums) {
         

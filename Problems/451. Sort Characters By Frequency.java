@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 519ms ( 8.35% ) 40.2mb ( 42.29% )
+
 class Solution {
     public String frequencySort(String s) {
         
@@ -20,7 +24,8 @@ class Solution {
         
     }
     
-    
+    // modified sorting by value of hashmap to get decreasing order
+
     public static String sortByValue(HashMap<Character, Integer> hm)
     {
         // Create a list from elements of HashMap
@@ -35,9 +40,7 @@ class Solution {
                 return (o2.getValue()).compareTo(o1.getValue());
             }
         });
-         
-        // put data from sorted list to hashmap
-        
+                 
         int i; char c;String ans="";
         
         for (Map.Entry<Character, Integer> aa : list) {

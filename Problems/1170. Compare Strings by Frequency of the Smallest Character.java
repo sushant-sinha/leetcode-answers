@@ -1,3 +1,9 @@
+// SUSSHANT SINHA
+
+// 11ms ( 44.20% ) 39.3mb ( 74.86% )
+
+// no binary search
+
 class Solution {
     public int[] numSmallerByFrequency(String[] queries, String[] words) {
         

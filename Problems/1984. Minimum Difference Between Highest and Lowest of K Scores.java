@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 3ms ( 100% ) 38.8mb ( 100% )
+
 class Solution {
     public int minimumDifference(int[] nums, int k) {
         

@@ -1,3 +1,8 @@
+// SUSHANT SINHA
+
+// 11ms ( 6.55% ) 40.2mb ( 6.86% )
+// separate values for the cases
+
 class Solution {
     public int minOperations(String s) {
         
@@ -28,3 +33,4 @@ class Solution {
         
     }
 }
+

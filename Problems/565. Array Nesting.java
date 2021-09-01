@@ -1,3 +1,6 @@
+
+// 2ms ( 61.68% ) 45.7mb ( 12.41% )
+
 class Solution {
     public int arrayNesting(int[] nums) {
                 

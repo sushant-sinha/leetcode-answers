@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 2ms ( 99.19% ) 38.6mb ( 81.07% )
+
 class Solution {
     public boolean makeEqual(String[] words) {
         

@@ -1,3 +1,8 @@
+// SUSHANT SINHA
+
+// not the inplace solution..
+// 0ms ( 100% ) 37.3mb ( 78.18% )
+
 class Solution {
     public void gameOfLife(int[][] board) {
         

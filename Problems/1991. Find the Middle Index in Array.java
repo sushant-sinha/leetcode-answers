@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 0ms ( 100% ) 38.2mb ( 100% )
+
 class Solution {
     public int findMiddleIndex(int[] nums) {
         

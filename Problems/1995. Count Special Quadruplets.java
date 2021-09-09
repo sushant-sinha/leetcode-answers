@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 30ms ( 37.28% ) 38.7mb ( 67.46% )
+
 class Solution {
     public int countQuadruplets(int[] nums) {
         

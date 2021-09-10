@@ -1,3 +1,8 @@
+// SUSHANT SINHA
+
+// using frequency array for elements ranging from -100<= to <=100
+// 4ms ( 96.78% ) 39mb ( 85.59% )
+
 class Solution {
     public int[] frequencySort(int[] nums) {
         

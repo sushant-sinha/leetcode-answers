@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 2ms ( 71.95% ) 39.1mb ( 32.48% )
+
 class Solution {
     public boolean areOccurrencesEqual(String s) {
         

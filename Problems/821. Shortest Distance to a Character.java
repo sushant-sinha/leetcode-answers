@@ -1,4 +1,7 @@
+
+
 // reference
+// 1ms ( 96.76% ) 39mb ( 84.01% )
 
 class Solution {
     public int[] shortestToChar(String s, char c) {

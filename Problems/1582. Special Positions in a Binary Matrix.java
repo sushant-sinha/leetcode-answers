@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms ( 98.55% ) 38.9mb ( 93.90% )
+
 class Solution {
     public int numSpecial(int[][] mat) {
         
@@ -10,6 +14,8 @@ class Solution {
                 if(mat[i][j]==1){
                     boolean hasone=false;
                     
+                    // row-wise
+
                     for(int a=0;a<mat[0].length;a++){
                         
                         if(mat[i][a]==1 && a!=j){
@@ -18,6 +24,8 @@ class Solution {
                         }
                         
                     }
+
+                    // if there were no ones in row, check column
                     
                     if(!hasone){
                         for(int a=0;a<mat.length;a++){
@@ -29,6 +37,8 @@ class Solution {
                             
                         }
                     }
+
+                    // if no one in row and column, add to the ans
                     
                     if(!hasone)
                         ans++;

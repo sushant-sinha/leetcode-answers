@@ -1,3 +1,12 @@
+// SUSHANT SINHA
+
+// 781ms ( 27.16% ) 72.1mb ( 15.02% )
+
+// not the expected solution U_U
+// traversing the whole linked-list to find the length of list
+// iterating linked-list again, and for each element, scan the whole list for the next bigger number.
+
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {

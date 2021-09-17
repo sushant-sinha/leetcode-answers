@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 0ms ( 100% ) 39.1mb ( 68.65% )
+
 class Solution {
     public int singleNonDuplicate(int[] nums) {
         

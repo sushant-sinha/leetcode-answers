@@ -1,3 +1,8 @@
+// SUSHANT SINHA
+
+// 6ms ( 78.73% ) 38.5mb ( 86.13% )
+// basic approach
+
 class Solution {
     public int countKDifference(int[] nums, int k) {
         

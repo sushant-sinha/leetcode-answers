@@ -1,5 +1,27 @@
 // SUSHANT SINHA
 
+// 0ms ( 100% ) 38.6mb ( 80.89% )
+// faster solution
+
+class Solution {
+    public int countKDifference(int[] nums, int k) {
+        
+        int counter[]=new int[101];
+        
+        int ans=0;
+        
+        for(int i:nums)
+            counter[i-1]++;
+        
+        for(int i=0;i<100-k;i++){
+            ans+= counter[i]*counter[i+k];
+        }
+        
+        return ans;
+        
+    }
+}
+
 // 6ms ( 78.73% ) 38.5mb ( 86.13% )
 // basic approach
 

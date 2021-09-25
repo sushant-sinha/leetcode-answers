@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms ( 100% ) 39mb ( 69.99% )
+
 class Solution {
     public int titleToNumber(String columnTitle) {
         

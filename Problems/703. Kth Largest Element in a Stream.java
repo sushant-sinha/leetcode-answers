@@ -1,3 +1,8 @@
+// SUSHANT SINHA
+
+// no the expected solution i guess :)
+// 1160ms ( 5.01% ) 46.2mb ( 34.00% )
+
 class KthLargest {
 
     ArrayList<Integer> list = new ArrayList<>();

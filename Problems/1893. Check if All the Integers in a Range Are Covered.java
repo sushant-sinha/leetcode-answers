@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 0ms ( 100% ) 36.9mb ( 89.73% )
+
 class Solution {
     public boolean isCovered(int[][] ranges, int left, int right) {
         

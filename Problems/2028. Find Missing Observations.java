@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 3ms ( 98.19% ) 54.2mb ( 95.37% )
+
 class Solution {
     public int[] missingRolls(int[] rolls, int mean, int n) {
         

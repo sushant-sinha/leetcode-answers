@@ -1,5 +1,13 @@
 // SUSHANT SINHA
 
+/* 
+
+hiepit's great explanation
+
+https://leetcode.com/problems/find-missing-observations/discuss/1500256/C%2B%2BJavaPython-Math-then-Div-Mod-Clean-and-Concise
+
+*/
+
 // 3ms ( 98.19% ) 54.2mb ( 95.37% )
 
 class Solution {
@@ -37,5 +45,33 @@ class Solution {
         
         return ans;        
         
+    }
+}
+
+/* 
+
+notice the Arrays' methods :
+	
+	Arrays.stream(rolls).sum();
+	Arrays.fill(ans, part);
+
+*/
+
+// hiepit's java solution
+
+// 11ms ( 38.38% ) 57.9mb ( 78.49% )
+
+class Solution {
+    public int[] missingRolls(int[] rolls, int mean, int n) {
+        int curSum = Arrays.stream(rolls).sum(), m = rolls.length;
+        int missingSum = mean * (n + m) - curSum;
+        if (missingSum < n || missingSum > 6*n) return new int[0];
+
+        int part = missingSum / n, rem = missingSum % n;
+        int[] ans = new int[n];
+        Arrays.fill(ans, part);
+        for (int i = 0; i < rem; ++i)
+            ++ans[i];
+        return ans;
     }
 }

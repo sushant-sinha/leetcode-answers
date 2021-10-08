@@ -1,6 +1,11 @@
+// SUSHANT SINHA
+
+// 3ms ( 89.15% ) 39.6mb ( 61.76% )
+
 class Solution {
     public String shortestCompletingWord(String licensePlate, String[] words) {
         
+        // random answer of length >15
         String ans="zzzzzzzzzzzzzzzz";
         
         int charcount[]=new int[26];        

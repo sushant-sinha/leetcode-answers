@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 0ms ( 100% ) 37.2mb ( 39.04% )
+
 class MyQueue {
 
     Stack<Integer> add=new Stack<>();

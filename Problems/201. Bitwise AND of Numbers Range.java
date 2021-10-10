@@ -1,3 +1,9 @@
+// referenced
+// this problem has 8268 testcases
+
+// 4ms ( 100% ) 38.5mb ( 52.54% )
+// most common answer
+
 class Solution {
     public int rangeBitwiseAnd(int m, int n) {
         int count =0;

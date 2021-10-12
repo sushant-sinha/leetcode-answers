@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 12ms ( 45.88% ) 39.5mb ( 78.39% )
+
 class Solution {
     public String convert(String s, int numRows) {
         

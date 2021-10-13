@@ -44,3 +44,50 @@ class Solution {
         
     }
 }
+
+// using trie ( expected/best solution from submission tab)
+// 11ms ( 81.23% ) 49.9mb (  )
+
+class Solution {
+    class TrieNode{
+        TrieNode[] children;
+        String word;
+        public TrieNode(){
+            this.children = new TrieNode[26]; 
+        }
+    }
+    TrieNode root;
+    public void insert(String word){
+        TrieNode curr = root;
+        for(int i=0;i<word.length();i++){
+            char c=word.charAt(i);
+            if(curr.children[c-'a']==null){
+                curr.children[c-'a'] = new TrieNode();
+            }
+            curr = curr.children[c-'a'];
+        }
+        curr.word = word;
+    }
+    String result;
+    public String longestWord(String[] words) {
+        root = new TrieNode();
+        for(String word : words){
+            insert(word);
+        }
+        result = "";
+       dfs(root);
+        return result;
+    }
+    public void dfs(TrieNode curr){
+        //base
+        if(curr.word!=null && curr.word.length()>=result.length()){
+            result = curr.word;
+        }
+        //action
+        for(int i=25;i>=0;i--){
+            if(curr.children[i]!=null && curr.children[i].word !=null){
+                dfs(curr.children[i]);
+            }
+        }
+    }
+}

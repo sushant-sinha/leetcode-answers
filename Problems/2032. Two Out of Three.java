@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 2ms ( 97.44% ) 39.4mb ( 98.25% )
+
 class Solution {
     public List<Integer> twoOutOfThree(int[] nums1, int[] nums2, int[] nums3) {
         

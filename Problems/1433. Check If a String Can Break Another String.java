@@ -1,3 +1,8 @@
+// SUSHANT SINHA
+
+// 16ms ( 21.12% ) 52.2mb ( 6.04% )
+
+
 class Solution {
     public boolean checkIfCanBreak(String s1, String s2) {
         

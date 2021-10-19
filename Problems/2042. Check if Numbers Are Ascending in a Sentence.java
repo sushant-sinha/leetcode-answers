@@ -1,12 +1,12 @@
 // SUSHANT SINHA
 
-// 7ms ( 25.66% ) 39.6mb ( 26.12% )
+// 4ms ( 44.28% ) 37.7mb ( 88.75% )
 // using lambda expression for testing whether the string is a number or not
 
 class Solution {
     public boolean areNumbersAscending(String s) {
         
-        int temp=-1,n;
+        int temp=-1;
         
         for(String a:s.split(" ")){
             
@@ -15,10 +15,8 @@ class Solution {
             //System.out.println(isNumeric);
             
             if(a.chars().allMatch( Character::isDigit )){
-                n=Integer.parseInt(a);
-                
-                if(temp<n)
-                    temp=n;
+                if(temp<Integer.parseInt(a))
+                    temp=Integer.parseInt(a);
                 else
                     return false;
                 

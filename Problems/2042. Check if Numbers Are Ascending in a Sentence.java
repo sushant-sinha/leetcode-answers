@@ -1,3 +1,8 @@
+// SUSHANT SINHA
+
+// 9ms ( 19.34% ) 39.3mb ( 38.75% )
+// using lambda expression for testing whether the string is a number or not
+
 class Solution {
     public boolean areNumbersAscending(String s) {
         

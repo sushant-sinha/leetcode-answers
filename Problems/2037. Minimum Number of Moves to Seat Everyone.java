@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 3ms ( 75.00% ) 41.2mb ( 25.00%)
+
 class Solution {
     public int minMovesToSeat(int[] seats, int[] students) {
         

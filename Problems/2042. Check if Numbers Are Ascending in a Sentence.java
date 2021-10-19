@@ -28,3 +28,28 @@ class Solution {
         
     }
 }
+
+// best solution from the submission tab
+
+// 0ms ( 100% )
+
+class Solution {
+    public boolean areNumbersAscending(String s) {
+        var index = 0;
+        var prev = 0;
+        while (index < s.length()) {
+            if (Character.isDigit(s.charAt(index))) {
+                var curr = 0;
+                while (index < s.length() && Character.isDigit(s.charAt(index))) {
+                    curr = curr * 10 + (s.charAt(index) - '0');
+                    index++;
+                }
+                if (curr <= prev)
+                    return false;
+                prev = curr;
+            }
+            index++;
+        }
+        return true;
+    }
+}

@@ -1,11 +1,17 @@
+// SUSHANT SINHA
+
+// 0ms ( 100% ) 35.7mb ( 98.65% )
+
 class Solution {
     public String convertToTitle(int columnNumber) {
         
         StringBuilder sb = new StringBuilder();
+        
+        int r;
 
         while(columnNumber>0){
             
-            int r=columnNumber%26;
+            r=columnNumber%26;
             
             if(r==0){
                 r+=26;

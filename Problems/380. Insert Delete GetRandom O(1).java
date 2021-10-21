@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 216ms ( 8.83% ) 84mb ( 96.96% )
+
 import java.util.Random;
 
 class RandomizedSet {

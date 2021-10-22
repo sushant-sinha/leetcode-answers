@@ -1,3 +1,6 @@
+// 0ms ( 100% ) 36.6mb ( 93.57% )
+// from https://leetcode.com/problems/number-of-segments-in-a-string/discuss/1530927/java-100-faster
+
 class Solution {
     public int countSegments(String s) {
         

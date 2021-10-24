@@ -1,3 +1,17 @@
+// SUSHANT SINHA
+
+/* IMPORTANT (tag used for referring this code in future)
+
+   use regex when want to split for multiple spaces in .split("regex goes here")
+
+   use .trim() before .split() to remove any unwanted leading and trailing spaces
+
+   thus: String ar[]=s.trim().split("regex goes here");
+
+*/
+
+// 21ms ( 14.29% ) 41.8mb ( 14.29% )
+
 class Solution {
     public int countValidWords(String sentence) {
         

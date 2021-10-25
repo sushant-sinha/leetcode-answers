@@ -1,7 +1,10 @@
+// SUSHANT SINHA
+
+// 97ms ( 78.91% ) 77.5mb ( 98.96% )
+
 class Bank {
     
     long bal[];
-    
 
     public Bank(long[] balance) {
         

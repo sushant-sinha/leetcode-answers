@@ -39,8 +39,10 @@ class Solution {
         
         int hyphen=0;
         
-        // if(s==' ')
+        // if(s.equals(" "))
         //     System.out.println(s);
+
+        // IMPORTANT : should have used if(s.isEmpty()) above
         
         for(int i=0;i<s.length();i++){
             

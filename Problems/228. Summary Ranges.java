@@ -1,5 +1,8 @@
 // SUSHANT SINHA
 
+// optimized string concatenation solution
+// 0ms ( 100% ) 37mb ( 97.98% )
+
 class Solution {
     public List<String> summaryRanges(int[] nums) {
         

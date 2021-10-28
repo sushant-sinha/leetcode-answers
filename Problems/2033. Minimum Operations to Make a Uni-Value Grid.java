@@ -1,3 +1,6 @@
+
+// 32ms ( 93.45% ) 69.4mb ( 70.01% )
+
 class Solution {
     public int minOperations(int[][] grid, int x) {
         

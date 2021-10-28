@@ -28,6 +28,7 @@ class Solution {
             for(String v:sp)
                 if(v.isEmpty() || v.length()>3)
                     return "Neither";
+                
             //test for the number of sections in array
             if(sp.length!=4)
                 return "Neither";

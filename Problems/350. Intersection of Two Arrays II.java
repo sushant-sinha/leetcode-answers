@@ -1,3 +1,8 @@
+// SUSHANT SINHA
+
+// to do
+// 0ms ( 100% ) 39mb ( 91.16% )
+
 class Solution {
     public int[] intersect(int[] nums1, int[] nums2) {
         

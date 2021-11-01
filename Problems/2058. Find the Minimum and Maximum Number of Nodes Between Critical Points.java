@@ -1,3 +1,9 @@
+// SUSHANT SINHA
+
+// 4ms ( 100% ) 60.7mb ( 100% )
+// IMPORTANT
+
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -8,7 +14,7 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
- 
+
 class Solution {
     public int[] nodesBetweenCriticalPoints(ListNode head) {
         

@@ -1,3 +1,8 @@
+// SUSHANT SINHA
+
+// 0ms ( 100% ) 36mb ( 80.34% )
+// using the formula directly
+
 class Solution {
     public double angleClock(int hour, int minutes) {
         

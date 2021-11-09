@@ -1,3 +1,8 @@
+// SUSHANT SINHA
+
+// brute force solution
+// 30ms ( 47.85% ) 39.2mb ( 72.73% )
+
 class Solution {
     
 //     ArrayList<Character> vowel = new ArrayList<>();

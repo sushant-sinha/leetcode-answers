@@ -1,3 +1,8 @@
+// SUSHANT SINHA
+
+// 6ms ( 60.19% ) 38.6mb ( 81.02% )
+// most common answer (everyone uses this 😑)
+
 class Solution {
     public int threeSumClosest(int[] nums, int target) {
 

@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms ( 66.67% ) 36.5mb ( 88.89% )
+
 class Solution {
     public int timeRequiredToBuy(int[] tickets, int k) {
         

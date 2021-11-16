@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 41ms ( 75.62% ) 49.1mb ( 71.63% )
+
 class Solution {
     public String decodeCiphertext(String encodedText, int rows) {
         

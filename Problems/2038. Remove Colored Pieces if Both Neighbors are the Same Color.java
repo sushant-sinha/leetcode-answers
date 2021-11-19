@@ -1,4 +1,4 @@
-// to do
+// 9ms ( 89.22% ) 39.9mb ( 88.41% )
 
 class Solution {
     public boolean winnerOfGame(String colors){

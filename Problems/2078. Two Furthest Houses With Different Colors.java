@@ -1,3 +1,8 @@
+// SUSHANT SINHA
+
+// 3ms ( 22.22% ) 38.8mb ( 11.11% )
+// brute force
+
 class Solution {
     public int maxDistance(int[] colors) {
         

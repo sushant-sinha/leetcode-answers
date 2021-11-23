@@ -34,3 +34,24 @@ class Solution {
     }
 
 }
+
+// another approach I found in the discuss section
+
+class Solution {
+    public int wateringPlants(int[] plants, int capacity) {
+        int c=capacity;
+        int steps=0;
+        for(int i=0;i<plants.length;i++){
+            if(plants[i]>c){
+                steps+=(i * 2) + 1; 
+                c=capacity-plants[i];
+            }
+            else 
+            {
+                steps+=1;
+                c-=plants[i];
+            }
+        }
+        return steps;
+    }
+}

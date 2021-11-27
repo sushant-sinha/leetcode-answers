@@ -1,5 +1,49 @@
 // SUSHANT SINHA
 
+class Solution {
+    public int[] productExceptSelf(int[] nums) {
+        
+        int temp=1;
+        
+        int zero=-1,counter=0;
+        
+        for(int i=0;i<nums.length;i++){
+            
+            if(nums[i]==0){
+                
+                counter++;
+                
+                if(counter>1){
+                    Arrays.fill(nums,0);
+                    return nums;
+                }
+                
+                zero=i;
+                
+                continue;
+            }
+            
+            temp*=nums[i];
+            
+        }
+        
+        if(zero!=-1){
+            Arrays.fill(nums,0);
+            nums[zero]=temp;
+        }
+        
+        else{
+            
+            for(int i=0;i<nums.length;i++)
+                nums[i]=temp/nums[i];
+            
+        }
+        
+        return nums;
+        
+    }
+}
+
 // 1ms ( 100% ) 47.1mb ( 99.74% )
 
 class Solution {

@@ -1,5 +1,9 @@
 // SUSHANT SINHA
 
+// new solution... easy to understand
+// 27th of November
+// 1ms ( 100% ) 47.8mb ( 98.09% )
+
 class Solution {
     public int[] productExceptSelf(int[] nums) {
         
@@ -44,6 +48,10 @@ class Solution {
     }
 }
 
+
+
+
+// old solution 13th of April
 // 1ms ( 100% ) 47.1mb ( 99.74% )
 
 class Solution {

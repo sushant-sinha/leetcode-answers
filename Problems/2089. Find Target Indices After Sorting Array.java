@@ -1,3 +1,8 @@
+// SUSHANT SINHA
+
+// basic approach...
+// 1ms ( 85.71% ) 39.1mb ( 42.86% )
+
 class Solution {
     public List<Integer> targetIndices(int[] nums, int target) {
         

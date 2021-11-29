@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// my code...works for 35/36 test cases
+
 
 class Solution {
     public int[] getAverages(int[] nums, int k) {

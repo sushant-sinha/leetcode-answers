@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 2ms ( 99.94% ) 57.5mb ( 92.54% )
+
 class Solution {
     public int minimumDeletions(int[] nums) {
         
@@ -26,7 +30,7 @@ class Solution {
         // delete from right
         ans = Math.min(ans, Math.max(nums.length - minindex, nums.length - maxindex));
         
-		// edges
+		// edges for deleting form both sides
         int left  = Math.min(minindex, maxindex);  
         int right = Math.max(minindex, maxindex);
         

@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 59ms ( 8.11% ) 38.3mb ( 99.72% )
+
 class Solution {
     public String kthDistinct(String[] arr, int k) {
         

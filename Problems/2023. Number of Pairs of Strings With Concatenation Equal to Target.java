@@ -25,6 +25,10 @@ class Solution {
     }
 }
 
+// add HashMap solution
+
+// best solution(with all optimal approach too) from submission section
+
 class Solution {
     public int numOfPairs(String[] nums, String target) {
         

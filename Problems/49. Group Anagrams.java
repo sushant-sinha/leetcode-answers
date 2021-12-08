@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 10ms ( 52.34% ) 53.5mb ( 12.90% )
+
 class Solution {
     public List<List<String>> groupAnagrams(String[] strs) {
         

@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms ( 99.30% ) 39.5mb ( 92.93% )
+
 class Solution {
     public int findLengthOfLCIS(int[] nums) {
         

@@ -1,3 +1,16 @@
+// referenced
+
+// 1ms ( 99.31% ) 39.4mb ( 34.48% )
+
+Runtime: 0 ms, faster than 100.00% of Java online submissions for Find And Replace in String.
+Memory Usage: 38.7 MB, less than 94.18% of Java online submissions for Find And Replace in String.
+Next challenges:
+Verifying an Alien Dictionary
+Diet Plan Performance
+Minimum Number of Taps to Open to Water a Garden
+Show off your acceptance:
+
+
 class Solution {
     public String findReplaceString(String s, int[] indices, String[] sources, String[] targets) {
         String[] pieces = new String[s.length()];

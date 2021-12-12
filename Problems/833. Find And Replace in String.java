@@ -2,6 +2,7 @@
 
 // 1ms ( 99.31% ) 39.4mb ( 34.48% )
 
+
 class Solution {
     public String findReplaceString(String s, int[] indices, String[] sources, String[] targets) {
         String[] pieces = new String[s.length()];
@@ -21,6 +22,39 @@ class Solution {
         for (int i = 0; i < pieces.length; i++) {
             if (pieces[i] != null) sb.append(pieces[i]);
         }
+        return sb.toString();
+    }
+}
+
+// best solution
+// 0ms ( 100% ) 38.7mb ( 94.18% )
+
+class Solution {
+    public String findReplaceString(String s, int[] indices, String[] sources, String[] targets) {
+        int len = s.length();
+        int n = sources.length;
+        int[] arr = new int[s.length()];
+        Arrays.fill(arr, -1);
+        
+        for(int i=0;i<n;i++){
+            //                  "a"         0         arr[0] = 0
+            //                  "cd"        2         arr[2] = 1
+            if (s.startsWith(sources[i], indices[i])) arr[indices[i]]=i;
+        }
+        // s="abcd", arr = [0,-1,1,-1]
+        StringBuilder sb = new StringBuilder();
+        int p = 0;
+        while(p<len){
+            int idx = arr[p];
+            if (idx>=0){
+                sb.append(targets[idx]);
+                p+=sources[idx].length();
+            } else {
+                sb.append(s.charAt(p));
+                p++;
+            }
+        }
+        
         return sb.toString();
     }
 }

@@ -1,3 +1,9 @@
+// SUSHANT SINHA
+
+
+// no brain needed for this method
+// 6ms ( 20.00% ) 39.1mb ( 20.00% )
+
 class Solution {
     public int countPoints(String rings) {
         
@@ -28,5 +34,37 @@ class Solution {
         
         return ans;
         
+    }
+}
+
+// best solution from the submission tab
+// 0ms
+
+class Solution {
+    public int countPoints(String rings) {
+        boolean [][] arr = new boolean [10][3];
+        int val;
+        char color;
+        
+        for (int i = 1; i < rings.length(); i += 2){
+            color = rings.charAt(i - 1);
+            val = rings.charAt(i) - '0';
+            
+            if (color == 'R')
+                arr[val][0] = true;
+            else if (color == 'G')
+                arr[val][1] = true;
+            else
+                arr[val][2] = true;
+        }
+        
+        int total = 0;
+        
+        for (int i = 0; i < 10; ++i){
+            if (arr[i][0] && arr[i][1] && arr[i][2])
+                ++total;
+        }
+        
+        return total;
     }
 }

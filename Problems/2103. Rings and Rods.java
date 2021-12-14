@@ -68,3 +68,20 @@ class Solution {
         return total;
     }
 }
+
+// another solution
+// 1ms
+
+class Solution {
+    public int countPoints(String rings) {
+        int n = rings.length();
+        boolean[][] hasRing = new boolean[10][3];
+        for (int i=0; i<n; i+=2)
+            hasRing[rings.charAt(i + 1) - '0'][rings.charAt(i) == 'R' ? 0 : rings.charAt(i) == 'G' ? 1 : 2] = true;
+        int ret = 0;
+        for (int i=0; i<10; i++)
+            if (hasRing[i][0] && hasRing[i][1] && hasRing[i][2])
+                ret++;
+        return ret;
+    }
+}

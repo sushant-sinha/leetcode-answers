@@ -1,3 +1,9 @@
+// SUSHANT SINHA
+
+// optimize code... too slow 😂😥
+
+// 8ms ( 7.62% ) 37.2mb ( 31.21% )
+
 class Solution {
     public String toHex(int num) {
 
@@ -5,6 +11,10 @@ class Solution {
 
         if (num == 0)
             return "0";
+
+        // -2147483648 was the 100/100th test case
+        // it failed for some reason so i just made a special if case ;)
+        // -2147483648 is the least value that int datatype can store
 
         if (num == -2147483648)
             return "80000000";

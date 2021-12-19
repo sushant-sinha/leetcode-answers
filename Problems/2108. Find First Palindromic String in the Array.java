@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 2ms ( 42.86% ) 39.2mb
+
 class Solution {
     public String firstPalindrome(String[] words) {
         

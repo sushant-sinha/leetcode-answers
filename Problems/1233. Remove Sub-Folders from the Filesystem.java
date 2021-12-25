@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 558ms ( 5.15% ) 49mb ( 63.64% )
+
 class Solution {
     public List<String> removeSubfolders(String[] folder) {
         

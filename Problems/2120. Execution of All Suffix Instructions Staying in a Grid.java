@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 66ms ( 32.63% ) 61.8mb ( 8.38% )
+
 class Solution {
     public int[] executeInstructions(int n, int[] startPos, String s) {
         

@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms ( 78.17% ) 38.7mb ( 64.81% )
+
 class Solution {
     public boolean checkString(String s) {
         

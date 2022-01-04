@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 11ms ( 98.47% ) 40.2mb ( 87.56% )
+
 class Solution {
     public int numberOfBeams(String[] bank) {
         

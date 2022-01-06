@@ -29,3 +29,28 @@ class Solution {
         
     }
 }
+
+// best solution from the submissions section
+// 0ms ( 100% ) 39mb ( 36.18% )
+
+class Solution {
+    public boolean carPooling(int[][] trips, int capacity) {
+        int len = 0;
+        int[] arr = new int[1001];
+        for(int i = 0;i < trips.length;i++){
+            int st = trips[i][1];
+             int end = trips[i][2];
+            int pass = trips[i][0];
+            arr[st] += pass;
+            arr[end] -= pass;
+            len = Math.max(len, end);
+        }
+        int prefix = 0;
+        for(int i = 0;i < len;i++){
+            prefix += arr[i];
+            
+            if(prefix > capacity) return false;
+        }
+        return true;
+    }
+}

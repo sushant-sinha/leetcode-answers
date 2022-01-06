@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 2ms ( 74.98% ) 41.2mb ( 23.55%)
+
 class Solution {
     public boolean carPooling(int[][] trips, int capacity) {        
         

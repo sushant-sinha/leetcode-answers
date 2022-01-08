@@ -5,6 +5,7 @@
 class Solution {
     public boolean carPooling(int[][] trips, int capacity) {        
         
+        // storing the passenger count for every stop ( pickup and drop location ) throughout the length of the trip
         int passcount[]=new int[1001];
         
         for(int i[]:trips){
@@ -18,8 +19,12 @@ class Solution {
         
         for(int i:passcount){
             
+            // adding passcount...
+            // which can be +ve if the someone is being picked up
+            // and -ve if someone is being dropped at his destination
             curpass+=i;
             
+            // if the current passenger count exceeds the capacity... this means we have to return false
             if(curpass>capacity)
                 return false;
             

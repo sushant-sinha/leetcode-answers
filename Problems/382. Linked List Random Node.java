@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 18ms ( 26.33% ) 48.8mb ( 5.22% )
+
 import java.util.Random;
 
 /**

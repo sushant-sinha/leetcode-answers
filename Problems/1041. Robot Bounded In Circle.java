@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 0ms ( 100% ) 38.9mb ( 7.55% )
+
 // https://leetcode.com/problems/robot-bounded-in-circle/discuss/1676745/Python3-LINEAR-()-Explained
 
 class Solution {

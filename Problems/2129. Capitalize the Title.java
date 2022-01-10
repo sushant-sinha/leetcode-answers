@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 7ms ( 33.33% ) 41.1mb ( 16.67% )
+
 class Solution {
     public String capitalizeTitle(String title) {
 
@@ -44,9 +48,6 @@ class Solution {
             ans.append(temp+" ");
 
         }
-        
-        
-
 
         return String.valueOf(ans).substring(0,title.length());
 

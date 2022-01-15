@@ -1,3 +1,6 @@
+// 7ms ( 83.05% ) 38.7mb ( 97.99% )
+
+
 class Solution {
   public boolean hasGroupsSizeX(int[] deck) {
       HashMap<Integer, Integer> map = new HashMap<>();

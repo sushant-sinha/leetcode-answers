@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 4ms ( 80.00% ) 40.5mb ( 20.00% )
+
 class Solution {
     public String[] divideString(String s, int k, char fill) {
         

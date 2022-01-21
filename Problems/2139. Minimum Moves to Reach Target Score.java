@@ -1,6 +1,6 @@
 // SUSHANT SINHA
 
-// 1ms ( 46.26% ) 38.2mb ( 10.58% )
+// 0ms ( 100% ) 37.8mb ( 35.20% )
 
 class Solution {
     public int minMoves(int target, int maxDoubles) {

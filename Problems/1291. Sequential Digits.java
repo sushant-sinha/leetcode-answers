@@ -1,15 +1,18 @@
+// SUSHANT SINHA
+
+// 0ms ( 100% ) 36.5mb ( 75.00% )
+
 class Solution {
     public List<Integer> sequentialDigits(int low, int high) {
         
         List<Integer> ans=new ArrayList<>();
-        int temp=12, len, adder=1;
+        int temp=12, len=2, adder=1;
         ans.add(temp);
         
         while(temp<=high){
             
             if(temp%10==9){
                 
-                len=String.valueOf(temp).length();
                 len++;
                 
                 if(len==10)

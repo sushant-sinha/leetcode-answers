@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 3ms ( 66.69% ) 39.7mb ( 34.86% )
+
 class Solution {
     public int minimumCost(int[] cost) {
         

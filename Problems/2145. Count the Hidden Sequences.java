@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 2ms ( 100% ) 54.7mb ( 82.00% )
+
 class Solution {
     public int numberOfArrays(int[] differences, int lower, int upper) {                
         
@@ -10,6 +14,7 @@ class Solution {
             
             cur+=differences[i];
             
+            // passed 83/85 test cases without this if condition.... failed the 84th test case because the statement in line #24 would reset the large value to be in range
             if(max-min>upper-lower)
                 return 0;
             

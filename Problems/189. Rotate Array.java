@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 2ms ( 42.45% ) 64.6mb ( 5.22% )
+
 public class Solution {
     public void rotate(int[] nums, int k) {
         if (nums == null || nums.length == 0) {

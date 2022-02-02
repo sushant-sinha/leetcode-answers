@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// last solution has the best runtime
+
 // 2ms ( 87.13% ) 44.1mb ( 76.82% )
 
 class Solution {
@@ -42,5 +44,19 @@ class Solution {
         
         return original;
         
+    }
+}
+
+// recursion
+// 1ms ( 96.99% ) 44.5mb ( 62.39% )
+
+class Solution {
+    public int findFinalValue(int[] nums, int original) {
+        for(int i=0; i<nums.length; i++) {
+            if(nums[i] == original) {
+                return findFinalValue(nums, original*2);
+            }
+        }
+        return original;
     }
 }

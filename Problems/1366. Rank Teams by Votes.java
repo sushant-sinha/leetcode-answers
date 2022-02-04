@@ -1,3 +1,9 @@
+// to do
+// expected solution
+
+// was not able to build the custom sort of the list
+// 6ms ( 86.42% ) 41.5mb ( 35.85% )
+
 class Solution {
     public String rankTeams(String[] votes) {
         List<Character> list = new ArrayList<>();

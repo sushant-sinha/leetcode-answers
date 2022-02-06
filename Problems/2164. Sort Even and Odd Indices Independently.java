@@ -1,3 +1,8 @@
+// SUSHANT SINHA
+
+// basic implementation ( used arraylist )
+// 5ms ( 66.67% ) 42.3mb ( 33.33% )
+
 class Solution {
     public int[] sortEvenOdd(int[] nums) {
         

@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 14ms ( 11.49% ) 42.5mb ( 6.06% )
+
 class Solution {
     public long smallestNumber(long num) {
         

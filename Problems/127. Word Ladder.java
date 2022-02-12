@@ -48,7 +48,7 @@ class Solution {
 }
 
 
-// 20 ms solution (better solution)
+// 9ms ( 99.98% ) 42.9mb ( 72.51% ) solution (better solution)
 
 class Solution {
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {

@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 3ms ( 100% ) 41.3mb ( 16.67% )
+
 class Solution {
     public int countPairs(int[] nums, int k) {
         

@@ -46,3 +46,34 @@ class Solution {
         
     }
 }
+
+// best solution from the submission tab
+// 0ms ( 100% )
+
+class Solution {
+    public int countEven(int num) {
+        if (num < 10)
+            return num / 2;
+        
+        // important
+        int tens = num / 10 - 1;
+        int result = 4 + 5*tens;
+        int left = num % 10;
+        
+        int sum = 0;
+        
+        tens = num / 10;
+        
+        while (tens != 0){
+            sum += tens % 10;
+            tens /= 10;
+        }
+        
+        if (sum % 2 != 0)
+            result += (left + 1) / 2;
+        else
+            result += 1 + left / 2;
+        
+        return result;
+    }
+}

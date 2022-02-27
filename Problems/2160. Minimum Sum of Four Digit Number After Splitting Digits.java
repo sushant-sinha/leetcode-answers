@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms ( 82.92% ) 41mb ( 50.99% )
+
 class Solution {
     public int minimumSum(int num) {
                 
@@ -10,6 +14,9 @@ class Solution {
         
     }
 }
+
+// best solution
+// 0ms ( 100% )
 
 class Solution {
     public int minimumSum(int num) {

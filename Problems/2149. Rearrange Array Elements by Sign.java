@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 8ms ( 72.13% ) 228.8mb ( 5.14% )
+
 class Solution {
     public int[] rearrangeArray(int[] nums) {
         

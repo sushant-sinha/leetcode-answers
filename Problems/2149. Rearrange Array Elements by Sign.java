@@ -44,3 +44,26 @@ class Solution {
         
     }
 }
+
+// best solution from the solution section
+// 6ms ( 90.43% ) 226mb ( 9.66% )
+
+class Solution {
+    public int[] rearrangeArray(int[] nums) {
+        int arr[]=new int[nums.length];
+        int k=1;
+        int j=0;
+        for(int i=0;i<arr.length;i++){
+            if(nums[i]<0){
+                arr[k]=nums[i];
+                k=k+2;
+                    
+            }
+            else{
+                arr[j]=nums[i];
+                j=j+2;
+            }
+        }
+        return arr;
+    }
+}

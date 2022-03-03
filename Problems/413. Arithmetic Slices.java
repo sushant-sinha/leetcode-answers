@@ -1,3 +1,10 @@
+// SUSHANT SINHA
+
+// 0ms ( 100.00% ) 39.9mb ( 52.27% )
+
+// brute force
+// intuition : https://leetcode.com/problems/arithmetic-slices/discuss/1814356/Java-or-3-liner-or-Explained
+
 class Solution {
     public int numberOfArithmeticSlices(int[] nums) {
         

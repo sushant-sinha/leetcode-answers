@@ -47,3 +47,78 @@ class Solution {
         
     }
 }
+
+// if not using tempSum, and just updating the node value
+// 12ms ( 57.35% ) 309mb ( 20.23% )
+
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+class Solution {
+    public ListNode mergeNodes(ListNode head) {
+        
+        ListNode ans=new ListNode();
+        ListNode temp=ans;
+        
+        while(head.next!=null){
+            
+            head=head.next;
+            
+            temp.next=new ListNode(0);
+            
+            while(head!=null && head.val!=0){
+                
+                temp.next.val+=head.val;
+                head=head.next;
+            }
+            
+            temp=temp.next;
+        }
+        
+        return ans.next;
+        
+    }
+}
+
+// best solution from the submission section
+// 6ms
+
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+class Solution {
+    public ListNode mergeNodes(ListNode head) {
+        ListNode dummy = head;
+        ListNode dummyHead = head, previousNode = null;
+        head = head.next;
+        int total = 0;
+        
+        while(head != null) {
+            if(head.val == 0) {
+                dummy.val = total;
+                previousNode = dummy;
+                dummy = dummy.next;
+                total = 0;
+            } else {
+                total += head.val;
+            }
+            head = head.next;
+        }
+        previousNode.next = null;
+        return dummyHead;
+    }
+}

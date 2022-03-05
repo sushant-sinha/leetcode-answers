@@ -1,3 +1,10 @@
+// SUSHANT SINHA
+
+// 7ms ( 97.76% ) 86.1mb ( 88.85% )
+
+// refer this https://leetcode.com/problems/delete-node-in-a-linked-list/discuss/654837/listnode-class-implementation-for-java
+// for using ListNode class
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {

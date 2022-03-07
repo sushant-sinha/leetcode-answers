@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 5ms ( 16.67% ) 42.9mb ( 83.33% )
+
 class Solution {
     public int prefixCount(String[] words, String pref) {
         

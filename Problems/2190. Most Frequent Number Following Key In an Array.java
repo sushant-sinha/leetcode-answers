@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 2ms ( 100% ) 42.1mb ( 100% )
+
 class Solution {
     public int mostFrequent(int[] nums, int key) {
         

@@ -68,3 +68,23 @@ class Solution {
         
     }
 }
+
+
+// best solution from the submission section
+// 0ms
+
+class Solution {
+    public int prefixCount(String[] words, String pref) {
+        
+        int result = 0;
+        String word;
+        
+        for (int i = 0; i < words.length; ++i){
+            word = words[i];
+            
+            if (word.startsWith(pref)) ++result;
+        }
+        
+        return result;
+    }
+}

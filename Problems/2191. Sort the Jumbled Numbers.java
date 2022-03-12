@@ -83,3 +83,47 @@ class Solution {
     }
     
 }
+
+
+// solution from https://leetcode.com/problems/sort-the-jumbled-numbers/discuss/1831387/Java-Comparator
+// 90ms ( 99.28% ) 51.2mb ( 89.17% )
+
+class Solution {
+    public int[] sortJumbled(int[] mapping, int[] nums) {
+        List<Game> list = new ArrayList<>();
+        for(int num: nums){
+            int key = num;
+            int value = 0;
+            int multiplier = 1;
+            if(num==0){
+                value = mapping[0];
+            }
+            while(num>0){
+                value += multiplier * mapping[num%10];
+                num = num/10;
+                multiplier *= 10;
+            }
+            Game g = new Game(key, value);
+            list.add(g);
+        }
+        Collections.sort(list, new Comparator<Game>(){
+           public int compare(Game g1, Game g2){
+               return g1.value - g2.value;
+           } 
+        });
+        
+        for(int i=0; i<nums.length; i++){
+            nums[i] = list.get(i).key;
+        }
+        return nums;
+    }
+    
+    class Game {
+        int key;
+        int value;
+        public Game(int key, int value){
+            this.key = key;
+            this.value = value;
+        }
+    }
+}

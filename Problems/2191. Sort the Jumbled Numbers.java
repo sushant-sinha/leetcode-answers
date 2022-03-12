@@ -1,3 +1,8 @@
+// SUSHANT SINHA
+
+// code worked for 58/66 testcases....
+// it couldn't maintain the relative order in the array.... sorting method was using comparator and was from GFG
+
 class Solution {
     
     int mp[];
@@ -30,6 +35,7 @@ class Solution {
         
     }
     
+    // getting the value for the number
     int calculate(int n){
         
         //System.out.print(n);
@@ -53,6 +59,7 @@ class Solution {
         
     }
     
+    // sorting function from GFG
     public static HashMap<Integer, Integer> sortByValue(HashMap<Integer, Integer> hm){
         // Create a list from elements of HashMap
         List<Map.Entry<Integer, Integer> > list =

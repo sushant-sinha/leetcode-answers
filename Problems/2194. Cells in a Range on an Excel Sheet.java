@@ -50,3 +50,31 @@ class Solution {
         
     }
 }
+
+// best solution 
+// 2ms ( 98.10% ) 46.9mb ( 85.39% )
+
+class Solution {
+    public List<String> cellsInRange(String s) {
+        
+        List<String> output = new ArrayList<>();
+        
+        char startCol = s.charAt(0);
+        char startRow = s.charAt(1);
+        
+        int cols = s.charAt(3) - startCol;
+        int rows = s.charAt(4) - startRow;
+        
+        char[] cell = new char[2];
+        
+        for(int col = 0; col <= cols; col++){
+            for(int row = 0; row <= rows; row++){
+                cell[0] = (char) (startCol + col);
+                cell[1] = (char) (startRow + row);
+                output.add(new String(cell));
+            }
+        }
+        
+        return output;
+    }
+}

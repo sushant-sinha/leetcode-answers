@@ -8,6 +8,16 @@ class Solution {
         // splitting s to get the starting and ending cell
         String pos[]=s.split(":");
         
+        /*
+
+        if not using split, then: ( 7ms (65.46%) 42.8mb (97.49%) || 3ms (93.72) 47.5mb (62.92))
+
+        int n1=Integer.parseInt(s.substring(1,2)), n2=Integer.parseInt(s.substring(4,5));
+        
+        char start=s.charAt(0), end=s.charAt(3);
+
+        */
+
         ArrayList<String> ans= new ArrayList<>();
         
         // initializing numeric values for the rows        

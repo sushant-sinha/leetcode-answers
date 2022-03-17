@@ -1,3 +1,6 @@
+// do again
+// 3ms ( 93.95% ) 46.4mb ( 65.88% )
+
 class Solution {
     public List<Integer> findKDistantIndices(int[] nums, int key, int k) {
         
@@ -17,7 +20,7 @@ class Solution {
                 
                 i=Math.max(j-k,i);
 
-                int end = Math.min(j+k,nums.length-1);
+                int end=Math.min(j+k,nums.length-1);
                     
                 for(; i<=end; i++)
                     ans.add(i);

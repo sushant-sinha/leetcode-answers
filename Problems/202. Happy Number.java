@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 3ms ( 38.21% ) 41.2mb ( 45.90% )
+
 class Solution {
     public boolean isHappy(int n) {
         

@@ -1,8 +1,6 @@
 class Solution {
     public boolean divideArray(int[] nums) {
         
-        int n=nums.length;
-        
         int counter[][]=new int[501][1];
         
         for(int i:nums){

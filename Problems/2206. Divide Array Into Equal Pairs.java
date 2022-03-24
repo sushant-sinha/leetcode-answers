@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 3ms ( 79.92% ) 42.3mb ( 91.44% )
+
 class Solution {
     public boolean divideArray(int[] nums) {
         

@@ -1,6 +1,6 @@
 // SUSHANT SINHA
 
-// morre space consuming
+// more space consuming ( 43.3mb ( 80.23% ) )
 
 class Solution {
     public int search(int[] nums, int target) {

@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 31ms ( 30.65% ) 60.4mb ( 82.18% )
+
 class Solution {
     public int findDuplicate(int[] nums) {
         

@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 8ms ( 80.00% ) 42.7mb ( 92.22% )
+
 class Solution {
     public boolean validPalindrome(String s) {
         

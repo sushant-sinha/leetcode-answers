@@ -1,3 +1,8 @@
+// SUSHANT SINHA
+
+// 1ms ( 100% ) 40.1mb ( 100% )
+// could have reduced the use of superfluous variables 
+
 class Solution {
     public int convertTime(String current, String correct) {
         

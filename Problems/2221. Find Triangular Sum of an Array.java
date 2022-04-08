@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 489ms ( 15.31% ) 123.1mb ( 7.75% )
+
 class Solution {
     public int triangularSum(int[] nums) {
         

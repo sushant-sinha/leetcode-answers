@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 11ms ( 90.84% ) 42.1mb ( 97.37% )
+
 class Solution {
     public int numUniqueEmails(String[] emails) {
         

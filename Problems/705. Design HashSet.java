@@ -1,3 +1,8 @@
+// SUSHANT SINHA
+// 1107ms ( 5.02% ) 57.1mb ( 38.19% )
+
+// using arraylist
+
 class MyHashSet {
     
     List<Integer> arr;

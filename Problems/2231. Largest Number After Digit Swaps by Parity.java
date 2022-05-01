@@ -1,7 +1,12 @@
+// SUSHANT SINHA
+
+// 1ms ( 97.95% ) 39.2mb ( 90.83% )
+
+
 class Solution {
     public int largestInteger(int num) {
         
-        // will reuse this variable to be the anwer
+        // will reuse this variable to be the answer
         int counter=num;
         
         int evenlen=0, oddlen=0;

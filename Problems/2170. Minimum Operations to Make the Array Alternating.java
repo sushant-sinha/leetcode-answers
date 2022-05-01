@@ -1,4 +1,4 @@
-// shiiit question... wasted a lot of time (had to refer)
+// sh*t question... wasted a lot of time (had to refer)
 
 class Solution {
     public int minimumOperations(int[] nums) {

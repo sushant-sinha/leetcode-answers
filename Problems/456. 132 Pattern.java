@@ -1,9 +1,9 @@
 // SUSHANT SINHA
 
-// hint solution
-// 132ms ( 12.59% ) 39mb ( 75.56% )
+// this code gives TLE now
+// stack implementation is needed see below -> https://leetcode.com/problems/132-pattern/discuss/2015130/Going-from-O(N3)-greater-O(N2)-greater-O(N)-%2B-MEME
 
-// ideal solution has stack implementation
+// TLE now ..... Before -> 132ms ( 12.59% ) 39mb ( 75.56% )
 
 class Solution {
     public boolean find132pattern(int[] nums) {
@@ -36,3 +36,20 @@ class Solution {
     }
 }
 
+// 38ms ( 48.59% ) 61.3mb ( 84.51% )
+
+class Solution {
+    public boolean find132pattern(int[] nums) {
+        
+        Stack<Integer> st = new Stack<>();
+        
+        int thirdElement = Integer.MIN_VALUE;
+        
+        for(int i = nums.length - 1; i >= 0; i--){
+            if(nums[i] < thirdElement) return true;
+            while(!st.isEmpty() && st.peek() < nums[i]) thirdElement = st.pop();
+            st.push(nums[i]);
+        }
+        return false;
+    }
+}

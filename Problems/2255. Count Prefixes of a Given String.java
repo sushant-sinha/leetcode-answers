@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 2ms ( 47.01% ) 44.6mb ( 21.02% )
+
 class Solution {
     public int countPrefixes(String[] words, String s) {
         

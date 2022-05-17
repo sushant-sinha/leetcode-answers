@@ -1,4 +1,6 @@
-// 6ms ( 64.82% ) 45.4mb ( 71.32% )
+// SUSHANT SINHA
+
+// 3ms ( 96.61% ) 42.3mb ( 98.95% )
 
 class Solution {
     public List<String> removeAnagrams(String[] words) {

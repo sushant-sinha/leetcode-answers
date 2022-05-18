@@ -29,7 +29,7 @@ class Solution {
 }
 
 // using the precalculated xor values for the entire array
-// 5ms ( 29.24% ) 66.8mb ( 58.47% )
+// 1ms ( 100% ) 54.3mb ( 88.37% )
 
 class Solution {
     public int[] xorQueries(int[] arr, int[][] queries) {

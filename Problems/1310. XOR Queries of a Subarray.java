@@ -1,3 +1,8 @@
+// SUSHANT SINHA
+
+// dumb brute force 😂😴
+// 1998ms ( 5.32% ) 66.6mb ( 62.13% )
+
 class Solution {
     public int[] xorQueries(int[] arr, int[][] queries) {
         
@@ -23,6 +28,8 @@ class Solution {
     }
 }
 
+// using the precalculated xor values for the entire array
+// 5ms ( 29.24% ) 66.8mb ( 58.47% )
 
 class Solution {
     public int[] xorQueries(int[] arr, int[][] queries) {
@@ -43,18 +50,13 @@ class Solution {
             
             ans[i]=preCal[end];
             
-            if(start==0){
-                
+            if(start==0)
                 continue;
-            }
             
-            start--;
-            
-            for(;start>=0;start--){
-                
-                ans[i]^=arr[start];
-                
-            }
+            // removed the for loop from the previous solution (refer previous commit)
+
+            else
+                ans[i]^=preCal[start-1];
             
         }
         

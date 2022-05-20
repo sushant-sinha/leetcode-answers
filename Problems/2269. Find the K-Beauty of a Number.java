@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms ( 100% ) 39.4mb ( 66.67% )
+
 class Solution {
     public int divisorSubstrings(int num, int k) {
         

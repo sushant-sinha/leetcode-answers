@@ -1,13 +1,14 @@
+// SUSHANT SINHA
+
+// 18ms ( 89.91% ) 90.2mb ( 60.65% )
+
 class Solution {
     public int maximumBags(int[] capacity, int[] rocks, int additionalRocks) {
         
         int diff[]=new int[rocks.length];
         
-        for(int i=0;i<rocks.length;i++){
-            
+        for(int i=0;i<rocks.length;i++)
             diff[i]=capacity[i]-rocks[i];
-            
-        }
         
         Arrays.sort(diff);
         

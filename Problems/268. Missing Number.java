@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 0-1ms ( 100% ) 50.5mb ( 68.83% )
+
 class Solution {
     public int missingNumber(int[] nums) {
         

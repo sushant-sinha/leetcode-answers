@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms ( not enough accepted solutions ) 41.9mb ( no percentage )
+
 class Solution {
     public int rearrangeCharacters(String s, String target) {
         

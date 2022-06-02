@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 2ms ( 28.57% ) 42.1mb ( 85.71% )
+
 class Solution {
     public boolean digitCount(String num) {
         

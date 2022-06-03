@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 21ms ( 22.75% ) 161.4mb ( 64.59% )
+
 class Solution {
     public int[] pivotArray(int[] nums, int pivot) {
         

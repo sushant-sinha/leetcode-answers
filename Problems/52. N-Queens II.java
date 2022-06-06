@@ -1,3 +1,14 @@
+// SUSHANT SINHA
+
+// 1ms ( 97.89% ) 38.9mb ( 94.55% )
+
+/*
+
+the solution is same as that of N-Queens... all we need to do here is to return the size of the solution array
+this is because the solution set is always unique, so we can simply return the size of the List
+
+*/
+
 class Solution {
     private List<List<String>> res;
     private int N;

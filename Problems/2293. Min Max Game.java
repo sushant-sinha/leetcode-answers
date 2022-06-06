@@ -1,3 +1,9 @@
+// SUSHANT SINHA
+
+// 1ms ( 100% ) 43.5mb ( 25.00% )
+
+// reused the nums array
+
 class Solution {
     public int minMaxGame(int[] nums) {
         

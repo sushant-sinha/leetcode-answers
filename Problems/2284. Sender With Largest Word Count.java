@@ -1,3 +1,20 @@
+// SUSHANT SINHA
+
+// 114ms ( 56.95% ) 108.8mb ( 30.70% )
+
+/*
+
+very important for the traversal of the HashMap...
+the type returned by the m.getValue() and m.getKey is Object..
+
+these are needed to be converted to int and String before being used/assigned to max and ans respectively
+
+for int:        (int)m.getValue();
+for String:     String.valueOf(m.getKey());
+or...for String (String)m.getKey();
+
+*/
+
 class Solution {
     public String largestWordCount(String[] messages, String[] senders) {
         
@@ -27,7 +44,7 @@ class Solution {
                 max=(int)m.getValue();
                 ans=(String)m.getKey();
                 // another way of converting object to String
-                //ans=String.valueOf(m.getKey());
+                // ans=String.valueOf(m.getKey());
             }
             
             else if((int)m.getValue()==max){

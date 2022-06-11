@@ -1,8 +1,21 @@
+// SUSHANT SINHA
+
+// 94ms ( 62.09% ) 163.7mb ( 82.67% )
+
 class Solution {
     public int[] arrayChange(int[] nums, int[][] operations) {
         
         HashMap<Integer, Integer> map=new HashMap<>();
+        
+        /*
 
+        the hashmap maps value->index
+        this is because at the time of replacing value (when used index->value mapping), we will have to traverse the entire map..
+        but using value->index mapping means, we would just get the value (using map.get(key) key here is the value) and then delete(remove) it from the map... then make a new mapping for the replaced number(key) with the same index(value)
+        haven't checked it for the performance ( whether faster that for, entrySet )... but is less in terms of sloc
+
+        */
+        
         for(int i=0;i<nums.length;i++)
             map.put(nums[i],i);
         

@@ -1,5 +1,6 @@
 // to do
 
+// https://leetcode.com/problems/triangle/discuss/2144980/From-Memoization-to-DP-or-JAVA-Explanation
 // so went to the discussion tab... memoization, dp and inplace to be the most common was the most used approach
 
 class Solution {

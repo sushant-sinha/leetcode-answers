@@ -1,3 +1,8 @@
+// SUSHANT SINHA
+
+// 1ms ( 88.64% ) 42.4mb ( 13.64% )
+// the below solution is made way more complex than it should be
+
 class Solution {
     public boolean strongPasswordCheckerII(String password) {
         
@@ -57,5 +62,27 @@ class Solution {
         
         return 4;
         
+    }
+}
+
+// 0ms
+
+class Solution {
+    public boolean strongPasswordCheckerII(String password) {
+        boolean len=password.length()>7;
+        boolean low=false,hi=false,dig=false,sp=false,adj=false;
+        
+        int i,n=password.length();
+        String special="!@#$%^&*()-+";
+        for(i=0;i<n;i++)
+        {
+            char c=password.charAt(i);
+            if(c>='a' && c<='z') low=true;
+            else if(c>='A' & c<='Z') hi=true;
+            else if(c>='0' & c<='9') dig=true;
+            else sp=true;
+            if(i>0 && password.charAt(i-1)==c) adj=true;
+        }
+        return len & low & hi & dig & sp & !adj;
     }
 }

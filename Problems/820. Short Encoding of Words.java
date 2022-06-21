@@ -1,3 +1,11 @@
+// SUSHANT SINHA
+
+// initial approach
+// this will be followed by the trie approach (optimal ig)... it has better speed at the cost of space
+
+// 540ms ( 9.82ms ) 42.2mb ( 98.77% )
+// slow because String is being used for the condition and sorting
+
 class Solution {
     public int minimumLengthEncoding(String[] words) {
         

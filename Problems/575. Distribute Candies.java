@@ -22,3 +22,24 @@ class Solution {
         
     }
 }
+
+// using HashSet
+// 63ms ( 40.67% ) 111.1mb ( 22.25% )
+
+class Solution {
+    public int distributeCandies(int[] candyType) {
+        
+        int allowedCandies=candyType.length/2;
+        
+        HashSet<Integer> unique=new HashSet<>();
+        
+        for(int i:candyType){
+            
+            unique.add(i);
+            
+        }
+        
+        return Math.min(unique.size(), allowedCandies);
+        
+    }
+}

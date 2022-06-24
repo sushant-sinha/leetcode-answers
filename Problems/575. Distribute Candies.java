@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 55ms ( 58.36% ) 74mb (77.47% )
+
 class Solution {
     public int distributeCandies(int[] candyType) {
         

@@ -1,3 +1,10 @@
+// SUSHANT SINHA
+
+// 11ms ( 90.02% ) 54.3mb ( 57.90% )
+
+// using array was a waste of space and caused more interations in the for loop
+// should have used an HashSet
+
 class Solution {
     public int minDeletions(String s) {
         

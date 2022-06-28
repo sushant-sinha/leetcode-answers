@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms ( 100% ) 42.4mb
+
 class Solution {
     public int countAsterisks(String s) {
         

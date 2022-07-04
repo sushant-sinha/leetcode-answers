@@ -16,6 +16,7 @@ class Solution {
         Arrays.sort(cuts);
         
         // using the long data type is very important because the input cannot be accomodated in the int data type sometimes
+        // from variable is for storing the previous value... to get the difference between the present value and the previous value
         long from=0,max=0;
         
         for(int c:cuts){

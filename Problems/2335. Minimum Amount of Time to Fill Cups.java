@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 2ms ( 55.56% ) 41.4mb ( 66.67% )
+
 class Solution {
     public int fillCups(int[] amount) {
         

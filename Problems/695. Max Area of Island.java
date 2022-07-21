@@ -1,3 +1,10 @@
+// SUSHANT SINHA
+
+// 3ms ( 84.14% ) 47mb ( 65.91% )
+
+// regular expectde slution
+// see the solution tab also ( iterative solution )
+
 class Solution {
     public int maxAreaOfIsland(int[][] grid) {
         

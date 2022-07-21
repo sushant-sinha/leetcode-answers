@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 3ms 42.7mb
+
 class Solution {
     public int[] numberOfPairs(int[] nums) {
         

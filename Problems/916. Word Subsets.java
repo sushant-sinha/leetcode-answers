@@ -1,54 +1,35 @@
+// SUSHANT SINHA
+
+// couldn't solve this... used HashMap to map the Characters and the number of times it occured
+// this is from the solution section
+
+// 16ms ( 93.80% ) 50.2mb ( 95.87% )
+
 class Solution {
-    public List<String> wordSubsets(String[] words1, String[] words2) {
-        
-        // this solution is giving TLE.... need to use a hashmap for the mapping of the elements in the words2 and the elements in the words1
-        
-        List<String> ans=new ArrayList<>();
-        
-        List<int[]> indCounter=new ArrayList<>();
-        
-        int n=words2.length;
-        
-        for(String s:words2){
-            
-            int ar[]=new int[26];
-            
-            for(char c:s.toCharArray())
-                ar[c-'a']++;
-            
-            indCounter.add(ar);
-            
+    public List<String> wordSubsets(String[] A, String[] B) {
+        int[] bmax = count("");
+        for (String b: B) {
+            int[] bCount = count(b);
+            for (int i = 0; i < 26; ++i)
+                bmax[i] = Math.max(bmax[i], bCount[i]);
         }
-        
-        for(String s: words1){
-            
-            int temp[]=new int[26];
-            boolean flag=true;
-            
-            for(char c:s.toCharArray()){
-                temp[c-'a']++;
-            }
-            
-            for(int x=0;x<n;x++)
-            for(int i=0;i<26;i++){
-                
-                int curr[]=indCounter.get(x);
-                
-                if(!(temp[i]>=curr[i])){
-                    flag=false;
-                    break;
-                }
-                
-            }
-            
-            if(flag)
-                ans.add(s);
-            
-            
-            
+
+        List<String> ans = new ArrayList();
+        search: for (String a: A) {
+            int[] aCount = count(a);
+            for (int i = 0; i < 26; ++i)
+                if (aCount[i] < bmax[i])
+                    continue search;
+            ans.add(a);
         }
-        
+
         return ans;
-        
+    }
+
+    public int[] count(String S) {
+        int[] ans = new int[26];
+        for (char c: S.toCharArray())
+            ans[c - 'a']++;
+        return ans;
     }
 }

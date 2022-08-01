@@ -15,6 +15,10 @@ class Solution {
         }
 
         List<String> ans = new ArrayList();
+
+        // here the concept of label for loop is  used
+        // https://www.javatpoint.com/labeled-loop-in-java
+
         search: for (String a: A) {
             int[] aCount = count(a);
             for (int i = 0; i < 26; ++i)

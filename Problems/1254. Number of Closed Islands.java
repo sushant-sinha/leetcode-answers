@@ -1,3 +1,10 @@
+// SUSHANT SINHA
+
+// below given link is for the approach in which the islands which are sharing the edge with the boundary of the 
+// https://leetcode.com/problems/number-of-closed-islands/discuss/761788/clean-C%2B%2B-solution-using-DFS
+
+// 3ms ( 60.74% ) 45.9mb ( 81.34% )
+
 class Solution {
     
     public int closedIsland(int[][] grid) {

@@ -1,8 +1,14 @@
+// SUSHANT SINHA
+
+// 86ms ( 37.76% ) 72.4mb ( 22.68% )
+
 class Solution {
     public int equalPairs(int[][] grid) {
         
         int n=grid.length, ans=0;
         
+        // using HasHMap instead of an ArrayList... because there is a chance of multiple instance/occurences of a given col/row...
+        // therefore the frequency of the cols=umns should be tracked.
         HashMap<String, Integer> col=new HashMap<>();
         
         for(int i=0;i<n;i++){

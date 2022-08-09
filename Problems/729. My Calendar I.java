@@ -1,3 +1,12 @@
+// SUSHANT SINHA
+
+// this is the brute force approach
+
+// see the solution section for a more optimized solution which uses a balanced tree
+// https://leetcode.com/problems/my-calendar-i/solution/
+
+// 109ms ( 22.96% ) 42.9mb ( 94.90% )
+
 class MyCalendar {
 
     // using an arraylist to keep the tack of the slots that have been booked already

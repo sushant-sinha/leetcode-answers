@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms ( 75% ) 41.6mb ( 66.67% )
+
 class Solution {
     public int arithmeticTriplets(int[] nums, int diff) {
         

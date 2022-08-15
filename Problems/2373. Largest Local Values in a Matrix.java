@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 3ms ( 75% ) 51.9mb ( 50% )
+
 class Solution {
     public int[][] largestLocal(int[][] grid) {
         
@@ -43,4 +47,32 @@ class Solution {
         
     }
     
+}
+
+
+// best solution
+// 2ms
+
+class Solution {
+    public int[][] largestLocal(int[][] grid) {
+        int n = grid.length;
+        
+        int [][] result = new int [n - 2][n - 2];
+        int max;
+        
+        for (int i = 0; i < n - 2; ++i){
+            for (int j = 0; j < n - 2; ++j){
+                max = 1;
+                for (int a = 0; a < 3; ++a){
+                    for (int b = 0; b < 3; ++b){
+                        max = Math.max(max, grid[i + a][j + b]);
+                    }
+                }
+                
+                result[i][j] = max;
+            }
+        }
+        
+        return result;
+    }
 }

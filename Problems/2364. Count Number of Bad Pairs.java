@@ -1,7 +1,14 @@
+// SUSHANT SINHA
+
+// 95ms ( 20% ) 106.7mb ( 20% )
+
 class Solution {
     public long countBadPairs(int[] nums) {
         
         long ans=0, n=nums.length;
+
+        // ans counts the numbers which are good
+        // rearrange the condition to be --> nums[j]-j == nums[i]-i
         
         // mapping values and their counts
         HashMap<Integer, Integer> counter=new HashMap<>();
@@ -26,6 +33,10 @@ class Solution {
             
             
         }
+        
+        // instead of calculating fact(n)and fact(n-2)...
+        // used n*(n-1)
+        // this was for calculating all the possible pairs
 
         return (n*(n-1)/2)-ans;
         

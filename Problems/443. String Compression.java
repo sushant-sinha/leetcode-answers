@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms ( 99.72% ) 43.1mb ( 84.65% )
+
 class Solution {
     
     int ans=0;
@@ -22,7 +26,6 @@ class Solution {
             if(counter>=10){
                 
                 int temp=index+len(counter);
-                int counterDuplicate=counter;
                 
                 while(counter!=0){
                     

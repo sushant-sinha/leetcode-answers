@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 22ms ( 47.80% ) 41.9mb ( 54.45% )
+
 // intuition: using fibonacci series to calculate the number of possible arrangements on one side of the road, and then squaring it
 
 // the number of possible arrangements on the one side of the road can be calculated using the fibonacci series..

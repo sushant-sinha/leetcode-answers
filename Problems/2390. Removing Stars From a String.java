@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 206ms ( 52.19% ) 43mb ( 97.80% )
+
 class Solution {
     public String removeStars(String s) {
         

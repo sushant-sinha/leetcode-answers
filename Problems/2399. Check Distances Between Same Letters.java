@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms ( 100% ) 42.3mb ( ~90% )
+
 class Solution {
     public boolean checkDistances(String s, int[] distance) {
         

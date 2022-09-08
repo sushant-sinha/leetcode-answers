@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 2ms ( 84.22% ) 42.7mb ( 9.44% )
+
 class Solution {
     public boolean findSubarrays(int[] nums) {
         

@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms ( 44.99% ) 41.2mb ( 31.15% )
+
 class Solution {
     
     public boolean isStrictlyPalindromic(int n) {

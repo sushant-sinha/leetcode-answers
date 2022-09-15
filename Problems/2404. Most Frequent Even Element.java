@@ -1,3 +1,9 @@
+// SUSHANT SINHA
+
+// 21ms ( 45.45% ) 54mb ( 36.36% )
+
+// initial approach
+
 class Solution {
     public int mostFrequentEven(int[] nums) {
         
@@ -40,3 +46,29 @@ class Solution {
         
     }
 }
+
+// best solution
+// claimed 6ms runtime
+
+class Solution {
+    public int evenMajorityNumber(int[] nums) {
+        int [] arr = new int [10_001];
+        
+        for (int num : nums){
+            ++arr[num];
+        }
+        int max = 0;
+        int result = -1;
+        
+        //System.out.println(Arrays.toString(arr));
+        
+        for (int i = 0; i < arr.length; i += 2){
+            //System.out.println(max + " " + arr[i]);
+            if (max < arr[i]){
+                result = i;
+                max = arr[i];
+            }
+        }
+        
+        return result;
+    }

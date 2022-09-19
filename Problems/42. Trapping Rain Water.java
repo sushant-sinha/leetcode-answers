@@ -1,3 +1,10 @@
+// SUSHANT SINHA
+
+// 1ms ( 99.76% ) 42.9mb ( 95.11% )
+
+// needs 2 arrays.. sell all the 4 approaches given in the solution tab
+// link: https://leetcode.com/problems/trapping-rain-water/solution/
+
 class Solution {
     public int trap(int[] height) {
         

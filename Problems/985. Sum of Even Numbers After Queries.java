@@ -1,3 +1,8 @@
+// SUSHANT SINHA
+
+// 18ms ( 7.40% ) 75.4mb ( 16.72% )
+
+
 class Solution {
     public int[] sumEvenAfterQueries(int[] nums, int[][] queries) {
         

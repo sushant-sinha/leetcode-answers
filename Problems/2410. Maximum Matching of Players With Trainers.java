@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 49ms ( 33.49 ) 79.2mb ( 73.80% )
+
 class Solution {
     public int matchPlayersAndTrainers(int[] players, int[] trainers) {
         

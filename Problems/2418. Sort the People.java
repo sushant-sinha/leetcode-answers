@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+ // 31ms ( 70% ) 42.8mb ( 100% )
+
 class Solution {
     public String[] sortPeople(String[] names, int[] heights) {
         

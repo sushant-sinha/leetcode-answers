@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 17ms ( 44.20% ) 88.8mb ( 81.90% )
+
 class Solution {
     public int minCost(String colors, int[] neededTime) {
         

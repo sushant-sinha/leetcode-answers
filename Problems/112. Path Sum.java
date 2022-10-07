@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 0ms ( 100% ) 41.8mb ( 98.94% )
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -24,8 +28,6 @@ class Solution {
         return ans;
         
     }
-    
-    int iter=0;
     
     boolean dfs(TreeNode root, int curSum, int target){
         

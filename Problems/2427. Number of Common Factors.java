@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms ( 80% ) 41mb ( 48.97% )
+
 class Solution {
     public int commonFactors(int a, int b) {
         

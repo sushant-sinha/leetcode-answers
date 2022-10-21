@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 10ms ( 40.00% ) 52mb ( 40.00% )
+
 class Solution {
     public int findMaxK(int[] nums) {
         

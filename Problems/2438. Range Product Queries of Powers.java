@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 104ms ( 21.28% ) 134.4mb ( 33.85% )
+
 class Solution {
     public int[] productQueries(int n, int[][] queries) {
         

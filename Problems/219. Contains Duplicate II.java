@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 28ms ( 83.96% ) 60.4mb ( 84.27% )
+
 class Solution {
     public boolean containsNearbyDuplicate(int[] nums, int k) {
         

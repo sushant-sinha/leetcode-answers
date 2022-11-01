@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 211ms ( 15.47% ) 87.1mb ( 20.47% )
+
 class Solution {
     public int maximumSum(int[] nums) {
         
@@ -77,4 +81,41 @@ class Solution {
         
     }
     
+}
+
+// best solution from the submission section
+// 39ms
+
+class Solution {
+    public int maximumSum(int[] nums) {
+        int res = -1;
+        int[][] m = new int[82][2];
+        for (int i = 0; i < nums.length; i++) {
+            int cur = 0;
+            int n = nums[i];
+            while(n > 0) {
+                cur += (n%10);
+                n = n / 10;
+            }
+            if (m[cur][0] == 0 || m[cur][1] == 0) {
+                if (m[cur][0] == 0) m[cur][0] = nums[i];
+                else m[cur][1] = nums[i];
+            } else {
+                int a = m[cur][0];
+                int b = m[cur][1];
+                int c = nums[i];
+                if (a < c || b < c) {
+                    if (a < b) {
+                        m[cur][0] = c;
+                    } else {
+                        m[cur][1] = c;
+                    }
+                }
+            }
+            if (m[cur][0] != 0 && m[cur][1] != 0) {
+                res = Math.max(res, m[cur][0] + m[cur][1]);
+            }
+        }
+        return res;
+    }
 }

@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 2ms ( 73.85% ) 54mb ( 50.86% )
+
 class Solution {
     public int hardestWorker(int n, int[][] logs) {
         

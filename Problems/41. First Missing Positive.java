@@ -60,3 +60,63 @@ class Solution {
         
     }
 }
+
+//expected solition from the submission tab
+
+class Solution {
+    public int firstMissingPositive(int[] nums) {
+        int size = nums.length;
+
+        int arr[] = new int[size+1];
+
+        for(int i=0;i<size;i++){
+            int temp=nums[i];
+            if(temp>0 && temp<=size){
+                arr[temp]=temp;
+            }
+        }
+        
+        for(int i=1;i<size+1;i++){
+            if(arr[i]!=i){
+                return i;
+            }
+        }
+        return size+1;
+    }
+}
+
+// best solution
+// 1ms
+
+class Solution {
+    public int firstMissingPositive(int[] nums) {
+        
+        int[] A = nums;
+        int n = A.length;
+        for (int i = 0; i < n; i++) {
+
+            if (A[i] > n || A[i] < 1) {
+                continue;
+            }
+
+            while (A[i] != (i + 1) && A[i] < n && A[i] > 0 && A[i] != A[A[i] - 1]) {
+                int temp = A[i];
+                A[i] = A[temp - 1];
+                A[temp - 1] = temp;
+            }
+        }
+
+        int ans = 1;
+
+        for (int i = 0; i < A.length; i++) {
+            if (ans == A[i]) {
+                ans++;
+            } else {
+                break;
+            }
+        }
+
+        return ans; 
+        
+    }
+}

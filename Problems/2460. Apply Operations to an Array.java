@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms ( 66.67% ) 42.4mb ( 66.67% )
+
 class Solution {
     public int[] applyOperations(int[] nums) {
         

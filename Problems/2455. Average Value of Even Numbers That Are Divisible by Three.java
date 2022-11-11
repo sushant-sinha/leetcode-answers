@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms ( 100% ) 45.1mb ( 80.31% )
+
 class Solution {
     public int averageValue(int[] nums) {
         

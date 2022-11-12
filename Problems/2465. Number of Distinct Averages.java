@@ -1,3 +1,11 @@
+// SUSHANT SINHA
+
+// 2ms 42mb solution
+
+// instead of using a temp variable to store the average..
+// could have stored the sum of the two numbers because if two numbers (or any number of numbers) have the same sum... they wll also have the same average
+
+
 class Solution {
     public int distinctAverages(int[] nums) {
         

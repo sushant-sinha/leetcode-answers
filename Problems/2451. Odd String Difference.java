@@ -1,3 +1,10 @@
+// SUSHANT SINHA
+
+// 2ms ( 100% ) 40.2mb ( 83.33% )
+
+// was initially thinking of using a HashSet... then shifted to use HashMap...
+// to keep the track of the elements with common array in one side and the odd one out will have only one element
+
 class Solution {
     public String oddString(String[] words) {
         Map<List<Integer>, List<String>> map = new HashMap<>();

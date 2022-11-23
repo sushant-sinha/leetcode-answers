@@ -1,21 +1,17 @@
+// SUSHANT SINHA
+
+// 134ms ( 80.74% ) 123.5mb ( 68.10% )
+
 class Solution {
     public int countDistinctIntegers(int[] nums) {
         
         HashSet<Integer> seen=new HashSet<>();
         
         for(int i:nums){
-            
-//             if(seen.contains(i))
-//                 continue;
-            
-//             else{
                 
                 //System.out.println(i+" "+rev(i));
                 seen.add(i);
                 seen.add(rev(i));
-                
-            
-            
         }
         
         return seen.size();

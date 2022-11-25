@@ -1,3 +1,9 @@
+// SUSHANT SINHA
+
+// 7ms ( 100% ) 39.7mb ( 100% )
+
+// not the expected solution for sure (but works as the input size is very small)
+
 class Solution {
     public int unequalTriplets(int[] nums) {
         

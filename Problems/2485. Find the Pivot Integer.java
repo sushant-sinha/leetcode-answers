@@ -26,32 +26,3 @@ class Solution {
         
     }
 }
-
-// 0ms solution math logic from the submission tab
-
-class Solution {
-    
-    static int sqrt(int n){
-        return (int) Math.sqrt(n);
-    }
-    
-    static boolean isPerfectSquare(int n, int sqr){
-        return n*n == sqr;
-    }
-    
-    public int pivotInteger(int n) {
-        int c = (n * (n + 1)) / 2 ;
-        int dis = 1 + 8*c;
-        
-        int sqrt = sqrt(c);
-        
-        //System.out.println(c+" "+dis+" "+sqrt);
-        
-        if(isPerfectSquare(sqrt, c)){
-            return sqrt;
-        }
-        else{
-            return -1;
-        }
-    }
-}

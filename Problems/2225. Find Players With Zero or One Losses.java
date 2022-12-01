@@ -1,3 +1,8 @@
+// SUSHANT SINHA
+
+// not the most optimal solution for obvious reasons
+// 477ms ( 14.25% ) 152.3mb ( 52.06% )
+
 class Solution {
     public List<List<Integer>> findWinners(int[][] matches) {
         

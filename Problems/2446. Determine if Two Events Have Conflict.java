@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 0ms ( 100% ) 40mb ( 70.00% )
+
 class Solution {
     public boolean haveConflict(String[] event1, String[] event2) {
         

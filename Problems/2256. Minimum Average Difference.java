@@ -1,3 +1,10 @@
+// SUSHANT SINHA
+
+// 18ms ( 88.86% )  60.3mb ( 94.98% )
+
+// can optimise by not using a long array but rather only one single long variable
+// this variable will store the total sum of the entire array
+
 class Solution {
     public int minimumAverageDifference(int[] nums) {
         
@@ -11,7 +18,7 @@ class Solution {
         
         sum[0]=nums[0];
         
-        // modifying the array to have continuos sum
+        // modifying the array to have continuous sum
         
         for(int i=1;i<len;i++)
             sum[i]=sum[i-1]+nums[i];

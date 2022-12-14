@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 3ms ( 99.81% ) 42mb ( 98.26% )
+
 class Solution {
     public int deleteGreatestValue(int[][] grid) {
         

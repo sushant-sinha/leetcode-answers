@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms ( 99.91% ) 41.2mb ( 83.27% )
+
 class Solution {
     public boolean isCircularSentence(String sentence) {
 

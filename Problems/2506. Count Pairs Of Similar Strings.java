@@ -1,3 +1,32 @@
+// SUSHANT SINHA
+
+// 4ms solution from the submission tab
+
+// uses mask😑😑😑??
+
+class Solution {
+    public int similarPairs(String[] words) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for (String s: words) {
+            int mask = 0;
+            for (int c: s.toCharArray()) {
+                mask |= 1<<(c-'a');
+            }
+            int count = map.getOrDefault(mask, 0);
+            count++;
+            map.put(mask, count);
+        }
+        int res = 0;
+        for (int count: map.values()) {
+            res += count * (count - 1) / 2;
+        }
+        return res;
+    }
+}
+
+// 83ms( 50% ) 53.5mb ( 12.50% )
+
+// my solution
 class Solution {
     public int similarPairs(String[] words) {
         

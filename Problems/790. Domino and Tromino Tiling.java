@@ -1,3 +1,9 @@
+// SUSHANT SINHA
+
+// 0ms ( 100% ) 38.9mb ( 97.34% )
+// refer https://github.com/sushant-sinha/leetcode-answers/blob/main/Problems/790.%20Domino%20and%20Tromino%20Tiling%20pic.png image for the intuition
+// image courtesy: https://leetcode.com/1120131418/ (from the discuss tab)
+
 class Solution {
     public int numTilings(int n) {
 

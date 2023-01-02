@@ -1,3 +1,46 @@
+// SUSHANT SINHA
+
+// 1ms ( 95.36% ) 39.8mb ( 99.38% )
+
+/*
+
+old solution... fails for 
+
+pattern= "abba"
+s= "dog dog dog dog"
+
+the problem here is ... we were not checking whether the word "dog" is already existing in the map or not with any other key
+
+class Solution {
+    public boolean wordPattern(String pattern, String s) {
+
+        HashMap<Character, String> map=new HashMap<>();
+
+        String ar[]=s.split(" ");
+        int i=0;
+
+        for(char c: pattern.toCharArray()){
+
+            if(map.containsKey(c)){
+                if(!map.get(c).equals(ar[i])){
+                    return false;
+                }
+            }
+
+            else{
+                map.put(c, ar[i]);
+            }
+
+            i++;
+
+        }
+
+        return true;
+        
+    }
+}
+*/
+
 class Solution {
     public boolean wordPattern(String pattern, String s) {
 

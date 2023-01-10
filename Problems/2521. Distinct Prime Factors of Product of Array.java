@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 39ms ( 60.42% ) 43.1mb ( 66.71% )
+
 class Solution {
     public int distinctPrimeFactors(int[] nums) {
         

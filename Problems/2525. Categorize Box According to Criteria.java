@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 0ms ( 100% ) 39.3mb ( 91.46% )
+
 class Solution {
     public String categorizeBox(int length, int width, int height, int mass) {
         

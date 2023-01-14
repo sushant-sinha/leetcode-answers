@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 0ms ( 100% ) 39.6mb ( 87.65% )
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -16,8 +20,6 @@
 class Solution {
     public boolean isSameTree(TreeNode p, TreeNode q) {
 
-        
-        // return false;
         return recur(p, q);
         
     }

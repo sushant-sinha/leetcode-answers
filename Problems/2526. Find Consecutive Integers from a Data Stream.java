@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 68ms ( 7.77% ) 83.5mb ( 5.22% )
+
 class DataStream {
     
     // mapping the index and the value

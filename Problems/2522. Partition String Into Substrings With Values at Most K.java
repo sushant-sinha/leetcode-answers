@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 92ms ( 24.42% ) 42.7mb ( 72.78% )
+
 class Solution {
     public int minimumPartition(String s, int k) {
         

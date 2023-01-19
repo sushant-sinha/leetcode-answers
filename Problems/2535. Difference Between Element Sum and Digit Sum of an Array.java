@@ -1,3 +1,8 @@
+// SUSHANT SINHA
+
+// no brainer
+// 2ms ( 99.91% ) 42.1mb ( 92.14% )
+
 class Solution {
     public int differenceOfSum(int[] nums) {
         

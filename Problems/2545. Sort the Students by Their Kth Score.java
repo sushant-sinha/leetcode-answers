@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 3ms ( 68.18% ) 74.8mb ( 31.12% )
+
 class Solution {
     public int[][] sortTheStudents(int[][] score, int k) {
         

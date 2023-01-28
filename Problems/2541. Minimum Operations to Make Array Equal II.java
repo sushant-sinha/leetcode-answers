@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 5ms ( 76.16% ) 60mb ( 96.80% )
+
 class Solution {
 
     public long minOperations(int[] nums1, int[] nums2, int k) {
@@ -23,7 +27,7 @@ class Solution {
 
                 numberOfTimesOperationNeeded+=calc;
 
-                ans+=Math.abs(calc);
+                ans+= calc<0 ? calc*-1 : calc;
             }
 
         }
@@ -37,6 +41,7 @@ class Solution {
         
     }
 
+    // can skip this function and add the same logic within the for loop
     int calculate(int diff, int k){
 
         if(diff%k==0){

@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 2ms ( 9.49% ) 39.4mb ( 52.81% )
+
 class Solution {
     public int minBitFlips(int start, int goal) {
 

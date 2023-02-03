@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 6ms ( 69.97% ) 42.7mb ( 92.90% )
+
 class Solution {
     public boolean makeStringsEqual(String s, String target) {
 

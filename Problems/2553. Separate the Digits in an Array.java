@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 4ms ( 100% ) 43.1mb ( 100% )
+
 class Solution {
     public int[] separateDigits(int[] nums) {
         

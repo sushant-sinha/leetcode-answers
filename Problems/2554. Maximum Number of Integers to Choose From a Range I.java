@@ -1,6 +1,6 @@
 // SUSHANT SINHA
 
-// 64ms ( 38.94% ) 44mb ( 43.64% )
+// 55ms ( 55.83% ) 44mb ( 43.64% )
 
 class Solution {
     public int maxCount(int[] banned, int n, int maxSum) {
@@ -12,7 +12,7 @@ class Solution {
         for(int i: banned)
             set.add(i);
         
-        for(int i=1;i<=n && sum<=maxSum;i++){
+        for(int i=1;i<=n;i++){
             
             if(set.contains(i))
                 continue;
@@ -21,6 +21,9 @@ class Solution {
                 sum+=i;
                 ans++;
             }
+
+            else
+            break;
         }
         
         return ans;

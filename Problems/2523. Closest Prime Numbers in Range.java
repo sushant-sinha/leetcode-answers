@@ -1,4 +1,6 @@
-// to do
+// SUSHANT SINHA
+
+// 103ms ( 80.51% ) 50.1mb ( 25.47% )
 
 class Solution {
     public static boolean[]sieve(int n){

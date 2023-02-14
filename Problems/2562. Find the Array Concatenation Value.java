@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms ( 97.89% ) 41.8mb ( 66.91% )
+
 class Solution {
     public long findTheArrayConcVal(int[] nums) {
         

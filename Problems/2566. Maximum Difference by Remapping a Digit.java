@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 9ms ( 33.33% ) 39.7mb ( 16.67% )
+
 class Solution {
     public int minMaxDifference(int num) {
         

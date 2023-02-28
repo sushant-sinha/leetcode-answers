@@ -1,3 +1,7 @@
+//  SUSHANT SINHA
+
+// 1ms ( 100% ) 42.8mb ( 85.29% )
+
 class Solution {
     public int[] leftRigthDifference(int[] nums) {
 

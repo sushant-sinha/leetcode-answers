@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms ( 50% ) 39.8mb ( 50% )
+
 class Solution {
     public int splitNum(int num) {
         

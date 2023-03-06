@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 0ms ( 100% ) 39.4mb ( 100% )
+
 class Solution {
     public int passThePillow(int n, int time) {
         

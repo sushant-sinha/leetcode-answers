@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 0ms ( 100% ) 39.6mb ( 43.83% )
+
 class Solution {
     public long coloredCells(int n) {
         

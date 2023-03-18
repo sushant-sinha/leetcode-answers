@@ -1,8 +1,15 @@
+// SUSHANT SINHA
+
+// 59ms ( 54.85% ) 50.8mb ( 22.81% )
+
 class BrowserHistory {
 
     // use hashmap for indexing
-    // use doubly linkedlist 
-
+    // or
+    // use doubly linkedlist but traversal for back and forward will take time
+    // or
+    // try with ArrayList🤷‍
+    
     HashMap<Integer, String> map;
 
     int index=0, endIndex=0;

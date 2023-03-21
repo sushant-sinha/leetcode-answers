@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 12ms ( 100% ) 42.6mb ( 100% )
+
 class Solution {
     public int[] evenOddBit(int n) {
         

@@ -1,3 +1,6 @@
+// lee's solution"
+// https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/solutions/3203994/java-c-python-1-line-solution/
+
 // referred solution tab
 
 class Solution {

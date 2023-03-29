@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 3ms ( 54.38% ) 40.9mb ( 51.80% )
+
 class Solution {
     public int maxSatisfaction(int[] satisfaction) {
 

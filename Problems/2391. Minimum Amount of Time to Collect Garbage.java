@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 29ms ( 72.20% ) 71.6mb ( 12.64% )
+
 class Solution {
     public int garbageCollection(String[] garbage, int[] travel) {
 

@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 13ms ( 20% ) 51.3mb ( 100% )
+
 class Solution {
     public int diagonalPrime(int[][] nums) {
         
@@ -14,12 +18,10 @@ class Solution {
                 ans = ans < nums[i][i] ? nums[i][i] : ans;
             
             // System.out.println("ans="+ans);
-                
-            
+
         }
         
         return ans;
-        
     }
     
     boolean isPrime(int n){

@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 3ms ( 78.41% ) 64.4mb ( 90.20% )
+
 class Solution {
     public long[] findPrefixScore(int[] nums) {
         

@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 32ms ( 34.28% ) 42.9mb ( 93.20% )
+
 class SmallestInfiniteSet {
 
     TreeSet<Integer> removed;

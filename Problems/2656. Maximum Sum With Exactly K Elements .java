@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 7ms ( 16.67% ) 43.1mb ( 16.67% )
+
 class Solution {
     public int maximizeSum(int[] nums, int k) {
         

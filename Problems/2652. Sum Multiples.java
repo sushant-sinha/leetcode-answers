@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 4ms ( 66.67% ) 39.7mb ( 77.78% )
+
 class Solution {
     public int sumOfMultiples(int n) {
         

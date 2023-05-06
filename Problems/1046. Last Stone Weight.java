@@ -1,6 +1,6 @@
 // SUSHANT SINHA
 
-// 1ms ( 91.16% ) 36.3mb ( 68.40% )
+// 1ms ( 98.75% ) 39.9mb ( 79.26% )
 
 class Solution {
     public int lastStoneWeight(int[] stones) {

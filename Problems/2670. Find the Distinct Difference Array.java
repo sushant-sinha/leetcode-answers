@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 6ms ( 100% ) 43.8mb ( 20% )
+
 class Solution {
     public int[] distinctDifferenceArray(int[] nums) {
         

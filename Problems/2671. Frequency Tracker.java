@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 73ms ( 28.18% ) 102.3mb ( 76.11% )
+
 class FrequencyTracker {
 
     int ar[];
@@ -31,6 +35,8 @@ class FrequencyTracker {
         return freq[frequency] > 0 ;
     }
 }
+
+// old code using one hashmap gives TLE
 
 /**
  * Your FrequencyTracker object will be instantiated and called as such:

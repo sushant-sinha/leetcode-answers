@@ -1,3 +1,9 @@
+// SUSHANT SINHA
+
+// 29ms ( 12.47% ) 92.2mb ( 7.46% )
+
+// check the editorial and hints
+
 class Solution {
     public List<Integer> findSmallestSetOfVertices(int n, List<List<Integer>> edges) {
 

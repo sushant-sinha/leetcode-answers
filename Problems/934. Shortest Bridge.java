@@ -1,3 +1,24 @@
+// SUSHANT SINHA
+
+// 1117ms ( 5.8% ) 44.1mb ( 5.97% )
+// check the editorial for better solution
+
+/*
+
+More practice!
+
+286. Walls and Gates
+417. Pacific Atlantic Water Flow <-- the best!!!
+994. Rotting Oranges
+1162. As Far from Land as Possible
+1765. Map of Highest Peak
+
+*/
+
+
+// new idea: just find one island
+//           then traverse the entire matrix to find all the manhattan distances from grid[i][j]==1
+
 class Solution {
 
     HashSet<int[]> i1=new HashSet<>();

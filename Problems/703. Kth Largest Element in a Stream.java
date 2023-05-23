@@ -3,30 +3,43 @@
 // best explanation at https://leetcode.com/problems/kth-largest-element-in-a-stream/discuss/1459107/Java-solution-with-explanation-clean-concise-easy-to-understand-minHeap
 
 // not the expected solution i guess :)
-// 1160ms ( 5.01% ) 46.2mb ( 34.00% )
+// 535ms ( 6.81% ) 46.6mb ( 70.90% )
 
 class KthLargest {
-
-    ArrayList<Integer> list = new ArrayList<>();
     int n=0;
+
+    // maintaining an array of length k
+    // this array will always have the top k largerst elements.... so the ar[0] will have the kth largest element when sorted in ascending order
+    int ar[];
     
     public KthLargest(int k, int[] nums) {
         
+        ar=new int[k];
         n=k;
+        // filling the array with min value
+        // because if the nums.length is less than k then there will be an empty element in ar and it will have value 0 (empty array has all elements initialized as 0)
+        // this is to prevent failure in line #35
+        Arrays.fill(ar, Integer.MIN_VALUE);
+        int index=0;
         
-        for(int i:nums){
-            list.add(i);
+        Arrays.sort(nums);
+
+        while(index<Math.min(nums.length, k)){
+            ar[k-index-1]=nums[nums.length-index-1];
+            index++;
         }
         
     }
     
     public int add(int val) {
         
-        list.add(val);
-        
-        Collections.sort(list);
-        
-        return list.get(list.size()-n);
+        if(val>ar[0]){
+            ar[0]=val;
+        }
+
+        Arrays.sort(ar);
+
+        return ar[0];
     }
 }
 

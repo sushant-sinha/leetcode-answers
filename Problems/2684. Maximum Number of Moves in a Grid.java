@@ -1,3 +1,19 @@
+// SUSHANT SINHA
+
+// 20ms ( 28.27% ) 54.8mb ( 7.33% )
+
+/*
+
+was using flood fill kind of algo first but led to TLE
+the number of possible steps that can be taken from a given index will always be same irrespective of where it is being traversed to or from
+so the number of steps from a cell is always constant
+if we can create a score matrix for the number of steps that can be taken from a cell...
+we can find the cell in the first column which has the most value (if it is zero... it means we cannot reach to column 1)
+
+Image link: https://github.com/sushant-sinha/leetcode-answers/commit/21d7a7b189fe99a19d9e1ee6af5d751a98b75282
+
+*/
+
 /*
 
 class Solution {

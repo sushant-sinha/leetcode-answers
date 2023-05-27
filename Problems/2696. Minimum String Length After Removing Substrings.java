@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 7ms ( 84.34% ) 42.4mb ( 91.77% )
+
 class Solution {
     public int minLength(String s) {
         
@@ -25,8 +29,6 @@ class Solution {
                 }
                 
             }
-            
-            // System.out.println(sb);
             
         }
         

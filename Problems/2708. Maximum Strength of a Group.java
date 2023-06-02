@@ -1,3 +1,9 @@
+// SUSHANT SINHA
+
+// 3ms ( 73.55% ) 43.3mb ( 62.25% )
+
+// just check for all the possible combinations of Negative, Positive and Zero values
+
 class Solution {
     public long maxStrength(int[] nums) {
         

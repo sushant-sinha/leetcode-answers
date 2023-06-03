@@ -1,3 +1,7 @@
+// https://leetcode.com/problems/longest-absolute-file-path/solutions/2449014/best-java-implementation-top-96-7-easy-to-understand/
+
+// 0ms ( 100% ) 40mb ( 85.16% )
+
 class Solution {
     int ans = 0;
     public int lengthLongestPath(String input) {

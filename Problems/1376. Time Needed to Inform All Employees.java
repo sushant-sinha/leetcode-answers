@@ -1,3 +1,10 @@
+// SUSHANT SINHA
+
+// 72ms ( 67.92% ) 63.3mb ( 26.51% )
+
+// knew the logic and approach but was not able to think of using nested arraylist😥....rather preferred using hashmap and tried optimising
+// had to refer the editorial section
+
 class Solution {
 
     int ans=Integer.MIN_VALUE;
@@ -5,7 +12,7 @@ class Solution {
     public int numOfMinutes(int n, int headID, int[] manager, int[] informTime) {
 
         // map to know the managers
-        // mapping manager and their subordinates
+        // mapping manager and their subordinates: ArrayList<i> contains the ArrayList of all the subordinates
         ArrayList<ArrayList<Integer>> adjList = new ArrayList<ArrayList<Integer>>(n);
 
         for (int i = 0; i < n; i++) {

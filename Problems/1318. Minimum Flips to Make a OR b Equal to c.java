@@ -1,3 +1,9 @@
+// SUSHANT SINHA
+
+// 1ms ( 8.68% ) 39.2mb ( 61.14% )
+
+// Can optimise by using array instead of ArrayList
+
 class Solution {
     public int minFlips(int a, int b, int c) {
 
@@ -6,8 +12,6 @@ class Solution {
         ArrayList<Integer> abin=tobin(a);
         ArrayList<Integer> bbin=tobin(b);
         ArrayList<Integer> cbin=tobin(c);
-
-        // System.out.println("a="+abin+" b="+bbin+" c="+cbin);
 
         int max=abin.size()>bbin.size() ? (abin.size()>cbin.size() ? abin.size() : cbin.size()) : (bbin.size()>cbin.size() ? bbin.size() : cbin.size());
         

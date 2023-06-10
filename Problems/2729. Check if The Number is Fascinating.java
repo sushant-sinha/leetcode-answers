@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 9ms ( 28.57% ) 40.6mb ( 14.29% )
+
 class Solution {
     public boolean isFascinating(int n) {
         

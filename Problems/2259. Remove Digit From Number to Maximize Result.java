@@ -1,3 +1,8 @@
+// SUSHANT SINHA
+
+// edit before pushing
+// 1ms ( 98.02% ) 42.3mb ( 71.70% )
+
 class Solution {
     public String removeDigit(String number, char digit) {
         

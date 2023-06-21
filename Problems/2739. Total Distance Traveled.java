@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 7ms ( 100% ) 42.8mb ( 75.75% )
+
 class Solution {
     public int distanceTraveled(int mainTank, int additionalTank) {
         

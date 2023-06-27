@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 61ms ( 97.62% ) 55.9mb ( 77.33% )
+
 class Solution {
     public long totalCost(int[] costs, int k, int candidates) {
 
@@ -25,6 +29,7 @@ class Solution {
 
         for(int i=0;i<k;i++){
 
+            // these conditions are needed to prevent the case when either of the queues are empty
             if(left.size()>0){
 
                 if(right.size()>0){
@@ -70,6 +75,6 @@ class Solution {
         }
 
         return ans;
-        
+
     }
 }

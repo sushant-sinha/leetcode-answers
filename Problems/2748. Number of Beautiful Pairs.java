@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 48ms ( 51.11% ) 44mb ( 19.9% )
+
 class Solution {
     public int countBeautifulPairs(int[] nums) {
         

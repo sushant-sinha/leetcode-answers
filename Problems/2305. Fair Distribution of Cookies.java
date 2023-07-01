@@ -1,10 +1,14 @@
+// SUSHANT SINHA
+
+// 316ms ( 55.15% ) 44.1mb ( 5.15% )
+
 class Solution {
 
     int min=Integer.MAX_VALUE;
     public int distributeCookies(int[] cookies, int k) {
 
         Arrays.sort(cookies);
-        final int len=cookies.length;
+        int len=cookies.length;
 
         if(cookies.length==k)
         return cookies[len-1];

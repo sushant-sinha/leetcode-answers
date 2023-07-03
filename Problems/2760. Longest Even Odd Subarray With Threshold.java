@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 18ms ( 33.33% ) 43.6mb ( 66.67% )
+
 class Solution {
     public int longestAlternatingSubarray(int[] nums, int threshold) {
         

@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms ( 99.1% ) 41.2mb ( 96.3% )
+
 class Solution {
     public boolean buddyStrings(String s, String goal) {
 
@@ -9,9 +13,11 @@ class Solution {
             // check if two characters at different indexes are same
             // else false
 
+            // if the length is more than 26.... obviously repeated characters are there
             if(s.length()>26)
                 return true;
 
+            // else check the frequency of all the characters
             int freq[]=new int[26];
 
             for(char c:s.toCharArray()){
@@ -59,6 +65,7 @@ class Solution {
 
             // no second part of swap found and the entire string is traversed.... return false
             
+            // return true if exactly exactly one pair found
             return toFind==2;
 
         }

@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 6ms ( 22.31% ) 44mb ( 59.60% )
+
 class Solution {
     public int singleNumber(int[] nums) {
 

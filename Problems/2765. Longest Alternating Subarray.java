@@ -1,3 +1,10 @@
+// SUSHANT SINHA
+
+// input array was too small to need any optimization...
+// brute force would have worked just fine
+
+// 10ms ( 33.33% ) 43.4mb ( 66.67% )
+
 class Solution {
     public int alternatingSubarray(int[] nums) {
         

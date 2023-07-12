@@ -1,6 +1,6 @@
 // SUSHANT SINHA
 
-// 10ms ( 58.17% ) 62.7mb ( 23.56% )
+// 9ms ( 69.59% ) 62.3mb ( 53.91% )
 
 /**
  * Definition for a binary tree node.
@@ -23,11 +23,17 @@ class Solution {
 
     public int minDepth(TreeNode root) {
 
+        /*
+        no need of if condition, this is already handled in the helper function
+        but... need to add null case check in the return statement
+
         if(root==null)
             return 0;
 
+        */
+
         helper(root, 0);
-        return ans;
+        return ans==Integer.MAX_VALUE ? 0 : ans;
         
     }
 

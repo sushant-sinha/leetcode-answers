@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 2ms ( 77.37% ) 59.1mb ( 59.91% )
+
 class Solution {
     public int[] findArray(int[] pref) {
 

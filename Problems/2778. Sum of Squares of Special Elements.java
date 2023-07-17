@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms ( 100% ) 43.5mb ( 25% )
+
 class Solution {
     public int sumOfSquares(int[] nums) {
         

@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 42ms ( 68.89% ) 57.2mb ( 43.59% )
+
 class Solution {
     public int minimumIndex(List<Integer> nums) {
         

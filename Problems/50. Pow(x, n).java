@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 0ms ( 100% ) 40.3mb ( 98.35% )
+
 class Solution {
     public double myPow(double x, int n) {
         

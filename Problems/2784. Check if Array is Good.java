@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 3ms ( 100% ) 41.5mb ( 100% )
+
 class Solution {
     public boolean isGood(int[] nums) {
         

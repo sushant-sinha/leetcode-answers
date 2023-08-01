@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms 41.1mb
+
 class Solution {
     
     public int numberOfEmployeesWhoMetTarget(int[] hours, int target) {

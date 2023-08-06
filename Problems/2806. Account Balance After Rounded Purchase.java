@@ -1,3 +1,8 @@
+// SUSHANT SINHA
+
+// hardcoding at its finest😁
+// 0ms 39.1mb
+
 class Solution {
     public int accountBalanceAfterPurchase(int purchaseAmount) {
         

@@ -1,18 +1,50 @@
 // SUSHANT SINHA
 
-// Brute force
-// 0ms( 100% ) 38.1mb ( 95.18% )
-
 class Solution {
     public boolean searchMatrix(int[][] matrix, int target) {
         
-        for(int a[]:matrix){
-            for(int b:a)
-                if(b==target)
-                    return true;
-        }
+        int midIndex=helper(0, matrix.length-1, matrix, target);
+
+        // System.out.println("------"+midIndex);
+
+        for(int i:matrix[midIndex])
+            if(i==target)
+                return true;
         
         return false;
+    }
+
+    int helper(int start, int end, int[][] matrix, int target){
+
+        if(start==end)
+            return start;
+
+        // if the difference between start and end is one... this means there are two rows now left for testing
+
+        if(Math.abs(end-start)==1){
+            if(matrix[start][0]<=target && matrix[start][matrix[0].length-1]>=target)
+                return start;
+            else
+                return end;
+        }
+
+        else{
+
+            int mid=(start+end)/2;
+
+            if(matrix[mid][matrix[0].length-1]>target){
+                // System.out.println("start="+start+" mid="+mid);
+                mid=helper(start, mid, matrix, target);
+            }
+
+            else{
+                // System.out.println("mid="+mid+" end="+end);
+                mid=helper(mid, end, matrix, target);
+            }
+
+            return mid;
+        }
+
     }
 }
 

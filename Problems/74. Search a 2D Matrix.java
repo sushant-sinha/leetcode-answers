@@ -1,5 +1,7 @@
 // SUSHANT SINHA
 
+// 0ms ( 100% ) 40.90mb ( 74.07% )
+
 class Solution {
     public boolean searchMatrix(int[][] matrix, int target) {
         

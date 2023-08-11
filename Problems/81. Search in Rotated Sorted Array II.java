@@ -1,3 +1,10 @@
+// SUSHANT SINHA
+
+// exactly same as 33. Search in Rotated Sorted Array
+// just return true or false intead of index and -1 respectively
+
+// 0ms ( 100% ) 42.3mb ( 99.56% )
+
 class Solution {
     public boolean search(int[] nums, int target) {
 

@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 0ms ( 100% ) 40.75mb ( 85.30% )
+
 class Solution {
     public int search(int[] nums, int target) {
 

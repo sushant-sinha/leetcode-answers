@@ -3,9 +3,10 @@ class Solution {
 
         int count[]=new int[n];
 
-        // counting the number of roads from each city
-
+        // hashing the presence of roads between two cities
         int isHavingRoad[][]=new int[n][n];
+
+        // counting the number of roads from each city
         for(int i[]:roads){
             count[i[0]]++;
             count[i[1]]++;
@@ -22,7 +23,7 @@ class Solution {
 
         int ans=-1;
 
-        // checking all the possible pairs
+        // checking all the possible pairs of cities
         for(int i=0; i<n-1; i++){
 
             for(int j=i+1; j<n; j++){

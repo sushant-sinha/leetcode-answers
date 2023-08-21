@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 6ms ( 65.55% ) 44.3mb ( 33.55% )
+
 class Solution {
     public int maximalNetworkRank(int n, int[][] roads) {
 

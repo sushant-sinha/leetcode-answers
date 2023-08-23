@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 8ms ( 100% ) 41.5mb ( 100% )
+
 class Solution {
     public int minimumSum(int n, int k) {
         

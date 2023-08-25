@@ -1,8 +1,15 @@
+// SUSHANT SINHA
+
+// 2ms ( 76.50% ) 40.4mb ( 87.10% )
+
+// check the two solutions from the editorial
+
 class Solution {
     public String reorganizeString(String s) {
 
         StringBuilder ans=new StringBuilder();
 
+        // can optimize using an arraylist
         int count[]=new int[26];
 
         int maxFreq=0;

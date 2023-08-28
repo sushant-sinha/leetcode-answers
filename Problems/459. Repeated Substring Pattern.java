@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 64ms ( 56.09% ) 44.06mb ( 74.78% )
+
 class Solution {
     public boolean repeatedSubstringPattern(String s) {
         int n = s.length();

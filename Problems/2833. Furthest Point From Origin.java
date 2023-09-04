@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms ( 100% ) 40.8mb ( 100% )
+
 class Solution {
     public int furthestDistanceFromOrigin(String moves) {
         

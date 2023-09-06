@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 18ms ( 35.07% ) 54.70mb ( 21.97% )
+
 class Solution {
     public long minimumPossibleSum(int n, int target) {
 

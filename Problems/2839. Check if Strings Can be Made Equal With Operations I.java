@@ -1,3 +1,8 @@
+// SUSHANT SINHA
+
+// what kind of question was this?
+// 1ms ( 99.91% ) 41.5mb ( 84.71% )
+
 class Solution {
     public boolean canBeEqual(String s1, String s2) {
         

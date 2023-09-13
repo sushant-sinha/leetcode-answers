@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 221ms ( 11.72% ) 52mb ( 7.51% )
+
 class Solution {
     public boolean checkStrings(String s1, String s2) {
         

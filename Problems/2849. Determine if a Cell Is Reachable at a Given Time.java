@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms ( 95.45% ) 39.28mb ( 98.32% )
+
 class Solution {
     public boolean isReachableAtTime(int sx, int sy, int fx, int fy, int t) {
         
@@ -12,54 +16,27 @@ class Solution {
         }
         
         int totalRoute=0;
+
+        // travel diagonally and check which axis is met first
+        // which coordinate aligns first (checked in line 24)
+        // then calculate the distance along the other axis (done in the second half of the totalRoute calculation)
+        // x reaches first
+        if(Math.abs(sx-fx)<Math.abs(sy-fy)){
+            
+            int minRoute=Math.abs(sx-fx);
+            
+            totalRoute=minRoute+(Math.abs(fy-sy)-minRoute);
         
-        // case 1: finish is above start
+        }
         
-        // if(sy<=fy){
+        // y reaches first
+        else{
             
-            // which is first to reach? x or y
-            // x reaches first
-            if(Math.abs(sx-fx)<Math.abs(sy-fy)){
-                
-                int minRoute=Math.abs(sx-fx);
-                
-                totalRoute=minRoute+(Math.abs(fy-sy)-minRoute);
+            int minRoute=Math.abs(sy-fy);
             
-            }
+            totalRoute=minRoute+(Math.abs(fx-sx)-minRoute);
             
-            // y reaches first
-            else{
-                
-                int minRoute=Math.abs(sy-fy);
-                
-                totalRoute=minRoute+(Math.abs(fx-sx)-minRoute);
-                
-            }
-        // }
-        
-        // when finish is strictly below start
-        // else{
-            
-            // which is first to reach? x or y
-            // x reaches first
-            // if(Math.abs(sx-fx)<Math.abs(sy-fy)){
-                
-            //     int minRoute=Math.abs(sx-fx);
-                
-            //     totalRoute=minRoute+(Math.abs(fy-sy)-minRoute);
-                
-            // }
-            
-            // // y reaches first
-            // else{
-                
-            //     int minRoute=Math.abs(sy-fy);
-                
-                
-            //     totalRoute=minRoute+(Math.abs(fx-sx)-minRoute);
-                
-            // }
-        // }
+        }
         
         if(totalRoute<=t)
             return true;

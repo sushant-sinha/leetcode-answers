@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms ( 100% ) 41.4mb ( 66.91% )
+
 class Solution {
     public int minimumRightShifts(List<Integer> nums) {
         

@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 2ms ( 42.44% ) 43.2mb ( 68.62% )
+
 class Solution {
     public int sumIndicesWithKSetBits(List<Integer> nums, int k) {
         

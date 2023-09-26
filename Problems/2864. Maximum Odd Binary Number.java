@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms ( 100% ) 43.4mb ( 56.64% )
+
 class Solution {
     public String maximumOddBinaryNumber(String s) {
         

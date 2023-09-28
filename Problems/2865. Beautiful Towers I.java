@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 59ms ( 47.21% ) 42.86mb ( 94.46% )
+
 class Solution {
     public long maximumSumOfHeights(List<Integer> maxHeights) {
         

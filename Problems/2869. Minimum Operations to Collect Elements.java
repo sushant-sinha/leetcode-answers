@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms ( 100% ) 40.5mb ( 92.61% )
+
 class Solution {
     public int minOperations(List<Integer> nums, int k) {
         

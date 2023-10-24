@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 7ms ( 26.79% ) 43.6mb ( 18% )
+
 class Solution {
     public String shortestBeautifulSubstring(String s, int k) {
         

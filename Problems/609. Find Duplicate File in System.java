@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 22ms ( 71.11% ) 52.0mb ( 67.41% )
+
 class Solution {
     public List<List<String>> findDuplicate(String[] paths) {
 

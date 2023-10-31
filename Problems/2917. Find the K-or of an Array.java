@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 6ms ( 100% ) 43.47 ( 25.00% )
+
 class Solution {
     public int findKOr(int[] nums, int k) {
         

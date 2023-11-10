@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms ( 100% ) 44.11mb ( 50.00% )
+
 class Solution {
     public int findChampion(int[][] grid) {
         

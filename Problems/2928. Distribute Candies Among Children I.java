@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms 39.8mb
+
 class Solution {
     public int distributeCandies(int n, int limit) {
         

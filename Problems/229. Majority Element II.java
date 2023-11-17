@@ -1,3 +1,12 @@
+// SUSHANT SINHA
+
+// 12ms ( 33.23% ) 46.3mb ( 71.66% )
+
+// can maintain an array for the frequency of all the elements in nums
+
+// while traversing and calculating frequencies.... track the numbers which have the top 2 maximum freuencies
+// keep on updaing these values untill we've traversed the entire nums
+
 class Solution {
     public List<Integer> majorityElement(int[] nums) {
 

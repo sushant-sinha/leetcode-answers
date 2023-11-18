@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 53ms ( 88.08% ) 56.8mb ( 58.52% )
+
 class Solution {
     public String findDifferentBinaryString(String[] nums) {
 

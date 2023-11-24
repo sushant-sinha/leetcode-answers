@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 2ms( 60.65% ) 43.49mb ( 92.78% )
+
 class Solution {
     public int findMinimumOperations(String s1, String s2, String s3) {
         

@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 2ms ( 99.07% ) 43.06mb ( 56.53% )
+
 class Solution {
     public int maximumStrongPairXor(int[] nums) {
         

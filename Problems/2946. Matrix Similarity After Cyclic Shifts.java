@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 2ms ( 52.58% ) 43.86%  ( 75.11% )
+
 class Solution {
     public boolean areSimilar(int[][] mat, int k) {
         
@@ -8,29 +12,15 @@ class Solution {
                 matCopy[i][j]=mat[i][j];
             }
         }
-        
-        // start rotations:
-        
-        
             
         for(int row=0;row<matCopy.length;row++){
 
-            // matCopy[row]=shifter(row%2, matCopy[row], k);
-
+            // dir = 0 is for left shift
             if(!Arrays.equals(shifter(row%2, matCopy[row], k), (mat[row])))
                 return false;
 
         }
 
-        
-        
-        // for(int i=0;i<mat.length;i++){
-
-        //     for(int j=0;j<mat[0].length;j++)
-        //         if(matCopy[i][j]!=mat[i][j]){
-        //             return false;
-        //         }
-        // }
         
         return true;
         
@@ -43,6 +33,7 @@ class Solution {
         
         else{
             
+            // right shift
             if(dir==1){
                 
                 int last=row[row.length-1];
@@ -57,6 +48,7 @@ class Solution {
                 
             }
             
+            // left shift
             else{
                 
                 int first=row[0];

@@ -1,3 +1,25 @@
+// this one gives 0ms solution (cannot figure the optimization though)
+
+class Solution {
+    
+    public int toTime(int[] from, int[] to) {
+        int xDiff = Math.abs(from[0] - to[0]);
+        int yDiff = Math.abs(from[1] - to[1]);
+        
+        return Math.max(xDiff, yDiff);
+    }
+    
+    public int minTimeToVisitAllPoints(int[][] points) {
+        int time = 0;
+    
+        for (int i = 1; i < points.length; i++) {
+            time += toTime(points[i - 1], points[i]);
+        }
+        
+        return time;
+    }
+}
+
 // took from prashant404's solution in discuss tab
 
 // 0ms ( 100% ) 38.2mb ( 98.74% )

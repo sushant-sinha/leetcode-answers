@@ -1,3 +1,8 @@
+// SUSHANT SINHA
+
+// not efficient
+// 118ms ( 37.53% ) 43.74mb ( 12.00% )
+
 class Solution {
     public int beautifulSubstrings(String s, int k) {
         

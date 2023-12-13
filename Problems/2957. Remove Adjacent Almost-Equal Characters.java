@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms ( 100% ) 40.75mb ( 97.29% )
+
 class Solution {
     public int removeAlmostEqualCharacters(String word) {
         

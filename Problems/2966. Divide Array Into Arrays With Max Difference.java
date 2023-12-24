@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 25ms ( 35.02% ) 59.48% ( 5.41% )
+
 class Solution {
     public int[][] divideArray(int[] nums, int k) {
         

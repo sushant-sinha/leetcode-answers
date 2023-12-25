@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 61ms ( 66.53% ) 45.10mb ( 19.07% )
+
 function countPairs(nums: number[], target: number): number {
 
     var ans=0;

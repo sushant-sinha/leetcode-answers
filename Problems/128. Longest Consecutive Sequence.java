@@ -1,3 +1,8 @@
+// SUSHANT SINHA
+
+// 24ms ( 77.46% ) 55.87mb ( 94.20% )
+// saw this on ig reels😂
+
 class Solution {
     public int longestConsecutive(int[] nums) {
 

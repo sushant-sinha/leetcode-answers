@@ -1,3 +1,8 @@
+// SUSHANT SINHA
+
+// 1ms ( 91.63% ) 41.44mb ( 5.17% )
+// why though?
+
 class Solution {
     public int differenceOfSums(int n, int m) {
 

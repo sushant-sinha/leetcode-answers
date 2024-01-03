@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms ( 100% ) 44.82mb ( 7.27% )
+
 class Solution {
     public List<Integer> findWordsContaining(String[] words, char x) {
 
@@ -5,7 +9,7 @@ class Solution {
 
         for(int i=0;i<words.length;i++){
 
-            // better to use !=-1 than >=0
+            // better to use words[i].indexOf(x) != -1 than using words[i].indexOf(x) >= 0
             if(words[i].indexOf(x)!=-1)
                 ans.add(i);
         }

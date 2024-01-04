@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms ( 91.43% ) 44.26mb ( 53.88% )
+
 class Solution {
     public boolean hasTrailingZeros(int[] nums) {
         

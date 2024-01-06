@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 172ms ( 12.41% ) 44.80mb ( 15.24% )
+
 class Solution {
     public int lengthOfLIS(int[] nums) {
 
@@ -10,8 +14,8 @@ class Solution {
         for(int i=1; i<nums.length; i++){
 
             if(map.lowerKey(nums[i])!=null){
+
                 int key=map.lowerKey(nums[i]);
-                // System.out.println("cur key= "+nums[i]+" just min key= "+key);
 
                 int val=0;
 
@@ -20,7 +24,7 @@ class Solution {
                     val=Math.max(e.getValue(), val);
 
                     if(e.getKey()==key)
-                    break;
+                        break;
 
 
                 }

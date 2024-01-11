@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms ( 100% ) 55.50mb ( 74.60% )
+
 class Solution {
     public int minOperations(int[] nums, int k) {
         
@@ -9,8 +13,10 @@ class Solution {
             
         }
         
+        // bits which are not same between the XOR and the target
         int diff=cur^k;
         
+        // return the number of places where the bit is one (where the bits are different)
         return count(diff);
         
     }

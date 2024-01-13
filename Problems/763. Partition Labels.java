@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 4ms ( 92.70% ) 42.00mb ( 38.65% )
+
 class Solution {
     public List<Integer> partitionLabels(String s) {
 

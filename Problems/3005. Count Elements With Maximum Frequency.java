@@ -1,3 +1,8 @@
+// SUSHANT SINHA
+
+// 2ms ( 73.56% ) 42.11mb ( 71.96% )
+// can try doing it without HashMap as well
+
 class Solution {
     public int maxFrequencyElements(int[] nums) {
         

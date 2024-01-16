@@ -38,3 +38,29 @@ class Solution {
         
     }
 }
+
+class Solution {
+    public int maxFrequencyElements(int[] nums) {
+        
+        int ans=0;
+
+        int counter[]=new int[101];
+
+        for(int i:nums)
+            counter[i]++;
+        
+        int max=1;
+
+        for(int i=0;i<=100;i++)
+            max=Math.max(max,counter[i]);
+
+        for(int i=0;i<=100;i++)
+        {
+            if(counter[i]==max)
+            {
+                ans+=max;
+            }
+        }
+        return ans;
+    }
+}

@@ -39,6 +39,9 @@ class Solution {
     }
 }
 
+// 1ms ( 99.90% ) 42.12mb ( 71.96% )
+// TC: O(n)
+
 class Solution {
     public int maxFrequencyElements(int[] nums) {
         

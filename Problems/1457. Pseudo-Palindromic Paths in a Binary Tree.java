@@ -1,3 +1,25 @@
+// 64ms ( 28.36% )  109.7mb ( 35.38% )
+
+// Very difficult to come up with this approach!
+// Refer solution again to understand
+// Check Pair
+
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+
 class Solution {
     public int pseudoPalindromicPaths (TreeNode root) {
         int count = 0, path = 0;

@@ -23,6 +23,8 @@ class Solution {
     }
 }
 
+//  0ms ( 100% ) 44.66mb ( 5.66% )
+
 class Solution {
     public int minimumCost(int[] nums) {
         
@@ -31,6 +33,7 @@ class Solution {
         int min1=Integer.MAX_VALUE;
         int min2=min1;
         
+        // using for loop to find the smallest 2 numbers
         for(int i=1;i<nums.length;i++){
 
             if(nums[i]<=min1){

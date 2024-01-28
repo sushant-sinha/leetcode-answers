@@ -1,3 +1,8 @@
+// SUSHANT SINHA
+
+// 12ms ( 26.34% ) 44.73mb ( 26.75% )
+// huge scope of optimization (for both, memory and run time)
+
 class Solution {
 
     HashMap<Integer, Integer> setBit=new HashMap<>();
@@ -16,6 +21,8 @@ class Solution {
         }
 
         Arrays.sort(ar);
+
+        // checking whether nums is already sorted or not
 
         boolean sorted=true;
 
@@ -51,6 +58,7 @@ class Solution {
         
     }
 
+    // for checking if the number can swapped from its current position to the correct position
     boolean swapper(int numToBeSwapped, int currentIndex, int correctIndex, int ar[]){
 
         int start = Math.min(correctIndex, currentIndex);
@@ -67,6 +75,8 @@ class Solution {
         return true;
     }
 
+    // count the number of set bits in the number
+    // taken from GFG, didn't had enough brain power to code it myself🤣
     int countSetBits(int n)
     {
         int ans = 0;

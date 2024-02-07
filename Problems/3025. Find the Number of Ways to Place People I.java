@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 14ms ( 50% ) 44.46mb ( 50% )
+
 class Solution {
     public int numberOfPairs(int[][] points) {
         

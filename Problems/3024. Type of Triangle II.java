@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms ( 61.69% ) 41.80mb ( 83.92% )
+
 class Solution {
     public String triangleType(int[] nums) {
         

@@ -1,6 +1,6 @@
 // SUSHANT SINHA
 
-// 22ms ( 82.51% ) 48.08mb ( 97.50% )
+// 16ms ( 94.66% ) 48.48mb ( 91.58% )
 
 class Solution {
     public String lastNonEmptyString(String s) {
@@ -24,7 +24,9 @@ class Solution {
             
         }
         
-        String ans="";
+        // String ans="";
+
+        StringBuffer sb=new StringBuffer();
         
         int maxFreqCount=0;
         
@@ -49,12 +51,12 @@ class Solution {
             
             freq[c]=0;
             
-            ans+=(char)(c+'a');
+            sb.append((char)(c+'a'));
             
             maxFreqCount--;
         }
         
-        return ans;
+        return sb.toString();
         
     }
 }

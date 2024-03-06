@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 4ms ( 9.55% ) 42.49mb ( 85.03% )
+
 class Solution {
     public int bagOfTokensScore(int[] tokens, int power) {
 

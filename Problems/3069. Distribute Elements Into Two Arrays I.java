@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms ( 99.90% ) 44.78mb ( 35.13% )
+
 class Solution {
     public int[] resultArray(int[] nums) {
         

@@ -1,3 +1,8 @@
+// SUSHANT SINHA
+
+// 279ms ( 5.07% ) 82.76mb ( 7.97% )
+// barely optimised😥
+
 class Solution {
     public int minOperations(int[] nums, int k) {
         

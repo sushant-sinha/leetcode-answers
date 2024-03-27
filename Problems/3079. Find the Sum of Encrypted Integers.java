@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms ( 99.96% ) 42.53mb ( 83.26% )
+
 class Solution {
     public int sumOfEncryptedInt(int[] nums) {
 

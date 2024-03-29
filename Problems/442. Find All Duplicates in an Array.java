@@ -47,3 +47,29 @@ class Solution {
         
     }
 }
+
+// 4ms ( 94.93% ) 48.38mb ( 99.92% )
+
+class Solution {
+    public List<Integer> findDuplicates(int[] nums) {
+        
+        List<Integer> ans=new ArrayList<>();
+        
+        int freq[]=new int[nums.length+1];
+        
+        for(int i:nums){
+            freq[i]++;
+            if(freq[i]==2)
+                ans.add(i);
+        }
+        
+        // for(int i=0;i<freq.length;i++)
+        //     if(freq[i]==2)
+        //         ans.add(i);
+            
+        System.gc();
+        
+        return ans;
+        
+    }
+}

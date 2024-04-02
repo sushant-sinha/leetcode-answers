@@ -1,3 +1,9 @@
+// Took reference from the solutions
+
+// To do
+
+// 4ms ( 99.99% ) 47.77mb ( 32.01% )
+
 class Solution {
     public int numSubarrayProductLessThanK(int[] nums, int k) {
         if (k <= 1) return 0;

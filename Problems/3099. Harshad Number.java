@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 0ms ( 100% ) 40.22mb ( 63.68% )
+
 class Solution {
     public int sumOfTheDigitsOfHarshadNumber(int x) {
 

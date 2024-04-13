@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 2ms ( 39.96% ) 43.17mb ( 23.91% )
+
 class Solution {
     public String getSmallestString(String s, int k) {
 

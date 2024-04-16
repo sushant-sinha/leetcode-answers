@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 878ms ( 5.13% ) 44.62mb ( 5.03% )
+
 class Solution {
 
     public int minOperations(int k) {

@@ -1,6 +1,6 @@
 // SUSHANT SINHA
 
-// 878ms ( 5.13% ) 44.62mb ( 5.03% )
+// 4ms ( 47.20% ) 40.47mb ( 76.52% )
 
 class Solution {
 
@@ -14,9 +14,8 @@ class Solution {
         // iterating through the number of additions
         for(int i=1;i<=k/2;i++){
             
+            // calculating the number of duplications needed after the increment
             int totalDuplications = duplicate(1+i, k);
-
-            System.out.println(i+ " " + totalDuplications);
 
             ans = Math.min(i+totalDuplications-1, ans);
         }

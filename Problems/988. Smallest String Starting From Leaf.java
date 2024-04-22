@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 8ms ( 39.83% ) 44.96mb ( 32.08% )
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -15,6 +19,7 @@
  */
 class Solution {
 
+    // its ASCII value is just more than z, so this will always be updated
     String ans="{";
 
     public String smallestFromLeaf(TreeNode root) {
@@ -28,6 +33,9 @@ class Solution {
         return ans;
         
     }
+
+    // tried using StringBuffer for making the append operations faster, but that just broke the code
+    // so sticking with String for now
 
     void traverse(TreeNode root, String temp){
 

@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 22ms ( 33.33% ) 45.28mb ( 100% )
+
 class Solution {
     public int numberOfSpecialChars(String word) {
 

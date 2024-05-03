@@ -1,8 +1,16 @@
+// SUSHANT SINHA
+
+// 7ms ( 26.37% ) 106.45mb ( 5.00% )
+
 class Solution {
     public int minRectanglesToCoverPoints(int[][] points, int w) {
 
         int ans=0;
 
+        // tried using the treemap and treeset for getting it naturally sorted
+
+        // TreeMap<Integer, Integer> sortedPoints=new TreeMap<>();
+        // Too expensive to use arraylist as we will be sorting it again
         ArrayList<Integer> allPoints=new ArrayList<>();
 
         for(int i[]: points){

@@ -41,3 +41,41 @@ class Solution {
         
     }
 }
+
+// best solution from the submission section
+
+class Solution {
+    public int minRectanglesToCoverPoints(int[][] points, int w) {
+        int min = Integer.MAX_VALUE, max = 0;
+
+        for (int[] point : points) {
+            if (point[0] < min) {
+                min = point[0];
+            }
+
+            if (point[0] > max) {
+                max = point[0];
+            }
+        }
+
+        int width = max - min + 1;
+
+        boolean[] occupied = new boolean[width];
+
+        for (var point : points) {
+            occupied[point[0] - min] = true;
+        }
+
+        int res = 0;
+
+        for (int i = 0; i < occupied.length; i++) {
+            if (occupied[i] == true) {
+                // we need to cover a point here
+                res++;
+                i += w; //we cover the next w points, so we can skip checking those
+            }
+        }
+
+        return res;
+    }
+}

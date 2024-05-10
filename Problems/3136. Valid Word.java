@@ -1,3 +1,9 @@
+// SUSHANT SINHA
+
+// 1ms ( 99.32% ) 41.77mb ( 82.74% )
+
+// very low acceptance rate for this question... has no hidden tricks that can fail the test case
+
 class Solution {
     public boolean isValid(String word) {
 

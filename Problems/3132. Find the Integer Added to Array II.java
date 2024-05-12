@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 2ms ( 100% ) 42.21mb ( 98.24% )
+
 class Solution {
     public int minimumAddedInteger(int[] nums1, int[] nums2) {
 

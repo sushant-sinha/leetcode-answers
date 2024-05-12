@@ -10,9 +10,7 @@ class Solution {
 
             int diff=nums2[0]-nums1[i];
 
-            int index=0;
-            boolean cur=true;
-
+            // check whether this diff works for all the members of nums2
             boolean check=check(nums1, nums2, diff, i);
 
             if(check)

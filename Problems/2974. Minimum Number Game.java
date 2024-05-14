@@ -1,3 +1,8 @@
+// SUSHANT SINHA
+
+// 2ms ( 97.16% ) 44.72mb ( 48.68% )
+// there was a better solution (according to leetcode) which uses a custom sort instead of Arrays.sort
+
 class Solution {
     public int[] numberGame(int[] nums) {
 

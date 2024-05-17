@@ -1,3 +1,8 @@
+// SUSHANT SINHA
+
+// 62ms ( 5.55% ) 61.63mb ( 41.54% )
+// might improve it later by not using Arrays.sort.... works for now ;)
+
 class Solution {
     public int maximumEnergy(int[] energy, int k) {
 

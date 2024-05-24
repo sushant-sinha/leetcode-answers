@@ -1,3 +1,8 @@
+// SUSHANT SINHA
+
+// 1ms ( 95.52% ) 44.60mb ( 30.49% )
+// has less than 50% acceptance rate for some reason
+
 class Solution {
     public boolean satisfiesConditions(int[][] grid) {
 

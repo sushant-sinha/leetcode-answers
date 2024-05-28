@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 72ms ( 81.45% ) 45.07mb ( 60.06% )
+
 public class Solution {
     public bool IsArraySpecial(int[] nums) {
 

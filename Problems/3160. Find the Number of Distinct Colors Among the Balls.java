@@ -1,7 +1,16 @@
+// SUSHANT SINHA
+
+// 53ms ( 30.93% ) 106.54mb ( 6.95% )
+// not fast, but fast enough😁
+
 class Solution {
     public int[] queryResults(int limit, int[][] queries) {
 
+        // mapping all the colors with the balls
+
         HashMap<Integer, ArrayList<Integer>> colorBall = new HashMap<>();
+
+        // mapping all balls with their respective colors
 
         HashMap<Integer, Integer> ballColor=new HashMap<>();
 
@@ -14,6 +23,7 @@ class Solution {
 
             if(ballColor.containsKey(ball)){
 
+                // get the arraylist of balls with the old color, and remove that ball from that color list
                 ArrayList<Integer> temp=colorBall.get(ballColor.get(ball));
 
                 temp.remove(new Integer(ball));

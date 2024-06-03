@@ -1,3 +1,6 @@
+// 2ms ( 78.43% ) 40.94mb ( 69.61% )
+// just wrote the pseudocode for this problem.
+
 class Solution {
     public int countTriplets(int[] arr) {
         int n = arr.length;

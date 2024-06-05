@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 16ms ( 98.70% ) 45.63mb ( 71.08% )
+
 class Solution {
     public String compressedString(String word) {
 

@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 4ms ( 85.31% ) 97.15mb ( 10.41% )
+
 class Solution {
     public long countCompleteDayPairs(int[] hours) {
 
@@ -14,9 +18,6 @@ class Solution {
 
             remainder[i%24]++;
         }
-
-        // System.out.println(Arrays.toString(remainder));
-
 
         return ans;
         

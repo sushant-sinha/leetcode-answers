@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 14ms ( 33.33% ) 62.21mb ( 100% )
+
 class Solution {
     public int maximumLength(int[] nums) {
 
@@ -14,21 +18,30 @@ class Solution {
 
         int tempAns=0;
 
+        // function protocoal -> int: subsequence(int array, startindex, pairity)
+
         if(oddStart!=-1){
-            
+            // case 1: when %2==0, starts with odd
             tempAns=subsequence(nums, oddStart, 0);
+            // System.out.println("case 1 "+tempAns);
             ans=Math.max(ans, tempAns);
 
+            // case 2: when %2==1, starts with odd
             tempAns=subsequence(nums, oddStart, 1);
+            // System.out.println("case 2 "+tempAns);
             ans=Math.max(ans, tempAns);
 
         }
 
         if(evenStart!=-1){
+            // case 3: when %2==0, starts with even
             tempAns=subsequence(nums, evenStart, 0);
+            // System.out.println("case 3 "+tempAns);
             ans=Math.max(ans, tempAns);
 
+            // case 4: when %2==1, starts with even
             tempAns=subsequence(nums, evenStart, 1);
+            // System.out.println("case 4 "+tempAns);
             ans=Math.max(ans, tempAns);
 
         }
@@ -51,6 +64,8 @@ class Solution {
 
             if(curPair==0 && pairity==0 || curPair==1 && pairity==1){
                 
+                // find 0
+                // System.out.println("inside 1 "+tempIndex);
                 tempIndex++;
                 while(tempIndex<ar.length){
                     if(ar[tempIndex]==0){
@@ -64,6 +79,8 @@ class Solution {
             else if(curPair==1 && pairity==0 || curPair==0 && pairity==1){
                 
                 tempIndex=i;
+                // System.out.println("inside 2 "+tempIndex);
+                // find 1
                 tempIndex++;
                 while(tempIndex<ar.length){
                     if(ar[tempIndex]==1){

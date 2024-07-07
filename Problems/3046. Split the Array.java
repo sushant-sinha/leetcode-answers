@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms ( 98.82% ) 42.27mb ( 96.43% )
+
 class Solution {
     public boolean isPossibleToSplit(int[] nums) {
         

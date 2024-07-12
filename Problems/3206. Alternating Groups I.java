@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms ( 97.08% ) 43.46mb ( 10.40% )
+
 class Solution {
     public int numberOfAlternatingGroups(int[] colors) {
 

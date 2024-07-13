@@ -1,3 +1,15 @@
+// SUSHANT SINHA
+
+// 1ms ( 76.84% ) 42.65mb ( 69.70% )
+
+/*
+    Was thinking of implementing a REAL encoding algorithm
+    This would have eliminated the need of HashMaps.
+    More like an encryption and decryption mechanism. But, we'll use a common key for both the tasks.
+
+    But HashMaps work in this case (referred Solutions section to understand that this is enough).
+*/
+
 public class Codec {
 
     HashMap<String, String> originalLinkToShortLink=new HashMap<>();

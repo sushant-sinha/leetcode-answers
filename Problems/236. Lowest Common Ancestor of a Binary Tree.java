@@ -1,3 +1,9 @@
+// SUSHANT SINHA
+
+// 10ms ( 12.28% ) 46.73mb ( 5.52% )
+
+// need to optimize the search and traversal😝
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -17,6 +23,7 @@ class Solution {
         HashSet<TreeNode> ancestors=new HashSet<>();
         ancestors.add(p);
 
+        // traverse from node p to root
         TreeNode parent=nodeToParent.get(p.val);
         
         while(parent!=null){
@@ -25,6 +32,8 @@ class Solution {
             parent=nodeToParent.get(parent.val);
     
         }
+
+        // traverse from node q to root and find the common element
 
         parent=q;
         while(!ancestors.contains(parent)){

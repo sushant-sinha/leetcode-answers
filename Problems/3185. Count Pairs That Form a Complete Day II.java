@@ -1,6 +1,6 @@
 // SUSHANT SINHA
 
-// 4ms ( 85.31% ) 97.15mb ( 10.41% )
+// 4ms ( 85.31% ) 96.91mb ( 19.60% )
 
 class Solution {
     public long countCompleteDayPairs(int[] hours) {

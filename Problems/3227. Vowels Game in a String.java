@@ -1,6 +1,6 @@
 // SUSHANT SINHA
 
-// 6ms ( 90.20% ) 45.29mb ( 96.39% )
+// 4ms ( 92.12% ) 45.19mb ( 96.84% )
 
 class Solution {
     public boolean doesAliceWin(String s) {
@@ -9,13 +9,15 @@ class Solution {
 
         for(char c:s.toCharArray()){
             if(c=='a' || c=='e' || c=='i' || c=='o' || c=='u')
-                vowCount++;
+                return true;
         }
 
-        if(vowCount==0)
-            return false;
+        // if(vowCount==0)
+        //     return false;
 
-        else
-            return true;
+        // else
+            // return true;
+        
+        return false;
     }
 }

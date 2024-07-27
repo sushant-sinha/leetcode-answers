@@ -34,9 +34,6 @@ class Solution {
 
         }
 
-        // System.out.println(Arrays.toString(lastPositionOfLowerCase));
-        // System.out.println(Arrays.toString(firstPositionOfUpperCase));
-
         for(int i=0;i<26;i++){
 
             if(lastPositionOfLowerCase[i]!=-1 && firstPositionOfUpperCase[i]!=-1 && lastPositionOfLowerCase[i]<firstPositionOfUpperCase[i])

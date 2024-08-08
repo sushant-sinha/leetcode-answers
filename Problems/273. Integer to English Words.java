@@ -1,3 +1,15 @@
+// SUSHANT SINHA
+
+// 4ms ( 65.73% ) 41.60mb ( 88.65% )
+
+/*
+
+Took me 3 attempts to solve this because of 2 cases:
+    1) When the triplet is having value '0'. Handled it by adding a condition in line# 68.
+    2) Missed to update one of the if conditions while copying🥲
+
+*/ 
+
 class Solution {
     public String numberToWords(int num) {
 
@@ -155,8 +167,7 @@ class Solution {
 
                 return genericDoubleDigit(digit);
             }
-            
-            
+                 
         }
 
         if(position==1){
@@ -204,7 +215,7 @@ class Solution {
             
         }
 
-        return"";
+        return "";
     }
 
     String genericDoubleDigit(int num){

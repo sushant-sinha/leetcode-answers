@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 65ms ( 70.80% ) 46.30mb ( 56.56% )
+
 class Solution {
     public int rangeSum(int[] nums, int n, int left, int right) {
 

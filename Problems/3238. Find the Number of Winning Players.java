@@ -1,3 +1,17 @@
+// SUSHANT SINHA
+
+// 3ms ( 71.61% ) 44.88mb ( 77.65% )
+
+/*
+    Found a new thing about typecasting.
+    We can typecast any object as long as it has the same thing inside.
+
+    So, the below piece code should work:
+    
+    Object o=new int[11];
+    int[] ar=(int[]) o;
+*/
+
 class Solution {
     public int winningPlayerCount(int n, int[][] pick) {
 

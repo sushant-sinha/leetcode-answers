@@ -1,3 +1,8 @@
+// SUSHANT SINHA
+
+// trivial solution
+// 0ms ( 100% ) 41.56mb ( 45.11% )
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {

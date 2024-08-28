@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 0ms ( 100% ) 44.48mb ( 83.57% )
+
 /*
 // Definition for a Node.
 class Node {
@@ -33,9 +37,9 @@ class Solution {
         if(root==null)
             return;
 
-        List<Node> child = root.children;
+        // List<Node> child = root.children;
 
-        for(Node n: child){
+        for(Node n: root.children){
             traverse(n);
         }
 

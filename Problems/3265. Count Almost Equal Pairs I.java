@@ -1,3 +1,17 @@
+// SUSHANT SINHA
+
+/*
+
+below solution cannot handle cases when there are multiple characters with the same value:
+
+for: 144363 and 134364
+when I replace 3 at ones place, with 4 at thousands place, I get 143364, which is not same as 134364.
+my algo should be able to look for the other 4 (at ten thousands place) and swap the 3 with it.
+
+might choose recursion for v2 of solution
+
+*/
+
 class Solution {
     public int countPairs(int[] nums) {
 

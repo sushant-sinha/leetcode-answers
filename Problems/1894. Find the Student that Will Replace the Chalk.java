@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 1ms ( 99.19% ) 60.30mb ( 20.88 )
+
 class Solution {
     public int chalkReplacer(int[] chalk, int k) {
 

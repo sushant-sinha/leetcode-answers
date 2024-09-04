@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 34ms ( 53.27% ) 48.70mb ( 93.45% )
+
 class Solution {
     public int robotSim(int[] commands, int[][] obstacles) {
 

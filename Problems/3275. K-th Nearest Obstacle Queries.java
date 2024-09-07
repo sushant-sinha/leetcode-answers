@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 124ms ( 11.94% ) 145.50mb ( 41.99% )
+
 class Solution {
     public int[] resultsArray(int[][] queries, int k) {
 

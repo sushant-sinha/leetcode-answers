@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 4ms ( 76.51% ) 42.49mb ( 77.29% )
+
 class Solution {
     public String convertDateToBinary(String date) {
 

@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 2ms ( 96.28% ) 44.14mb ( 99.73% )
+
 class Solution {
     public String stringHash(String s, int k) {
 

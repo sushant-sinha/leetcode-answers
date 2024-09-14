@@ -3,19 +3,19 @@ class Solution {
 
         // sliding window should do just fine
 
-        int ans=-1;
+        int ans=0;
 
         HashMap<Character, Integer> charAndBit=new HashMap<>();
 
-        charAndBitput('a', 0);
-        charAndBitput('a', 1);
-        charAndBitput('a', 2);
-        charAndBitput('a', 3);
-        charAndBitput('a', 4);
+        charAndBit.put('a', 0);
+        charAndBit.put('e', 1);
+        charAndBit.put('i', 2);
+        charAndBit.put('o', 3);
+        charAndBit.put('u', 4);
 
 
         HashMap<Integer, Integer> firstBitPattern=new HashMap<>();
-        firstBitPattern.put(0,0);
+        firstBitPattern.put(0,-1);
 
         int head=0, bitMask=0;
 
@@ -26,13 +26,12 @@ class Solution {
             }
 
             if(firstBitPattern.containsKey(bitMask)){
-                ans=Math.max(ans, i-firstBitPattern(bitMask)+1);
+                ans=Math.max(ans, i-firstBitPattern.get(bitMask));
             }
 
             else{
                 firstBitPattern.put(bitMask, i);
             }
-
 
         }
 

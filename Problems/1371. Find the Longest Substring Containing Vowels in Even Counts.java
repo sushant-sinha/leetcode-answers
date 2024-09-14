@@ -1,7 +1,16 @@
+// SUSHANT SINHA
+
+// had to refer from the solution section.
+// was confused when to move forward the tail
+// or when to just keep on going ahead and look for the next vowel to get the even frequency
+
+// 58ms ( 45.55% ) 45.36mb ( 60.50% )
+
 class Solution {
     public int findTheLongestSubstring(String s) {
 
-        // sliding window should do just fine
+        // sliding window should do just fine?
+        // Nah!! It wont.
 
         int ans=0;
 

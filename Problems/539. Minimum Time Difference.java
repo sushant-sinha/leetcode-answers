@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 7ms ( 52.51% ) 46.14mb ( 25.75% )
+
 class Solution {
     public int findMinDifference(List<String> timePoints) {
 

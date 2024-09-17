@@ -1,6 +1,48 @@
 class Solution {
     public int findMinDifference(List<String> timePoints) {
 
+        int allMins[]=new int[timePoints.size()];
+
+        int index=0;
+
+        for(String s: timePoints){
+            allMins[index++]=stringToMinutes(s);
+        }
+
+        Arrays.sort(allMins);
+
+        index=0;
+
+        int ans=1441;
+
+        for(;index<timePoints.size()-1;index++){
+            ans=Math.min(allMins[index+1]-allMins[index], ans);
+        }
+
+        return Math.min(ans, 1440-(allMins[index]-allMins[0]));
+        
+    }
+
+    int stringToMinutes(String time){
+
+        String split[]=time.split(":");
+
+        int ans=0;
+
+        
+            ans+=(Integer.parseInt(split[0]))*60;
+            ans+=Integer.parseInt(split[1]);
+        
+
+        return ans;
+    }
+}
+
+/*
+
+class Solution {
+    public int findMinDifference(List<String> timePoints) {
+
         TreeSet<Integer> minutes=new TreeSet<>();
 
         int ans=Integer.MAX_VALUE;
@@ -74,3 +116,5 @@ class Solution {
         return ans;
     }
 }
+
+*/

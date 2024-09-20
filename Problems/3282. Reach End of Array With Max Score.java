@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 10ms ( 62.85% ) 67.15mb ( 30.21% )
+
 class Solution {
     public long findMaximumScore(List<Integer> nums) {
 

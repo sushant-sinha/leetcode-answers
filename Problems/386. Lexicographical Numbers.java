@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 50ms ( 5.01% ) 52.89mb ( 5.01% )
+
 class Solution {
     public List<Integer> lexicalOrder(int n) {
 

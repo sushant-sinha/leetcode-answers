@@ -1,7 +1,15 @@
+// SUSHANT SINHA
+
+// 44ms ( 90.66% ) 45.33mb ( 86.35% )
+
 class MyCalendarTwo {
 
+    // all the new events are going to be added to this list.
+    // but, as soon as we see
     List<int[]> singleBook;
     
+    // List to store the timeframes that are being double booked.
+    // we will make sure that the new event isn't falling in this timeframe. This will ensure that we don't have any tripple bookings.
     List<int[]> doubleBook;
 
     public MyCalendarTwo() {
@@ -10,6 +18,9 @@ class MyCalendarTwo {
     }
     
     public boolean book(int start, int end) {
+
+        // not efficient implementation, traversing the entire list everytime
+        // took from solutions
 
         // Check if the new booking overlaps with any double-booked intervals
         for (int[] event : doubleBook) {

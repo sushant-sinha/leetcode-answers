@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 49ms ( 91.36% ) 73.89mb ( 54.16% )
+
 class Solution {
     public boolean reportSpam(String[] message, String[] bannedWords) {
 

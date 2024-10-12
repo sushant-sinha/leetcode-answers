@@ -28,23 +28,24 @@ class Solution {
 
         // System.out.println("in for "+index);
 
-        
+            
 
-        for(;index<nums.length;index++){
+            for(;index<nums.length;index++){
 
             // System.out.println("----------- in for "+index);
 
-            int tempOR=curOR | nums[index];
+                int tempOR=curOR | nums[index];
 
-            if(tempOR==maxBitwiseOR)
-                ans++;
+                if(tempOR==maxBitwiseOR)
+                    ans++;
 
-            recur(nums, index+1, tempOR);
-        }
+                recur(nums, index+1, tempOR);
+            }
 
         // System.out.println("--------------------end for "+x);
 
-        return;
-    }
+            return;
+        }
 
+    }
 }

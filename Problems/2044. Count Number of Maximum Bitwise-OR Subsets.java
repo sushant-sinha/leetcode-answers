@@ -23,9 +23,7 @@ class Solution {
 
     void recur(int nums[], int index, int curOR){
 
-        if(index==nums.length){
-            return;
-        }
+        for(; index < nums.length; index++){
 
 
         // System.out.println("in for "+index);

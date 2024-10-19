@@ -27,7 +27,6 @@ class Solution {
             return;
         }
 
-        int x=index;
 
         // System.out.println("in for "+index);
 

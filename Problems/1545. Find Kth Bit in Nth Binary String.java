@@ -1,3 +1,5 @@
+// SUSHANT SINHA
+
 /*
 
 for char to int and int to char conversions.
@@ -16,6 +18,7 @@ Output => 4
 */
 
 // 0ms ( 100% ) 41.21mb ( 56.45% )
+
 class Solution {
 
     int bitFlip=0;

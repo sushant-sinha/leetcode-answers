@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 4ms( 60.14% ) 41.88mb ( 83.03% )
+
 class Solution {
     public char kthCharacter(int k) {
 

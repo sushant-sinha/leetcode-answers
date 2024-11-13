@@ -1,3 +1,6 @@
+// couldn't solve this questions
+// referred solutions and discussion section
+
 class Solution {
 
     int numsCopy[];

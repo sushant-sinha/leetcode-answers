@@ -1,9 +1,14 @@
+// SUSHANT SINHA
+
+// 180ms ( 5.17% ) 80.42mb ( 6.02% )
+
 class Solution {
     public int countUnguarded(int m, int n, int[][] guards, int[][] walls) {
 
         HashMap<Integer, HashSet<Integer>> wallHash=new HashMap<>();
         HashMap<Integer, HashSet<Integer>> guardHash=new HashMap<>();
 
+        // convert array to map for faster search
         for(int i[]: walls){
 
             HashSet<Integer> temp;
@@ -47,112 +52,112 @@ class Solution {
 
         // System.out.println(ans);
 
-        
-
         for(int i[]: guards){
 
             // System.out.println("in for guard "+Arrays.toString(i));
 
-            int negatingCounter=0;
+            // made this variable for debugging, not needed for solution
+            // int negatingCounter=0;
 
             // check all four directions
 
-            int curPos[]=new int[]{i[0], i[1]};
+            int x=i[0], y=i[1];
 
             // check north
 
-            while(curPos[0]-1>=0){
-                if(wallHash.containsKey(curPos[0]-1) && wallHash.get(curPos[0]-1).contains(curPos[1])){
+            while(x-1>=0){
+                if(wallHash.containsKey(x-1) && wallHash.get(x-1).contains(y)){
                     // System.out.println("break1");
                     break;
                 }
 
-                if(guardHash.containsKey(curPos[0]-1) && guardHash.get(curPos[0]-1).contains(curPos[1])){
+                if(guardHash.containsKey(x-1) && guardHash.get(x-1).contains(y)){
                     // System.out.println("break2");
                     break;
                 }
 
 
-                if(map[curPos[0]-1][curPos[1]]==0){
+                if(map[x-1][y]==0){
                     ans--;
-                    negatingCounter++;
-                    map[curPos[0]-1][curPos[1]]=1;
+                    // negatingCounter++;
+                    map[x-1][y]=1;
                 }
-                curPos[0]--;
+                x--;
             }
             
-            curPos[0]=i[0];
-            curPos[1]=i[1];
+            x=i[0];
+            y=i[1];
 
             // check south
 
-            while(curPos[0]+1<m){
-                if(wallHash.containsKey(curPos[0]+1) && wallHash.get(curPos[0]+1).contains(curPos[1])){
+            while(x+1<m){
+                if(wallHash.containsKey(x+1) && wallHash.get(x+1).contains(y)){
                     // System.out.println("break3");
                     break;
                 }
 
-                if(guardHash.containsKey(curPos[0]+1) && guardHash.get(curPos[0]+1).contains(curPos[1])){
+                if(guardHash.containsKey(x+1) && guardHash.get(x+1).contains(y)){
                     // System.out.println("break4");
                     break;
                 }
                 
-                if(map[curPos[0]+1][curPos[1]]==0){
+                if(map[x+1][y]==0){
                     ans--;
-                    negatingCounter++;
-                    map[curPos[0]+1][curPos[1]]=1;
+                    // negatingCounter++;
+                    map[x+1][y]=1;
                 }
 
-                curPos[0]++;
+                x++;
             }
-            curPos[0]=i[0];
-            curPos[1]=i[1];
+
+            x=i[0];
+            y=i[1];
 
             // check east
 
-            while(curPos[1]-1>=0){
+            while(y-1>=0){
 
-                if(wallHash.containsKey(curPos[0]) && wallHash.get(curPos[0]).contains(curPos[1]-1)){
+                if(wallHash.containsKey(x) && wallHash.get(x).contains(y-1)){
                     // System.out.println("break5");
                     break;
                 }
 
-                if(guardHash.containsKey(curPos[0]) && guardHash.get(curPos[0]).contains(curPos[1]-1)){
+                if(guardHash.containsKey(x) && guardHash.get(x).contains(y-1)){
                     // System.out.println("break6");
                     break;
                 }
 
-                if(map[curPos[0]][curPos[1]-1]==0){
+                if(map[x][y-1]==0){
                     ans--;
-                    negatingCounter++;
-                    map[curPos[0]][curPos[1]-1]=1;
+                    // negatingCounter++;
+                    map[x][y-1]=1;
                 }
-                curPos[1]--;
+                y--;
             }
 
-            curPos[0]=i[0];
-            curPos[1]=i[1];
+            x=i[0];
+            y=i[1];
 
-            // check north
+            // check west
 
-            while(curPos[1]+1<n){
+            while(y+1<n){
 
-                if(wallHash.containsKey(curPos[0]) && wallHash.get(curPos[0]).contains(curPos[1]+1)){
+                if(wallHash.containsKey(x) && wallHash.get(x).contains(y+1)){
                     // System.out.println("break7");
                     break;
                 }
 
-                if(guardHash.containsKey(curPos[0]) && guardHash.get(curPos[0]).contains(curPos[1]+1)){
+                if(guardHash.containsKey(x) && guardHash.get(x).contains(y+1)){
                     // System.out.println("break8");
                     break;
                 }
 
-                if(map[curPos[0]][curPos[1]+1]==0){
+                if(map[x][y+1]==0){
                     ans--;
-                    negatingCounter++;
-                    map[curPos[0]][curPos[1]+1]=1;
+                    // negatingCounter++;
+                    map[x][y+1]=1;
                 }
-                curPos[1]++;
+                y++;
             }
 
             // System.out.println("----------------- "+negatingCounter);

@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 70ms ( 62.25% ) 49.88MB ( 76.67% )
+
 class Solution {
     public boolean isPossibleToRearrange(String s, String t, int k) {
 

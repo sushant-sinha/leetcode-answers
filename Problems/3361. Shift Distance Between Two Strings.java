@@ -1,8 +1,13 @@
+// SUSHANT SINHA
+
+// 42ms ( 81.42% ) 45.17MB ( 99.66% )
+
 class Solution {
     public long shiftDistance(String s, String t, int[] nextCost, int[] previousCost) {
 
         // create a map for converting every character to every other character
 
+        // must return long. Got wrong answer just because of this :')
         long ans=0;
 
         long[][] cost=new long[26][26];

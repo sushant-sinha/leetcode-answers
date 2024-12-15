@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 669ms ( 5.01% ) 73.04MB ( 5.03% )
+
 class Solution {
     public long findScore(int[] nums) {
 
@@ -23,7 +27,8 @@ class Solution {
         }
 
         int markedCounter=nums.length;
-        
+
+        // super slow
         while(markedCounter!=0){
 
             int choose = map.firstKey();

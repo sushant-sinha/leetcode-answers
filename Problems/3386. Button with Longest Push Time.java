@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 0ms ( 100.00% ) 45.05MB ( 21.51% )
+
 class Solution {
     public int buttonWithLongestTime(int[][] events) {
         
@@ -12,6 +16,8 @@ class Solution {
                 timeDiff=newTimeDiff;
             }
 
+            // this condition is important, submission failed because I missed on this
+            // tie breaker, consider the button index with the smaller value
             if(timeDiff==newTimeDiff)
                 ansIndex=Math.min(ansIndex, events[i][0]);
         }

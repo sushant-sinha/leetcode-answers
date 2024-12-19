@@ -1,63 +1,86 @@
+// SUSHANT SINHA
+
+// 6ms ( 5.66% ) 45.18MB ( 19.33% )
+
 class Solution {
     public int[] getFinalState(int[] nums, int k, int multiplier) {
-
-        // map the number with the index
-        TreeMap<Integer, TreeSet<Integer>> map=new TreeMap<>();
-
+        
+        TreeMap<Integer, TreeSet<Integer>> valAndIndex=new TreeMap<>();
+        
+        // int min=Integer.MAX_VALUE, max=Integer.MIN_VALUE;
+        
         for(int i=0;i<nums.length;i++){
+            TreeSet<Integer> ar;
 
-            TreeSet<Integer> index;
-            
-            if(map.containsKey(nums[i]))
-                index=map.get(nums[i]);
+            if(valAndIndex.containsKey(nums[i]))
+                ar=valAndIndex.get(nums[i]);
 
             else
-                index=new TreeSet<>();
+                ar=new TreeSet<>();
 
-            index.add(i);
+            ar.add(i);
 
-            map.put(nums[i], index);
+            valAndIndex.put(nums[i], ar);
         }
 
         for(int i=0;i<k;i++){
 
-            //get the first key, which is the smallest number
+            TreeSet<Integer> firstElement=valAndIndex.get(valAndIndex.firstKey());
+            // System.out.println(firstElement);
+            int index1=firstElement.pollFirst();
 
-            int smallest=map.firstKey();
-            // get the index of this number
+            if(firstElement.size()==0){
+                valAndIndex.remove(valAndIndex.firstKey());
+            }
+            nums[index1]*=multiplier;
 
-            TreeSet<Integer> indices=map.get(smallest);
+            TreeSet<Integer> ar;
 
-            int numIndex=indices.getFirst();
-
-            nums[numIndex]=smallest*multiplier;
-
-            indices.remove(numIndex);
-
-            if(indices.size()==0)
-                map.remove(new Integer(smallest));
+            if(valAndIndex.containsKey(nums[index1]))
+                ar=valAndIndex.get(nums[index1]);
 
             else
-                map.put(smallest, indices);
-            
-            // add the new element
+                ar=new TreeSet<>();
 
-            TreeSet<Integer> newIndices;
+            ar.add(index1);
 
-            if(map.containsKey(smallest*multiplier))
-                newIndices=map.get(smallest*multiplier);
+            // System.out.println(nums[index1]+" "+ar);
 
-            else
-                newIndices=new TreeSet<>();
+            valAndIndex.put(nums[index1], ar);
 
-            newIndices.add(numIndex);
-
-            map.put(smallest*multiplier, newIndices);
-
-            // System.out.println(smallest);
         }
 
         return nums;
-        
+    }
+}
+
+// O(N⋅logN+k⋅logN), since not using inbuilt heap
+// from the editorial
+// understand how the custom comparator works for Collections
+
+ class Solution {
+
+    public int[] getFinalState(int[] nums, int k, int multiplier) {
+        PriorityQueue<int[]> heap = new PriorityQueue<>((a, b) -> {
+            int valueComparison = Integer.compare(a[0], b[0]);
+            if (valueComparison == 0) {
+                return Integer.compare(a[1], b[1]);
+            }
+            return valueComparison;
+        });
+
+        for (int i = 0; i < nums.length; i++) {
+            heap.offer(new int[] { nums[i], i });
+        }
+
+        while (k-- > 0) {
+            int[] smallest = heap.poll();
+            int index = smallest[1];
+
+            nums[index] *= multiplier;
+            heap.offer(new int[] { nums[index], index });
+        }
+
+        return nums;
     }
 }

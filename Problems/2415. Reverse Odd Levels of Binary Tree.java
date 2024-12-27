@@ -1,3 +1,22 @@
+// SUSHANT SINHA
+
+// 24ms ( 5.60% ) 50.26MB ( 14.59% )
+
+// devised this solution to work even for non perfect binary trees
+// this leads to added cost for remembering the order of nodes/values for every level
+
+/*
+ editorial has two solutions
+ BFS uses a queue to store all the elements (TreeNode not value) to be discovered in the next level
+
+ when on a level, create a list of all the elements on this level (using the queue), and also add their child to the queue for next iteration
+ if this level is odd, we will use this list of TreeNode and swap their values
+
+ DFS uses (or rather exploits) the guaranteed "perfect tree". (Need to try)
+ swap the values of the extreme's values while going deeper
+
+ */
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {

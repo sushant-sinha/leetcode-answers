@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 4ms ( 97.74% ) 85.88MB ( 48.50% )
+
 class Solution {
     public int[] vowelStrings(String[] words, int[][] queries) {
 

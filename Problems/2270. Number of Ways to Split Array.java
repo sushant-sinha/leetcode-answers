@@ -1,3 +1,5 @@
+// SUSHANT SINHA
+
 // gives wrong answer for [0,0], expected 1, returns 0
 
 class Solution {
@@ -18,7 +20,7 @@ class Solution {
 
             // System.out.println(numSum[i]+" "+(numSum[i]-numSum[nums.length-1]));
 
-            if(numSum[i]>(numSum[nums.length-1]-numSum[i]))
+            if(numSum[i]>=(numSum[nums.length-1]-numSum[i]))
                 ans++;
         }
 

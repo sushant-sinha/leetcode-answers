@@ -1,3 +1,5 @@
+// gives wrong answer for [0,0], expected 1, returns 0
+
 class Solution {
     public int waysToSplitArray(int[] nums) {
 

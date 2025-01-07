@@ -1,35 +1,38 @@
 class Solution {
+
     public String shiftingLetters(String s, int[][] shifts) {
+        int n = s.length();
+        int[] diffArray = new int[n]; // Initialize a difference array with all elements set to 0.
 
-        int len=s.length();
-        int[] pos=new int[len];
-
-        for(int i=0;i<shifts.length;i++){
-
-            int dir=shifts[i][2]==1 ? 1 : 25;
-
-            for(int x=shifts[i][0]; x<=shifts[i][1];x++)
-                pos[x]= (pos[x]+dir)%26;
+        // Process each shift operation
+        for (int[] shift : shifts) {
+            if (shift[2] == 1) { // If direction is forward (1)
+                diffArray[shift[0]]++; // Increment at the start index
+                if (shift[1] + 1 < n) {
+                    diffArray[shift[1] + 1]--; // Decrement at the end+1 index
+                }
+            } else { // If direction is backward (0)
+                diffArray[shift[0]]--; // Decrement at the start index
+                if (shift[1] + 1 < n) {
+                    diffArray[shift[1] + 1]++; // Increment at the end+1 index
+                }
+            }
         }
 
-        // System.out.println(Arrays.toString(pos));
+        StringBuilder result = new StringBuilder(s);
+        int numberOfShifts = 0;
 
-        StringBuilder sb=new StringBuilder();
+        // Apply the shifts to the string
+        for (int i = 0; i < n; i++) {
+            numberOfShifts = (numberOfShifts + diffArray[i]) % 26; // Update cumulative shifts, keeping within the alphabet range
+            if (numberOfShifts < 0) numberOfShifts += 26; // Ensure non-negative shifts
 
-        for(int i=0;i<len;i++){
-            // System.out.println(s.charAt(i)+" "+(s.charAt(i)+pos[i]));
-            char cur=s.charAt(i);
-            int offset=pos[i];
-            int newPos=cur+offset;
-            if(newPos>'z')
-                newPos=newPos%'z';
-            if(newPos<'a')
-                newPos+='a'-1;
-            // System.out.println((char)newPos+" int "+newPos);
-            sb.append((char)newPos);
+            // Calculate the new character by shifting `s[i]`
+            char shiftedChar = (char) ('a' +
+                ((s.charAt(i) - 'a' + numberOfShifts) % 26));
+            result.setCharAt(i, shiftedChar);
         }
 
-        return sb.toString();
-        
+        return result.toString();
     }
 }

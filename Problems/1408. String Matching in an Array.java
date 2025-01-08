@@ -52,6 +52,8 @@ class Solution {
         
         List<String> result = new LinkedList<>();
         for(String str : words)
+            // checks if the same string is repeated anywhere in the appended string or not
+            // if the indexes don't match, that means we have found another occurence (bigger string which contains the smaller string) of the string
             if(allstr.indexOf(str) != allstr.lastIndexOf(str))
                 result.add(str);
         

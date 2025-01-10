@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 14ms ( 27.63% ) 45.69MB ( 39.24% )
+
 class Solution {
     public String answerString(String word, int numFriends) {
 

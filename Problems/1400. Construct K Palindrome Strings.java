@@ -1,3 +1,5 @@
+// failed for s="cr", k=7
+
 class Solution {
     public boolean canConstruct(String s, int k) {
 

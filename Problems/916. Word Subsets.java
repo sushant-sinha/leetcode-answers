@@ -3,7 +3,7 @@
 // couldn't solve this... used HashMap to map the Characters and the number of times it occured
 // this is from the solution section
 
-// 16ms ( 93.80% ) 50.2mb ( 95.87% )
+// 3ms ( 79.56% ) 54.58MB ( 62.41% )
 
 class Solution {
     public List<String> wordSubsets(String[] A, String[] B) {

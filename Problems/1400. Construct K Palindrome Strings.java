@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 28ms ( 17.55% ) 45.90MB ( 7.00% )
+
 class Solution {
     public boolean canConstruct(String s, int k) {
 

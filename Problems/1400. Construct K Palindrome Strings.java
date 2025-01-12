@@ -1,7 +1,8 @@
-// failed for s="cr", k=7
-
 class Solution {
     public boolean canConstruct(String s, int k) {
+
+        if(k>s.length())
+            return false;
 
         // int freq[]=new int[26];
 

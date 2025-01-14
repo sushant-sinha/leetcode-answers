@@ -1,11 +1,18 @@
-// 85ms ( 8.47% ) 47.79MB ( 6.43% )
-// too slow
+// use of stack was suggested by @chromaa
+// we were trying the new collaboration feature which was absolute bs
 
 class Solution {
     public long calculateScore(String s) {
         long ans=0;
         // creating a HashMap, maps the character with the position
-        HashMap<Character, TreeSet<Integer>> pos=new HashMap<>();
+        HashMap<Character, Stack<Integer>> pos=new HashMap<>();
+
+        char ar[]=new char[26];
+        for(int i=25;i>=0;i--){
+            ar[25-i]=(char)((int)'a'+i);
+
+            pos.put((char)((int)'a'+i), new Stack<Integer>());
+        }
 
         // for (char c = 'a'; c <= 'z'; c++) {
         //     System.out.println(mirrorGivenChar(c));
@@ -17,32 +24,40 @@ class Solution {
 
         for(int i=0;i<s.length();i++){
 
-            char mirrored=mirrorGivenChar(s.charAt(i));
+            // char mirrored=mirrorGivenChar(s.charAt(i));
+            char mirrored=ar[s.charAt(i)-'a'];
+            Stack<Integer> temp=pos.get(mirrored);
 
-            if(pos.containsKey(mirrored)){
+            if(temp.size()>0){
                 // get the closest index, will be the largest value in the set
-                TreeSet<Integer> temp=pos.get(mirrored);
-                int j=temp.last();
+                // Stack<Integer> temp=pos.get(mirrored);
+                int j=temp.pop();
                 ans+=i-j;
-                temp.remove(j);
+                // temp.remove(j);
 
-                if(temp.size()==0)
-                    pos.remove(mirrored);
+                // if(temp.size()==0)
+                //     pos.remove(mirrored);
             }
 
             else{
-                TreeSet<Integer> temp;
-                if(pos.containsKey(s.charAt(i)))
-                    temp=pos.get(s.charAt(i));
+                Stack<Integer> original=pos.get(s.charAt(i));
+                original.push(i);
+                pos.put(s.charAt(i), original);
+            }
+
+            // else{
+            //     Stack<Integer> temp;
+            //     if(pos.containsKey(s.charAt(i)))
+            //         temp=pos.get(s.charAt(i));
                     
 
-                else
-                    temp=new TreeSet<>();
+            //     else
+            //         temp=new Stack<>();
                 
-                temp.add(i);
+            //     temp.push(i);
 
-                pos.put(s.charAt(i), temp);
-            }
+            //     pos.put(s.charAt(i), temp);
+            // }
         }
         return ans;
     }       

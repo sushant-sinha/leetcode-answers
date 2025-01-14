@@ -1,3 +1,6 @@
+// 85ms ( 8.47% ) 47.79MB ( 6.43% )
+// too slow
+
 class Solution {
     public long calculateScore(String s) {
         long ans=0;

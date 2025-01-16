@@ -1,89 +1,64 @@
-// wrong answer for:
+// SUSHANT SINHA
 
-// s = "((()(()()))()((()()))))()((()(()"
-// locked = "10111100100101001110100010001001"
-
-// I wasn't considering the matching mechanism properly. Free brackets were not being matched maybe
+// referred editorial
 
 class Solution {
     public boolean canBeValid(String s, String locked) {
-
-        Stack<int[]> braces=new Stack<>();
 
         int len=s.length();
 
         if(len%2==1)
             return false;
 
+        Stack<Integer> open=new Stack<>();
+        Stack<Integer> free=new Stack<>();
+
         for(int i=0;i<len;i++){
 
-            int lockStatus=Character.getNumericValue(locked.charAt(i));
-            char c=s.charAt(i);
+            // System.out.println("testing index "+i);
 
-            if(braces.empty()){
-                braces.push(new int[]{c=='(' ? 0 : 1, lockStatus});
+            if(locked.charAt(i)=='0')
+                free.push(i);
+            
+            else if(s.charAt(i)=='(')
+                open.push(i);
+
+            // this is a closed and locked bracket
+            else{
+
+                if(!open.empty())
+                    open.pop();
+
+                else if(!free.empty())
+                    free.pop();
+
+                else
+                    return false;
+
+            }
+        }
+
+        // System.out.println(open+" "+free);
+
+        while(!open.empty()){
+
+            // ran out of unlocked spots
+            if(free.empty())
+                return false;
+            
+            int freePos=free.pop();
+            int openPos=open.pop();
+
+            if(freePos>openPos)
                 continue;
-            }
-
-            // if it is not empty, check for the
-            // hold until you don't find a fixed closing bracket before resolving
-
-            if(lockStatus==1){
-                // System.out.println("in stack for index = "+i);
-                // try to resolve this
-                if(c=='(')
-                    braces.push(new int[]{0, lockStatus});
-
-                else{
-                    int prev[]=braces.peek();
-                    // System.out.println("peeked val="+Arrays.toString(prev));
-                    if(prev[1]==0 || prev[0]==0)
-                        braces.pop();
-                    
-                    else
-                        return false;
-                    
-                }
-            }
-
+            
             else
-                braces.push(new int[]{c=='(' ? 0 : 1, lockStatus});
+                return false;
         }
 
-        // while(!braces.empty()){
-        //     System.out.println(Arrays.toString(braces.pop()));
-        // }
-
-        while(!braces.empty()){
-
-            int[] cur=braces.pop();
-            int[] prev=braces.pop();
-
-            // System.out.println("comparing "+Arrays.toString(cur)+ " "+Arrays.toString(prev));
-
-            if(cur[0]==1){
-                if(prev[0]==0 || prev[1]==0)
-                    continue;
-                
-                else
-                    return false;
-            }
-
-            if(cur[0]==0){
-
-                if(cur[1]==1)
-                    return false;
-
-                if(prev[0]==0 || prev[1]==0)
-                    continue;
-                
-                else
-                    return false;
-            }
-
-        }
-
-        return braces.empty();
+        // we don't care about the unmatched unlocked brackets
+        // I trust that they'll be matched by themselves
+        return open.empty();
         
     }
 }

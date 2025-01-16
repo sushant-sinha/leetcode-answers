@@ -1,3 +1,9 @@
+// wrong answer for:
+
+// s = "((()(()()))()((()()))))()((()(()"
+// locked = "10111100100101001110100010001001"
+
+// I wasn't considering the matching mechanism properly. Free brackets were not being matched maybe
 
 class Solution {
     public boolean canBeValid(String s, String locked) {

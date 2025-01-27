@@ -1,3 +1,10 @@
+// SUSHANT SINHA
+
+// SUSHANT SINHA
+
+// 20ms (9.01%) 64.85MB ( 6.16% )
+// Too slow, see the editorial for correct bit manipulation solution
+
 class Solution {
     public int xorAllNums(int[] nums1, int[] nums2) {
 

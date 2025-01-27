@@ -44,3 +44,6 @@ class Solution {
 
     }
 }
+
+// write a frequency based approach
+// use the commutative property (order doesn't matter) and x^x = 0 and x^0=x

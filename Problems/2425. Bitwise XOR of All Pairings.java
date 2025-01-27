@@ -47,3 +47,32 @@ class Solution {
 
 // write a frequency based approach
 // use the commutative property (order doesn't matter) and x^x = 0 and x^0=x
+
+class Solution {
+    public int xorAllNums(int[] nums1, int[] nums2) {
+
+        int len1=nums1.length, len2=nums2.length;
+
+        int ans=0;
+
+        if(len1%2==0){
+
+            if(len2%2!=0)
+                for(int i:nums1)
+                    ans^=i;
+        }
+
+        else{
+
+            for(int i: nums2)
+                ans^=i;
+            
+            if(len2%2!=0)
+                for(int i: nums1)
+                    ans^=i;
+        }
+
+        return ans;
+        
+    }
+}

@@ -1,3 +1,7 @@
+// SUSHANT SINHA
+
+// 22ms ( 84.41% ) 66.03MB ( 60.35 )
+
 class Solution {
     public int firstCompleteIndex(int[] arr, int[][] mat) {
 
